@@ -1,0 +1,1 @@
+<img src="PowerDesktop.png" align="right" />
