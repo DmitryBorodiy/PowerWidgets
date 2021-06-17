@@ -5,7 +5,7 @@
     More simple, more effective, more #Fluent.<br />
     <br /><br />
 </p>
-<h3 style="font-size: 20px;">The announce is comming///<h3/><br />
+<h3 style="font-size: 20px;">The announce is coming///<h3/><br />
 <p>
     Community Preview only for imaging!<br />
     Enjoy new Desktop features right now!<br />
