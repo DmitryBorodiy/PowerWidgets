@@ -22,6 +22,6 @@
 <br />
 <img src="screenshots/0.png" height="600" width="800" />
 <br />
-<img src="screenshots/1.png" height="400" width="650" />
+<img src="screenshots/Screenshot 2021-06-18 174251.png" height="500" width="900" />
 <br />
 <h1>Enjoy new Desktop!☺️☺️☺️</h1>
