@@ -19,6 +19,6 @@
 <br />
 <img src="screenshots/0.png" height="600" width="800" />
 <br />
-<img src="screenshots/1.png" height="600" width="800" />
+<img src="screenshots/1.png" height="400" width="650" />
 <br />
 <h1>Enjoy new Desktop!☺️☺️☺️</h1>
