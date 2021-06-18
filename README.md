@@ -5,7 +5,9 @@
     More simple, more effective, more #Fluent.<br />
     <br /><br />
 </p>
-<h3 style="font-size: 20px;">The announce is coming///<h3/><br />
+<h3><a href="https://1drv.ms/u/s!AtFuCISL0E8dnLR-C42aZijHP0nITg">Get PowerDesktop</a></h3>
+<br />
+<br />
 <p>
     Community Preview only for imaging!<br />
     Enjoy new Desktop features right now!<br />
