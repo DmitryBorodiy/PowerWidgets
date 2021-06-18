@@ -6,6 +6,7 @@
     <br /><br />
 </p>
 <h3><a href="https://1drv.ms/u/s!AtFuCISL0E8dnLR-C42aZijHP0nITg">Get PowerDesktop</a></h3>
+<a href="https://twitter.com/DmitriyJulia/status/1405904623114899459?s=20">See announcement video</a>
 <br />
 <br />
 <p>
