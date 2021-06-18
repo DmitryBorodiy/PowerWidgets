@@ -10,4 +10,7 @@
     Community Preview only for imaging!<br />
     Enjoy new Desktop features right now!<br />
 </p>
-
+<hr />
+    What's new in Community Preview 0.1.0.0<br />
+    - Preview features<br />
+    - Location detect<br />
