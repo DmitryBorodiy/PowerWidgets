@@ -14,3 +14,11 @@
     What's new in Community Preview 0.1.0.0<br />
     - Preview features<br />
     - Location detect<br />
+<br />
+    <h3>Screenshots</h3>
+<br />
+<img src="screenshots/0.png" height="600" width="800" />
+<br />
+<img src="screenshots/1.png" height="600" width="800" />
+<br />
+<h1>Enjoy new Desktop!☺️☺️☺️</h1>
