@@ -16,9 +16,21 @@
     <br />
 </p>
 <hr />
-    What's new in Community Preview 0.1.0.0<br />
+<p>
+    What's new in Community Preview 0.1.0.0?<br />
     - Preview features<br />
     - Location detect<br />
+    <br />
+    What's new in Community Preview 0.1.1.0?<br />
+    - Weather widget<br />
+    - New weather settings<br />
+    - Widgets keeping<br />
+    <br />
+    Known issues in 0.1.1.0<br />
+    <br />
+    - Problems with user account connection<br />
+    <br />
+</p>
 <br />
     <h3>Screenshots</h3>
 <br />
