@@ -5,7 +5,7 @@
     More simple, more effective, more #Fluent.<br />
     <br /><br />
 </p>
-<h3><a href="https://1drv.ms/u/s!AtFuCISL0E8dnLdCM-HvAiOTp60PJA?e=yeXcid">Get PowerDesktop</a></h3>
+<h3><a href="https://1drv.ms/u/s!AtFuCISL0E8dnLdFgmmhG759yRnhfA">Get PowerDesktop</a></h3>
 <a href="https://twitter.com/DmitriyJulia/status/1405904623114899459?s=20">See announcement video</a>
 <br />
 <br />
