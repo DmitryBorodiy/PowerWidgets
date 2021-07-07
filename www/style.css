@@ -66,6 +66,13 @@ header{
     margin-left: 20px;
 }
 
+.link_selected{
+    margin-left: 20px;
+    background-color: #007bc7;
+    color: white;
+    border-radius: 3px;
+}
+
 #app_logo{
     position: relative;
     top: 10px;
