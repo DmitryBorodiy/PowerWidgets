@@ -36,6 +36,7 @@ header{
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 111111111111111111111111111111111111111111111111111111;
+    background-color: white;
     position: fixed;
     top: 0px;
 }
