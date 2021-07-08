@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
   <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css" />
   <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.components.min.css" />
   <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
@@ -15,12 +17,15 @@
   <script src="main.js"></script>
 </head>
 
-<body>
+<body onresize="Page_OnResize">
   <header>
     <img id="app_logo" src="img/PowerDesktop.png" height="60" width="60" />
     <h3 id="app_title">Power Desktop</h3>
     <button id="download_app_button" class="ms-Button ms-Button--primary">
       <span class="ms-Button-label">Send review</span>
+    </button>
+    <button id="button_menu">
+      <span class="material-icons">&#xE87C;</span>
     </button>
     <menu id="app_navigation">
         <a class="link_selected">Home</a>
