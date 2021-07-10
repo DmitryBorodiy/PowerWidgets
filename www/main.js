@@ -15,8 +15,8 @@ window.onload = function(){
   }
 };
 
-function Page_OnResize(){
-  var width = document.documentElement.clientWidth;
+function Page_OnResize() {
+  var width = document.documentElement.scrollWidth;
   
   if(width <= 850){
     document.getElementById("app_navigation").style.visibility = "collapse";
