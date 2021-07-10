@@ -13,7 +13,7 @@ window.onload = function(){
     
     document.getElementById("button_menu").style.visibility = "collapse";
   }
-}
+};
 
 function Page_OnResize(){
   var width = document.documentElement.clientWidth;
@@ -25,3 +25,5 @@ function Page_OnResize(){
     document.getElementById("app_navigation").style.visibility = "visible";
   }
 }
+
+window.onresize = Page_OnResize;
