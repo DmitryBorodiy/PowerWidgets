@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    <style xmlns="http://www.w3.org/2000/svg">
+        @keyframes anim{
+            0%{
+                transform: translate(0px, 0px);
+            }
+            100%{
+                transform: translate(10px, 10px);
+            }
+        }
+
+        #cloud{
+            animation: 15s linear 0s infinite alternate anim;
+            animation-timing-function: ease-in-out;
+            transform: translate(0px, 0px);
+            /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+        }
+    </style>
+  <linearGradient id="PtY0UrX1qJDQb5CcMCRpOa" x1="6.221" x2="37.408" y1="5.221" y2="36.408" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#fed100"/>
+    <stop offset="1" stop-color="#e36001"/>
+  </linearGradient>
+  <linearGradient id="PtY0UrX1qJDQb5CcMCRpOb" x1="29.373" x2="37.64" y1="20.668" y2="39.146" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1, 0, 0, 1, -6.999883, -5.904059)">
+    <stop offset="0" stop-color="#fcfcfc"/>
+    <stop offset="1" stop-color="#c3c9cd"/>
+  </linearGradient>
+  <path fill="url(#PtY0UrX1qJDQb5CcMCRpOa)" d="M24,4C13.507,4,5,12.507,5,23s8.507,19,19,19s19-8.507,19-19S34.493,4,24,4z"/>
+  <path id="cloud" fill="url(#PtY0UrX1qJDQb5CcMCRpOb)" d="M 32.5 18.096 C 32.255 18.096 32.016 18.118 31.779 18.149 C 30.518 16.306 28.401 15.096 26 15.096 C 22.822 15.096 20.142 17.216 19.288 20.117 C 16.904 20.23 15 22.183 15 24.596 C 15 27.081 17.015 29.096 19.5 29.096 C 20.585 29.096 31.375 29.096 32.5 29.096 C 35.538 29.096 38 26.634 38 23.596 C 38 20.558 35.538 18.096 32.5 18.096 Z"/>
+</svg>
