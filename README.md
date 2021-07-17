@@ -5,7 +5,7 @@
     More simple, more effective, more #Fluent.<br />
     <br /><br />
 </p>
-<h3><a href="https://1drv.ms/u/s!AtFuCISL0E8dnLdFgmmhG759yRnhfA">Get PowerDesktop</a></h3> 
+<h3><a href="https://1drv.ms/u/s!AtFuCISL0E8dnLoiaOvWRxwJPlE10w">Get PowerDesktop</a></h3> 
 <a href="https://twitter.com/DmitriyJulia/status/1405904623114899459?s=20">See announcement video</a>
 <br />
 <br />
@@ -30,6 +30,13 @@
     <br />
     - Problems with user account connection<br />
     <br />
+    What's new in Community Preview 0.1.2.0?<br />
+    - The project brings to UWP<br />
+    - Weather widget updated<br />
+    - Outlook widget added<br />
+    - More settings added<br />
+    - Apps menu added<br />
+    - Store in development process<br />
 </p>
 <br />
     <h3>Screenshots</h3>
