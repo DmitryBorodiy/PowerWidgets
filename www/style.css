@@ -225,4 +225,7 @@ footer{
 #download_div{
     height: 600px;
     width: 850px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
