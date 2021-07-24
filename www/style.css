@@ -66,12 +66,14 @@ header{
 }
 
 footer{
-    height: auto;
+    height: 140px;
     width: 100%;
     text-align: center;
     background-color: #2A2A2A;
-    border-radius: 10px;
     color: white;
+    position: relative;
+    padding: 0px;
+    bottom: 0px;
 }
 
 .link{
@@ -173,10 +175,9 @@ footer{
 .tile{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: cover;
     height: auto;
     width: auto;
+    text-align: center;
 }
 
 .tile_icon{
@@ -218,7 +219,7 @@ footer{
 
 #download_section{
     width: 100%;
-    height: auto;
+    height: 920px;
     text-align: center;
 }
 
@@ -229,5 +230,15 @@ footer{
     border-radius: 10px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
     display: inline-block;
-    margin-top: 130px;
+    margin-top: 145px;
+    text-align: center;
+}
+
+#download_title{
+    position: relative;
+    margin-top: 56px;
+}
+
+#rufous-sandbox{
+    margin-top: 10px;
 }
