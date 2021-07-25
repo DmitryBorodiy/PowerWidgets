@@ -19,3 +19,21 @@ function OpenInStore(){
       console.log(e.toString());
     }
 }
+
+function DownloadInsiderBuild(){
+    try{
+      window.open("");
+    }
+    catch(e){
+      console.log(e.toString());
+    }
+}
+
+function NavigateTo(path){
+  try{
+    document.location.href = path;
+  }
+  catch(e){
+    console.log(e.toString());
+  }
+}
