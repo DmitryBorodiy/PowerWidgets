@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>PowerDesktop - news & feed</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css" />
+        <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.components.min.css" />
+        <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
+
+        <link rel="stylesheet" href="style.css" />
+        <script src="feed.js"></script>
+    </head>
+    <body onresize="Window_OnResize();">
+        <header>
+            <img id="app_logo" src="img/PowerDesktop.png" height="60" width="60" />
+            <h3 id="app_title">Power Desktop</h3>
+            <button id="download_app_button" class="ms-Button ms-Button--primary" onclick="NavigateTo('download.html');">
+              <span class="ms-Button-label">Get Preview</span>
+            </button>
+            <div id="menu_nav" style="position: absolute; right: 175px; top: 30px;">
+              <a class="link" style="margin-right: 15px;" href="index.html">Home</a>
+              <a class="link" style="margin-right: 15px;">Power Apps</a>
+              <a class="link_selected" href="feed.html">Feed & news</a>
+            </div>
+        </header>
+        <section id="content">
+            <div id="content_div">
+                <h1 id="page_title">Feed & news</h1>
+                <a href="https://twitter.com/intent/tweet?screen_name=DmitriyJulia&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-text="Follow" data-related="DmitriyJulia,DmitriyJulia" data-show-count="false">Tweet to @DmitriyJulia</a>
+                <div class="table">
+                    <div class="table_item" style="padding-top: 30px;">
+                        <a class="twitter-timeline" data-width="460" href="https://twitter.com/DmitriyJulia?ref_src=twsrc%5Etfw">Tweets by DmitriyJulia</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div style="text-align: center; padding-top: 45px;">
+                <button class="ms-Button ms-Button--small" style="margin: 3px; margin-bottom: 10px;" onclick="SendReview();">
+                  <span class="ms-Button-label">Send review</span> 
+                </button>
+                <button class="ms-Button ms-Button--small" style="margin: 3px; margin-bottom: 10px;" onclick="NavigateTo('privacy/index.html');">
+                  <span class="ms-Button-label">Privacy Policy</span> 
+                </button>
+                <a style="margin: 3px; margin-top: 20px;" href="https://twitter.com/intent/tweet?screen_name=DmitriyJulia&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-text="Follow" data-related="DmitriyJulia,DmitriyJulia" data-show-count="false">Tweet to @DmitriyJulia</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </footer>
+    </body>
+</html>

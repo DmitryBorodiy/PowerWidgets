@@ -224,8 +224,8 @@ footer{
 }
 
 #download_div{
-    height: 600px;
-    width: 850px;
+    height: auto;
+    max-width: 850px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
@@ -241,4 +241,16 @@ footer{
 
 #rufous-sandbox{
     margin-top: 10px;
+}
+
+#content{
+    width: 100%;
+    height: auto;
+}
+
+#content_div{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 80px;
 }
