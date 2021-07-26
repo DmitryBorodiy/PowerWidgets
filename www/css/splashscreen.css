@@ -1,0 +1,37 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#asset{
+    height: auto;
+    width: auto;
+}
+
+#logo{
+    animation-name: logo_anim;
+    animation-duration: 3s;
+    animation-play-state: running;
+    animation-direction: normal;
+}
+
+@keyframes logo_anim{
+    from{
+        height: 0px;
+        width: 0px;
+    }
+    to{
+        height: 100px;
+        width: 100px;
+    }
+}

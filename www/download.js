@@ -37,7 +37,7 @@ function OpenInStore(){
 
 function DownloadInsiderBuild(){
     try{
-      window.open("");
+      document.location.href = "insider/index.html";
     }
     catch(e){
       console.log(e.toString());

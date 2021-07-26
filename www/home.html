@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+  <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css" />
+  <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.components.min.css" />
+  <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
+  <title>Power Desktop</title>
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js"></script>
+</head>
+
+<body onresize="Window_OnResize();">
+  <header>
+    <img id="app_logo" src="img/PowerDesktop.png" height="60" width="60" />
+    <h3 id="app_title">Power Desktop</h3>
+    <button id="download_app_button" class="ms-Button ms-Button--primary" onclick="NavigateTo('download.html');">
+      <span class="ms-Button-label">Get Preview</span>
+    </button>
+    <div id="menu_nav" style="position: absolute; right: 175px; top: 30px;">
+      <a class="link_selected" style="margin-right: 15px;">Home</a>
+      <a class="link" style="margin-right: 15px;" href="apps.html">Power Apps</a>
+      <a class="link" href="feed.html">Feed & news</a>
+    </div>
+  </header>
+  <section id="start">
+    <div id="start_div">
+      <div id="start_pane">
+        <img id="start_pane_logo" src="img/PowerDesktop.png" height="120" width="120" />
+        <h2>New generation of Windows Desktop</h2>
+        <hr class="line"/>
+        <p>
+          Explore the new experience of Windows Desktop.<br />
+          More simple, more effective, more #Fluent.<br />
+          #Never stop running Windows!<br />
+        </p>
+        <br />
+        <button id="review_versions_button" class="ms-Button ms-Button--primary" onclick="NavigateTo('download.html');">
+          <span class="ms-Button-label">Get latest version</span>
+        </button>
+        <button id="send_review_button" class="ms-Button" onclick="SendReview();">
+          <span class="ms-Button-label">Send review</span>
+        </button>
+        <br />
+        <a href="#base_information">
+          <button class="circle_button" style="height: 45px; width: 45px; margin-top: 40px;">
+            <span class="material-icons" style="margin-top: 5px;">
+              expand_more
+            </span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="base_information">
+    <div id="base_information_div">
+      <img src="img/apps.png" height="80px" width="80px" />
+      <h1 style="margin-top: 50px;">Integrated apps and extensions</h1>
+      <p>
+        Power Desktop includes support for extensions<br />
+        and mini-apps. Integration of mini applications will allow<br />
+        fast access to userful features which should always be at hand.<br />
+      </p>
+      <div id="features_preview" class="table">
+        <div class="table_item">
+          <div class="tile" style="height: 135px; width: 135px;">
+            <img class="tile_icon" src="img/outlook.png" height="75px" width="75px" style="margin-top: 26px;"/>
+          </div>
+        </div>
+        <div class="table_item">
+          <div class="tile" style="height: 135px; width: 135px;">
+            <img class="tile_icon" src="img/edge.png" height="75px" width="75px" style="margin-top: 26px;"/>
+          </div>
+        </div>
+        <div class="table_item">
+          <div class="tile" style="height: 135px; width: 135px;">
+            <img class="tile_icon" src="img/onenote.png" height="75px" width="75px" style="margin-top: 26px;"/>
+          </div>
+        </div>
+        <div class="table_item">
+          <div class="tile" style="height: 135px; width: 135px;">
+            <img class="tile_icon" src="img/todo.png" height="75px" width="75px" style="margin-top: 26px;"/>
+          </div>
+        </div>
+        <div class="table_item">
+          <div class="tile" style="height: 135px; width: 135px;">
+            <img class="tile_icon" src="img/notes.png" height="75px" width="75px" style="margin-top: 26px;"/>
+          </div>
+        </div>
+        <div class="table_item">
+          <div class="tile" style="height: 135px; width: 135px;">
+            <img class="tile_icon" src="img/weather.png" height="75px" width="75px" style="margin-top: 26px;"/>
+          </div>
+        </div>
+      </div>
+      <button class="ms-Button ms-Button--primary" style="margin-top: 25px;">
+        <span class="ms-Button-label">Explore more</span>
+      </button>
+    </div>
+  </section>
+  <footer>
+    <div style="text-align: center; padding-top: 45px;">
+      <button class="ms-Button ms-Button--small" style="margin: 3px; margin-bottom: 10px;" onclick="SendReview();">
+        <span class="ms-Button-label">Send review</span> 
+      </button>
+      <button class="ms-Button ms-Button--small" style="margin: 3px; margin-bottom: 10px;" onclick="NavigateTo('privacy/index.html');">
+        <span class="ms-Button-label">Privacy Policy</span> 
+      </button>
+      <a style="margin: 3px; margin-top: 20px;" href="https://twitter.com/intent/tweet?screen_name=DmitriyJulia&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-text="Follow" data-related="DmitriyJulia,DmitriyJulia" data-show-count="false">Tweet to @DmitriyJulia</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </footer>
+</body>
+</html>

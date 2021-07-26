@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>PowerDesktop - news & feed</title>
+        <title>Power Apps</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet" />
         <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css" />
@@ -11,9 +11,9 @@
         <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
 
         <link rel="stylesheet" href="style.css" />
-        <script src="feed.js"></script>
+        <script src="apps.js"></script>
     </head>
-    <body onresize="Window_OnResize();">
+    <body>
         <header>
             <img id="app_logo" src="img/PowerDesktop.png" height="60" width="60" />
             <h3 id="app_title">Power Desktop</h3>
@@ -22,18 +22,18 @@
             </button>
             <div id="menu_nav" style="position: absolute; right: 175px; top: 30px;">
               <a class="link" style="margin-right: 15px;" href="home.html">Home</a>
-              <a class="link" style="margin-right: 15px;" href="apps.html">Power Apps</a>
-              <a class="link_selected" href="feed.html">Feed & news</a>
+              <a class="link_selected" style="margin-right: 15px;">Power Apps</a>
+              <a class="link" href="feed.html">Feed & news</a>
             </div>
         </header>
         <section id="content">
-            <div id="content_div">
-                <h1 id="page_title">Feed & news</h1>
-                <a href="https://twitter.com/intent/tweet?screen_name=DmitriyJulia&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-text="Follow" data-related="DmitriyJulia,DmitriyJulia" data-show-count="false">Tweet to @DmitriyJulia</a>
-                <div class="table">
-                    <div class="table_item" style="padding-top: 30px;">
-                        <a class="twitter-timeline" data-width="460" href="https://twitter.com/DmitriyJulia?ref_src=twsrc%5Etfw">Tweets by DmitriyJulia</a>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div id="content_div" style="height: 750px; padding-top: 100px;">
+                <h1 id="page_title">All Power Apps</h1>
+                <div class="table" style="padding-top: 35px;">
+                    <div class="table_item">
+                        <div class="tile" style="height: 430px; width: 360px;">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
