@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>PowerDesktop | Extensions and features</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css" />
+        <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.components.min.css" />
+        <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
+
+        <link rel="stylesheet" href="style.css" />
+        <script src="extensions.js"></script>
+    </head>
+    <body>
+        <header>
+            <img id="app_logo" src="img/PowerDesktop.png" height="60" width="60" />
+            <h3 id="app_title">Power Desktop Store</h3>
+            <button id="download_app_button" class="ms-Button ms-Button--primary" onclick="GetPremium();">
+              <span class="ms-Button-label">Get Premium</span>
+            </button>
+            <div id="menu_nav" style="position: absolute; right: 175px; top: 30px;">
+              <a class="link" style="margin-right: 15px;" href="home.html">Home</a>
+              <a class="link" style="margin-right: 15px;" href="apps.html">Power Apps</a>
+              <a class="link" href="feed.html">Feed & news</a>
+            </div>
+        </header>
+        <section id="content">
+            <div id="content_div">
+                <div id="extensions_ads">
+                    <h1 style="padding-top: 90px; padding-bottom: 90px; margin: 0px; color: white;">More features for PowerDesktop</h1>
+                </div>
+            </div>
+            <div id="extensions_div">
+                <h2>All extensions</h2>
+                <div class="table">
+                    <div class="table_item">
+                        <div class="tile" style="height: 400px; width: 320px; text-align: center; margin: 5px;">
+                            <div style="padding-top: 50px; padding-bottom: 50px; padding-left: 6px; padding-right: 6px;">
+                                <img src="img/clock.png" height="120px" width="120px" />
+                                <h2>Clock & Main widget</h2>
+                                <p>
+                                    Main widget with base weather<br />
+                                    information and calendar information.<br />
+                                    Also provide fast access to some important things.<br />
+                                </p>
+                                <button class="ms-Button ms-Button--primary">
+                                    <span class="ms-Button-label">Free</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_item">
+                        <div class="tile" style="height: 400px; width: 320px; text-align: center; margin: 5px;">
+                            <div style="padding-top: 50px; padding-bottom: 50px; padding-left: 6px; padding-right: 6px;">
+                                <img src="img/weather.png" height="120px" width="120px" />
+                                <h2>Weather</h2>
+                                <p>
+                                    Weather widget.<br />
+                                    Developed with OpenWeatherMap.<br />
+                                    <br />
+                                    <br />
+                                </p>
+                                <button class="ms-Button ms-Button--primary">
+                                    <span class="ms-Button-label">Free</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_item">
+                        <div class="tile" style="height: 400px; width: 320px; text-align: center; margin: 5px;">
+                            <div style="padding-top: 50px; padding-bottom: 50px; padding-left: 6px; padding-right: 6px;">
+                                <img src="img/outlook.png" height="120px" width="120px" />
+                                <h2>Outlook</h2>
+                                <p>
+                                    Provide access to Outlook<br />
+                                    features. Read your mail, see calendar,<br />
+                                    and work with contacts.<br />
+                                </p>
+                                <button style="background-color: green; border-color: green;" class="ms-Button ms-Button--primary" onclick="GetPremium();">
+                                    <span class="ms-Button-label">With Premium</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div style="text-align: center; padding-top: 45px;">
+                <button class="ms-Button ms-Button--small" style="margin: 3px; margin-bottom: 10px;" onclick="SendReview();">
+                  <span class="ms-Button-label">Send review</span> 
+                </button>
+                <button class="ms-Button ms-Button--small" style="margin: 3px; margin-bottom: 10px;" onclick="NavigateTo('privacy/index.html');">
+                  <span class="ms-Button-label">Privacy Policy</span> 
+                </button>
+                <a style="margin: 3px; margin-top: 20px;" href="https://twitter.com/intent/tweet?screen_name=DmitriyJulia&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-text="Follow" data-related="DmitriyJulia,DmitriyJulia" data-show-count="false">Tweet to @DmitriyJulia</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </footer>
+    </body>
+</html>

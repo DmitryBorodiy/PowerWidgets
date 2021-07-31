@@ -254,3 +254,19 @@ footer{
     text-align: center;
     padding-top: 80px;
 }
+
+#extensions_ads{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,112,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+#extensions_div{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}

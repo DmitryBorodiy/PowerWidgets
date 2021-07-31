@@ -1,7 +1,7 @@
 window.onload = function(){
-    Window_OnResize();
-
     document.body.onresize = Window_OnResize;
+
+    Window_OnResize();
 };
 
 function Window_OnResize(){
@@ -15,20 +15,29 @@ function Window_OnResize(){
     }
 }
 
-function GetPremium(){
-  try{
-      window.open("ms-windows-store://pdp/?ProductId=9N9D5RCZ3QV7");
-  }
-  catch(e){
+function NavigateTo(path){
+    try{
+      document.location.href = path;
+    }
+    catch(e){
       console.log(e.toString());
-  }
+    }
+}
+
+function GetPremium(){
+    try{
+        window.open("ms-windows-store://pdp/?ProductId=9N9D5RCZ3QV7");
+    }
+    catch(e){
+        console.log(e.toString());
+    }
 }
 
 function OpenWindow(url){
-  try{
-      window.open(url);
-  }
-  catch(e){
-      console.log(e.toString());
-  }
+    try{
+        window.open(url);
+    }
+    catch(e){
+        console.log(e.toString());
+    }
 }
