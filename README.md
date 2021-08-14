@@ -5,7 +5,7 @@
     More simple, more effective, more #Fluent.<br />
     <br /><br />
 </p>
-<h3><a href="https://1drv.ms/u/s!AtFuCISL0E8dnLoiaOvWRxwJPlE10w">Get PowerDesktop</a></h3> 
+<h3><a href="https://dmitryborodiy.github.io/PowerDesktop/www/download.html">Get PowerDesktop</a></h3> 
 <a href="https://twitter.com/DmitriyJulia/status/1405904623114899459?s=20">See announcement video</a>
 <br />
 <br />
@@ -38,11 +38,4 @@
     - Apps menu added<br />
     - Store in development process<br />
 </p>
-<br />
-    <h3>Screenshots</h3>
-<br />
-<img src="screenshots/0.png" height="600" width="800" />
-<br />
-<img src="screenshots/Screenshot 2021-06-18 174251.png" height="500" width="900" />
-<br />
 <h1>Enjoy new Desktop!☺️☺️☺️</h1>
