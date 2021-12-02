@@ -1,0 +1,396 @@
+﻿@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
+
+@media(prefers-color-scheme: light){
+  :root {
+    --theme-primary-color: #3379d9;
+    --theme-primary-color-focus: #559ce4;
+    --white: #ffffffff;
+    --black: #000000ff;
+    --neutral-light-color: rgb(220, 220, 220);
+  }
+  
+  input{
+    color: black;
+  }
+  
+  .ms-textblock{
+    color: black;
+  }
+
+  .ms-textbox{
+    background-color: white;
+    border: 0.9px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .ms-textbox:focus-within{
+    background-color: rgb(245, 245, 245);
+  }
+  
+  button{
+    background: #FFFFFF;
+    color: black;
+  }
+  
+  .ms-menu-button-selected{
+    background: rgba(102, 102, 102, 0.096);
+  }
+  
+  .ms-menu-button-selected:hover{
+    background: rgba(102, 102, 102, 0.2);
+    box-shadow: 0 0 0 black;
+  } 
+
+  .ms-menu-button-selected:active{
+    background: rgba(102, 102, 102, 0.3);
+    box-shadow: 0 0 0 black;
+  } 
+  
+  .ms-menu-button:hover{
+    background: rgba(102, 102, 102, 0.1);
+    box-shadow: 0 0 0 black;
+  }
+  
+  .ms-menu-button:active{
+    background: rgba(102, 102, 102, 0.3);
+    box-shadow: 0 0 0 black;
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .ms-acrylic-brush{
+      background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media(prefers-color-scheme: dark){
+  :root {
+    --theme-primary-color: #1284FF;
+    --theme-primary-color-focus: #00A4FF;
+    --white: #ffffffff;
+    --black: #000000ff;
+    --neutral-light-color: rgb(45, 45, 45);
+  }
+  
+  button{
+    background-color: rgb(26, 26, 26);
+    color: white;
+  }
+  
+  input{
+    color: white;
+  }
+
+  .ms-textblock{
+    color: white;
+  }
+  
+  .ms-textbox{
+    background-color: rgb(25, 25, 25);
+    border: 0.9px solid rgba(180, 180, 180, 0.1);
+  }
+  
+  .ms-textbox:focus-within{
+    background-color: rgb(15, 15, 15);
+  }
+  
+  .ms-menu-button-selected{
+    background-color: rgb(26, 26, 26);
+  }
+  
+  .ms-menu-button-selected:hover{
+    background-color: rgb(15, 15, 15);
+  }
+  
+  .ms-menu-button:hover{
+    background-color: rgb(25, 25, 25);
+  }
+  
+  .ms-menu-button:active{
+    background-color: rgb(15, 15, 15);
+  }
+
+  .ms-acrylic-brush{
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+    button{
+        border: 0.1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 1.2px 1px rgba(0, 0, 0, 0.35);
+        border-radius: 6px;
+    }
+    
+    input{
+      border-style: none;
+      background-color: transparent;
+      justify-content: center;
+      text-align: left;
+    }
+
+    .ms-grid{
+        display: grid;
+    }
+
+    .ms-acrylic-brush{
+        -webkit-backdrop-filter: blur(50px);
+        backdrop-filter: blur(50px);
+    }
+
+    .ms-textblock{
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 16px;
+    }
+    
+    .ms-text-input {
+      width: 100%;
+      height: 100%;
+      margin-left: 10px;
+    }
+    
+    .ms-text-input:focus{
+      border-color: transparent;
+      outline: none;
+    }
+    
+    .ms-textbox {
+      box-sizing: border-box;
+      box-shadow: 0px 1.2px 1px rgba(0, 0, 0, 0.35);
+      border-radius: 6px;
+    }
+    
+    .ms-textbox:focus-within{
+      border: 2px solid var(--theme-primary-color);
+    }
+    
+    .ms-textbox-icon {
+      display: flex;
+      position: relative;
+      float: right;
+      right: 10px;
+      bottom: 27px;
+      font-size: 16px;
+    }
+
+    .ms-button-accent{
+        background: var(--theme-primary-color);
+        border: none;
+        box-sizing: border-box;
+        box-shadow: 0px 1.2px 1px rgba(0, 0, 0, 0.35);
+        border-radius: 6px;
+        color: white;
+    }
+
+    .ms-button-accent:hover{
+        background: var(--theme-primary-color-focus);
+        border: none;
+        box-sizing: border-box;
+        box-shadow: 0px 1.2px 1px rgba(0, 0, 0, 0.40);
+        border-radius: 6px;
+        color: white;
+    }
+
+    .ms-button-accent:active{
+        background: var(--theme-primary-color-focus);
+        border: none;
+        box-sizing: border-box;
+        box-shadow: 0px 1.2px 8px rgba(0, 0, 0, 0.45);
+        border-radius: 6px;
+        color: white;
+    }
+
+    .ms-menu-button-selected{
+        border: 0.1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.35);
+        border-radius: 6px;
+        height: 36px;
+        width: auto; 
+    }
+
+    .ms-menu-button{
+        border-style: none; 
+        box-shadow: none;
+        background-color: transparent;
+        border-radius: 6px;
+        height: 36px;
+        width: auto; 
+    }
+
+    .ms-menu-button:hover{
+        border-style: none; 
+        box-shadow: none;
+        border-radius: 6px;
+        height: 36px;
+        width: auto; 
+    }
+
+    .ms-menu-button:active{
+        border: 0.1px solid rgba(0, 0, 0, 0.1);
+        height: 36px;
+        width: auto; 
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.40);
+    }
+
+    .ms-menu{
+        display: table;
+    }
+
+    .ms-menu-item{
+        display: inline-block;
+        margin: 3px;
+    }
+
+    h1{
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    h2{
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    h3{
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    h4{
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    h5{
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    p{
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    a{
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    button:hover{
+        background-color: rgb(245, 245, 245);
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.40);
+    }
+
+    button:active{
+        background-color: rgb(236, 236, 236);
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.45);
+    }
+
+    .button_label{
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 13px;
+    }
+
+    .menu-button-label{
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 13px;
+        position: relative;
+        margin-left: 6px;
+    }
+
+    .button_content{
+        display: flex;
+    }
+
+    .button_icon{
+        font-family: 'FluentSystemIcons-Regular', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        display: inline-block;
+    }
+
+    .bold_text{
+        font-family: 'Segoe UI'; 
+        font-weight: bold;
+    }
+
+    .table{
+        display: table;
+        width: 100%;
+    }
+
+    .table_item{
+        display: inline-block;
+        margin: 3px;
+    }
+
+    @keyframes progressring {
+  0% {
+    stroke-dasharray: 0% 275%;
+    transform: rotate(-90deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+    stroke-dasharray: 137.5% 137.5%;
+  }
+
+  100% {
+    stroke-dasharray: 0% 275%;
+    transform: rotate(990deg);
+  }
+}
+
+.progress-ring {
+  width: 48px;
+  height: auto;
+  position: absolute;
+}
+
+.progress-ring > .ring {
+  width: 100%;
+  height: 100%;
+}
+
+.progress-ring > .ring > .static {
+  fill: none;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  stroke-width: 12.5%;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 50%;
+  height: 100%;
+  stroke: var(--neutral-light-color);
+}
+
+.progress-ring > .ring > .dynamic {
+  -webkit-animation: progressring 2s linear infinite;
+  -moz-animation: progressring 2s linear infinite;
+  -o-animation: progressring 2s linear infinite;
+  animation: progressring 2s linear infinite;
+  fill: none;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  stroke-width: 12.5%;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  height: 100%;
+  border-radius: 50%;
+  stroke: var(--theme-primary-color);
+}

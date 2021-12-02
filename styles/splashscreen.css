@@ -1,0 +1,50 @@
+﻿#app_logo{
+    height: 136px;
+    width: 136px;
+    animation-name: logo;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes logo{
+    from {
+        height: 100px;
+        width: 100px;
+    }
+    to {
+        height: 145px;
+        width: 145px;
+    }
+}
+
+@media(prefers-color-scheme: light){
+    body{
+        padding: 0px;
+        margin: 0px;
+        background-color: white;
+    }
+
+    #app_logo{
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media(prefers-color-scheme: dark){
+    body{
+        padding: 0px;
+        margin: 0px;
+        background-color: rgb(30, 30, 30);
+    }
+
+    #app_logo{
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+    }
+}

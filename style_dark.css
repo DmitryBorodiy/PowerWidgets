@@ -1,0 +1,26 @@
+body {
+    font-size: 15pt;
+    padding: 0px;
+    margin: 0px;
+}
+
+.system-chrome-alt-high-color {
+    background-color: #202020;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+}
+
+#logo_img{
+    height: 45px;
+    width: 45px;
+    position: relative;
+    top: 14px;
+    left: 16px;
+}

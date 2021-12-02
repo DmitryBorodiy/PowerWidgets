@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Power Editor - best way to edit your code.</title>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- WinUI WASM -->
+  <link rel="stylesheet" href="styles/winui-web.css" />
+  <link rel="stylesheet" href="fonts/FluentSystemIcons-Regular.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+  <script src="mobile.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/browse/@n8d/htwoo-core@<version>/dist/css/htwoo.min.css">
+  <script src="https://unpkg.com/browse/@n8d/htwoo-core@<version>/dist/js/"></script>
+</head>
+
+<body class="system-chrome-alt-high-color" onresize="DetectMobileMode();">
+  <header class="navbar">
+    <div id="navbar-logo">
+        <img id="logo_img" src="img/app_logo.png" alt="logo_img" />
+        <a id="logo-text">Widgets</a>
+    </div>
+    <div id="navbar_separator" class="vertical-separator"></div>
+    <div id="desktop_menu" class="ms-menu">
+      <div class="ms-menu-item">
+        <button class="ms-menu-button-selected" style="width: 81px;">
+            <span class="button_content">
+                <i class="fluent-icons"></i>
+                <span class="menu-button-label">Home</span>
+            </span>
+        </button>
+      </div>
+      <div class="ms-menu-item">
+        <button class="ms-menu-button" style="width: auto;">
+            <span class="button_content">
+                <i class="fluent-icons"></i>
+                <span class="menu-button-label">What's new</span>
+            </span>
+        </button>
+      </div>
+      <div class="ms-menu-item">
+        <button class="ms-menu-button" style="width: auto;">
+            <span class="button_content">
+                <i class="fluent-icons"></i>
+                <span class="menu-button-label">Docs</span>
+            </span>
+        </button>
+      </div>
+      <div class="ms-menu-item">
+        <button class="ms-menu-button" style="width: auto;">
+            <span class="button_content">
+                <i class="fluent-icons"></i>
+                <span class="menu-button-label">Widgets</span>
+            </span>
+        </button>
+      </div>
+      <!--<div class="ms-menu-item">
+        <button class="ms-menu-button" style="width: auto;">
+            <span class="button_content">
+                <i class="fluent-icons"></i>
+                <span class="menu-button-label">Get from Microsoft Store</span>
+            </span>
+        </button>
+      </div> -->
+      <!--<div class="ms-menu-item">
+        <button class="ms-menu-button" style="width: auto;">
+          <span class="button_content">
+            <i class="fluent-icons icon-ic_fluent_settings_20_regular">&#xE700;</i>
+            <span class="menu-button-label">Settings</span>
+          </span>
+        </button>
+      </div> -->
+    </div>
+    <div id="SearchBoxControl" class="ms-textbox" style="position: fixed; top: 18px; right: 130px; height: 35px; width: 220px;">
+      <input id="SearchBoxInput" class="ms-text-input" type="text" placeholder="Search here..." autocomplete="true" />
+      <i class="ms-textbox-icon icon-ic_fluent_search_20_regular"></i>
+    </div>
+    <button id="send_review_button" class="ms-button-accent">
+        <span class="button_label">Send review</span>
+    </button>
+  </header>
+  <div id="content">
+    <section id="start">
+      <div id="start_content">
+         <h1 id="page-title" class="ms-textblock">Meet new Widgets for Windows</h1>
+         <p id="page-description" class="ms-textblock">
+             Power Widgets is new way to customize your at-a-glance info.<br />
+             With new widgets and mini-apps you can explore info and get fast access to important things.<br />
+         </p>
+         <div id="app-preview-image" class="ms-grid ms-acrylic-brush" />
+      </div>
+    </section>
+  </div>
+</body>
+</html>
