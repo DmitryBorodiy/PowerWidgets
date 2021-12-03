@@ -25,7 +25,7 @@ function DetectMobileMode(){
       document.getElementById("send_review_button").style.visibility = "collapse";
 
       $('#page-title').css("font-size", "40px");
-      $('#app-preview-image').css("top", "260px");
+      $('#app-preview-image').css("top", "100px");
       $('#app-preview-image').css("width", "85%");
     }
     else if(documentWidthProperty >= 1000){
@@ -39,7 +39,7 @@ function DetectMobileMode(){
       document.getElementById("send_review_button").style.visibility = "visible";
 
       $('#page-title').css("font-size", "60px");
-      $('#app-preview-image').css("top", "180px");
+      $('#app-preview-image').css("top", "50px");
       $('#app-preview-image').css("width", "1000px");
     }
   }

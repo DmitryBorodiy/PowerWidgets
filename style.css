@@ -172,7 +172,7 @@ body {
 
 #start_content{
   width: 100%;
-  height: 760px;
+  height: 900px;
   background-size: cover;
   background-position: center center;
   text-align: center;
@@ -187,8 +187,8 @@ body {
     position: fixed;
     top: 18px;
     right: 20px;
-    height: 36px;
-    width: 100px;
+    height: 35px;
+    width: 110px;
 }
 
 #page-title{
@@ -202,7 +202,25 @@ body {
     animation-duration: 2.5s;
 }
 
+#start-buttons-grid{
+    animation-name: start-buttons;
+    animation-duration: 3.5s;
+    /*animation-delay: 5s; */
+    /*opacity: 0; */
+}
+
 @keyframes start{
+    from{
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes start-buttons{
     from{
         transform: scale(0.1);
         opacity: 0;

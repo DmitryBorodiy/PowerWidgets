@@ -2,8 +2,8 @@
 
 @media(prefers-color-scheme: light){
   :root {
-    --theme-primary-color: #3379d9;
-    --theme-primary-color-focus: #559ce4;
+    --theme-primary-color: #005FB8;
+    --theme-primary-color-focus: rgb(38, 121, 199);
     --white: #ffffffff;
     --black: #000000ff;
     --neutral-light-color: rgb(220, 220, 220);
@@ -19,7 +19,9 @@
 
   .ms-textbox{
     background-color: white;
-    border: 0.9px solid rgba(0, 0, 0, 0.1);
+    border-width: 0px 0px 1px 0px;
+    border-color: rgba(0, 0, 0, 0.6);
+    border-style: solid;
   }
   
   .ms-textbox:focus-within{
@@ -27,8 +29,25 @@
   }
   
   button{
-    background: #FFFFFF;
-    color: black;
+      color: black;
+  }
+
+  .ms-button{
+    width: 120px;
+    height: 32px;
+    background: white;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: rgba(0, 0, 0, 0.3);
+    color: rgb(0, 0, 0, 0.8);
+    font-family: Segoe UI, sans-serif;
+  }
+
+  .ms-button:hover{
+      color: rgba(0, 0, 0, 0.6);
+      background-color: rgb(248, 248, 248);
+      border: none;
   }
   
   .ms-menu-button-selected{
@@ -63,16 +82,33 @@
 
 @media(prefers-color-scheme: dark){
   :root {
-    --theme-primary-color: #1284FF;
-    --theme-primary-color-focus: #00A4FF;
+    --theme-primary-color: #005FB8;
+    --theme-primary-color-focus: rgb(44, 121, 194);
     --white: #ffffffff;
     --black: #000000ff;
     --neutral-light-color: rgb(45, 45, 45);
   }
-  
+
   button{
-    background-color: rgb(26, 26, 26);
-    color: white;
+      color: white;
+  }
+  
+  .ms-button{
+    width: 120px;
+    height: 32px;
+    background: rgb(25, 25, 25);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.9);
+    font-family: Segoe UI, sans-serif;
+  }
+
+  .ms-button:hover{
+      color: rgba(255, 255, 255, 0.7);
+      background-color: rgb(35, 35, 35);
+      border: none;
   }
   
   input{
@@ -85,7 +121,9 @@
   
   .ms-textbox{
     background-color: rgb(25, 25, 25);
-    border: 0.9px solid rgba(180, 180, 180, 0.1);
+    border-width: 0px 0px 1px 0px;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
   }
   
   .ms-textbox:focus-within{
@@ -159,7 +197,7 @@
     }
     
     .ms-textbox:focus-within{
-      border: 2px solid var(--theme-primary-color);
+      border-color: var(--theme-primary-color);
     }
     
     .ms-textbox-icon {
@@ -172,30 +210,36 @@
     }
 
     .ms-button-accent{
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* padding: 5px 12px 7px; */
+        /* position: absolute; */
+        width: 120px;
+        height: 32px;
+        /* left: calc(50% - 120px/2); */
+        /* top: calc(50% - 32px/2); */
+
+        /* Light/Fill Color/Accent/Default */
         background: var(--theme-primary-color);
-        border: none;
-        box-sizing: border-box;
-        box-shadow: 0px 1.2px 1px rgba(0, 0, 0, 0.35);
-        border-radius: 6px;
+        border-radius: 4px;
+        border: solid;
+        border-width: 0px 0px 1px 0px;
+        border-color: rgba(0, 0, 0, 0.3);
         color: white;
+        font-family: Segoe UI, sans-serif;
     }
 
     .ms-button-accent:hover{
-        background: var(--theme-primary-color-focus);
-        border: none;
-        box-sizing: border-box;
-        box-shadow: 0px 1.2px 1px rgba(0, 0, 0, 0.40);
-        border-radius: 6px;
-        color: white;
+        background-color: var(--theme-primary-color-focus);
+        color: rgba(255, 255, 255, 0.7);
     }
 
     .ms-button-accent:active{
-        background: var(--theme-primary-color-focus);
+        background-color: var(--theme-primary-color-focus);
+        color: rgba(255, 255, 255, 0.6);
         border: none;
-        box-sizing: border-box;
-        box-shadow: 0px 1.2px 8px rgba(0, 0, 0, 0.45);
-        border-radius: 6px;
-        color: white;
     }
 
     .ms-menu-button-selected{
