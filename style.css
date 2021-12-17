@@ -24,7 +24,7 @@
   #app-preview-image{
     background-image: url('assets/light-screen.png');
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.3); */
   }
 }
 
@@ -52,17 +52,17 @@
   }
 
   #app-preview-image{
-    background-image: url('assets/dar-screen.png');
+    background-image: url('assets/dark-screen.png');
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.3); */
   }
 }
 
 #app-preview-image{
   display: inline-block;
-  height: 255px;
+  height: 500px;
   width: 85%;
-  background-position: cover;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 15px;
