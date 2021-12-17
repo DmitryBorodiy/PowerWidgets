@@ -1,4 +1,4 @@
-﻿@media(prefers-color-scheme: light){
+@media(prefers-color-scheme: light){
   body{
     background-color: rgb(245, 245, 245);
     color: black;
@@ -22,7 +22,9 @@
   }
 
   #app-preview-image{
-    
+    background-image: url('assets/light-screen.png');
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
 }
 
@@ -50,20 +52,21 @@
   }
 
   #app-preview-image{
-    
+    background-image: url('assets/dar-screen.png');
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
 }
 
 #app-preview-image{
   display: inline-block;
-  height: 680px;
+  height: 255px;
   width: 85%;
-  background-position: center center;
+  background-position: cover;
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 15px;
-  position: relative;
-  top: 46px;
+  margin-top: 36px;
   animation-name: app-preview;
   animation-duration: 4s;
 }
