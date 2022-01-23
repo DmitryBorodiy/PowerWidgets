@@ -1,4 +1,4 @@
-﻿@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
+@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
 
 @media(prefers-color-scheme: light){
   :root {
@@ -16,12 +16,27 @@
   .ms-textblock{
     color: black;
   }
+  
+  .ms-separator{
+    height: 1.1px;
+    color: rgb(156, 156, 156);
+    background-color: rgb(150, 150, 150);
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 6px;
+    border-width: 0px;
+    border: none;
+  }
 
   .ms-textbox{
     background-color: white;
     border-width: 0px 0px 1px 0px;
     border-color: rgba(0, 0, 0, 0.6);
     border-style: solid;
+  }
+  
+  .ms-base{
+    background-color: rgb(249, 249, 249);
   }
   
   .ms-textbox:focus-within{
@@ -78,6 +93,10 @@
   .ms-acrylic-brush{
       background-color: rgba(255, 255, 255, 0.5);
   }
+  
+  .ms-tile{
+      background-color: white;
+  }
 }
 
 @media(prefers-color-scheme: dark){
@@ -103,6 +122,21 @@
     border-color: rgba(255, 255, 255, 0.3);
     color: rgba(255, 255, 255, 0.9);
     font-family: Segoe UI, sans-serif;
+  }
+  
+  .ms-separator {
+    height: 1.1px;
+    color: rgb(45, 45, 45);
+    background-color: rgb(45, 45, 45);
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 6px;
+    border-width: 0px;
+    border: none;
+  }
+  
+  .ms-base{
+    background-color: rgb(20, 20, 20);
   }
 
   .ms-button:hover{
@@ -149,6 +183,10 @@
   .ms-acrylic-brush{
       background-color: rgba(0, 0, 0, 0.5);
   }
+  
+  .ms-tile{
+      background-color: black;
+  }
 }
 
     button{
@@ -163,6 +201,27 @@
       background-color: transparent;
       justify-content: center;
       text-align: left;
+    }
+    
+    .ms-tile{
+      display: inline-block;
+      border-radius: 6px;
+      margin: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      text-align: center;
+      justify-content: center;
+    }
+    
+    .ms-base{
+      border-radius: 6px;
+      box-shadow: 0 1 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    .ms-tile-img{
+      position: relative;
+      left: 28%;
+      top: 49%;
+      transform: translate(-50%, -50%);
     }
 
     .ms-grid{
