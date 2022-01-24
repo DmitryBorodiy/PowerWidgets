@@ -32,6 +32,12 @@
     border-radius: 5px;
     /*box-shadow: 0 0 10px rgba(0,0,0,0.3); */
   }
+
+  .gradient-div{
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.9617838859558105) 10%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 6px;
+  }
 }
 
 @media(prefers-color-scheme: dark){
@@ -67,6 +73,12 @@
     background-image: url('assets/dark-screen.png');
     border-radius: 5px;
     /*box-shadow: 0 0 10px rgba(0,0,0,0.3); */
+  }
+
+  .gradient-div{
+    background: rgb(40, 40, 40);
+    background: linear-gradient(90deg, rgba(35, 35, 35, 0.9617838859558105) 10%, rgba(35, 35, 35, 0) 100%);
+    border-radius: 6px;
   }
 }
 
@@ -173,8 +185,6 @@ body {
 }
 
 .gradient-div{
-    background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.9617838859558105) 10%, rgba(255, 255, 255, 0) 100%);
     border-radius: 6px;
 }
 
