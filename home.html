@@ -82,7 +82,7 @@
       <input id="SearchBoxInput" class="ms-text-input" type="text" placeholder="Search here..." autocomplete="true" />
       <i class="ms-textbox-icon icon-ic_fluent_search_20_regular"></i>
     </div>
-    <button id="send_review_button" class="ms-button-accent">
+    <button id="send_review_button" class="ms-button-accent" onclick="SendReview();">
         <span class="button_label">Send review</span>
     </button>
   </header>
@@ -95,7 +95,7 @@
              With new widgets and mini-apps you can explore info and get fast access to important things.<br />
          </p>
          <div id="start-buttons-grid" style="text-align: center; margin-top: 150px;">
-             <button class="ms-button" style="height: 60px; width: 290px; margin: 5px;">
+             <button class="ms-button" style="height: 60px; width: 290px; margin: 5px;" onclick="OpenInMicrosoftStore();">
                 <div style="display: table;text-align: center;position: relative;top: -5px;left: 16px;">
                   <img height="24px" width="24px" src="https://img.icons8.com/fluency/48/000000/microsoft-store.png" style="justify-content: middle; display: inline-block; position: relative; top: -6px;" />
                   <div style="display: inline-block;position: relative;left: 13px;">
@@ -106,7 +106,7 @@
                   </div>
                 </div>
              </button>
-             <button class="ms-button" style="height: 60px; width: 290px; margin: 5px;">
+             <button class="ms-button" style="height: 60px; width: 290px; margin: 5px;" onclick="Message('Coming soon!');">
                 <div style="display: table;text-align: center;position: relative;top: -5px;left: 16px;">
                   <img height="24px" width="24px" src="https://img.icons8.com/fluency/48/000000/product.png" style="justify-content: middle; display: inline-block; position: relative; top: -6px;" />
                   <div style="display: inline-block;position: relative;left: 13px;">
