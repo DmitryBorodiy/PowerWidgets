@@ -7,6 +7,9 @@
     --white: #ffffffff;
     --black: #000000ff;
     --neutral-light-color: rgb(220, 220, 220);
+    --text-color-light: #525252;
+    --background-high-color: rgb(220, 220, 220);
+    --theme-text-color: black;
   }
   
   input{
@@ -15,6 +18,10 @@
   
   .ms-textblock{
     color: black;
+  }
+  
+  .ms-footer{
+    background-color: rgb(246, 246, 246);
   }
   
   .ms-separator{
@@ -41,6 +48,12 @@
   
   .ms-textbox:focus-within{
     background-color: rgb(245, 245, 245);
+  }
+  
+  .ms-gradient{
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9617838859558105) 10%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 6px;
   }
   
   button{
@@ -106,10 +119,23 @@
     --white: #ffffffff;
     --black: #000000ff;
     --neutral-light-color: rgb(45, 45, 45);
+    --text-color-light: #c4c4c4;
+    --background-high-color: rgb(50, 50, 50);
+    --theme-text-color: white;
   }
 
   button{
       color: white;
+  }
+  
+  .ms-footer{
+    background-color: rgb(30, 30, 30);
+  }
+  
+  .ms-gradient {
+    background: rgb(30, 30, 30);
+    background: linear-gradient(0deg, rgba(30, 30, 30, 0.9617838859558105) 10%, rgba(30, 30, 30, 0) 100%);
+    border-radius: 6px;
   }
   
   .ms-button{
@@ -210,6 +236,40 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
       text-align: center;
       justify-content: center;
+    }
+    
+    .ms-footer{
+      margin: 15px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      text-align: center;
+      justify-content: center;
+      vertical-align: middle;
+      display: flex;
+    }
+    
+    .ms-badged-text{
+      font-size: 15px;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--theme-primary-color);
+      color: white;
+      border-radius: 6px;
+      padding: 3.5px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    
+    .ms-ellispe{
+      border-radius: 30%;
+    }
+    
+    .ms-border{
+      border: solid;
+    }
+    
+    .ms-listitem{
+      display: inline-block;
+      margin: 3px;
     }
     
     .ms-base{

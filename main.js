@@ -1,4 +1,4 @@
-﻿window.onload = function(){
+window.onload = function(){
   ThemeInitialize();
 };
 
@@ -36,6 +36,15 @@ function ThemeInitialize(){
         head.appendChild(link);
       }
     }
+  }
+  catch(e){
+    console.log(e.toString());
+  }
+}
+
+function NavigateTo(url){
+  try{
+    document.location.href = url.toString();
   }
   catch(e){
     console.log(e.toString());

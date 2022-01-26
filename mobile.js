@@ -1,4 +1,4 @@
-﻿var header;
+var header;
 var logo_img;
 
 window.onload = function(){

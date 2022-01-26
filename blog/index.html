@@ -7,10 +7,64 @@
     
     <link rel="stylesheet" href="../styles/winui-web.css" />
     <link rel="stylesheet" href="../style.css" />
+    
+    <script src="/main.js"></script>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
-  <body>
-    <header>
-      
+  <body onresize="Content_OnResize();">
+    <header class="navbar">
+      <div id="navbar-logo">
+        <img id="logo_img" src="../img/app_logo.png" alt="logo_img" />
+        <a id="logo-text">Widgets</a>
+        <span id="blog-badge" class="ms-badged-text">Blog</span>
+      </div>
+      <div id="navbar_separator" class="vertical-separator" style="left: 234px; top: 26px;"></div>
+      <div id="desktop_menu" class="ms-menu" style="left: 246px;">
+        <div class="ms-menu-item">
+          <button class="ms-menu-button-selected" style="width: 81px;" onclick="NavigateTo('../home.html');">
+            <span class="button_content">
+              <i class="fluent-icons"></i>
+              <span class="menu-button-label">Home</span>
+            </span>
+          </button>
+        </div>
+      </div>
+      <button id="send_review_button" class="ms-button-accent">
+        <span class="button_label">Send review</span>
+      </button>
     </header>
+    <section id="content">
+      <div id="content_div" style="padding-left: 75px; padding-top: 80px;">
+        <h1 style="font-size: 38px;">Power Widgets blog</h1>
+        <p style="padding: 0px; position: relative; top: -16px;">News about updates, bug fixes, improvements and new features.</p>
+        <h3 style="color: var(--text-color-light);">News</h3>
+        <div class="table">
+          <div class="ms-listitem ms-tile" style="height: 490px; text-align: left;  background-image: url('news/assets/update1.5.png'); background-repeat: no-repeat; background-position: center;">
+            <div class="ms-gradient" style="width: 100%; height: 100%;">
+              <div style="position: relative; bottom: 10px; top: 165px; padding-left: 36px; padding-right: 36px;">
+                <h2>Power Widgets version 1.5 is here!</h2>
+                <p>
+                  Read this to know what's<br />
+                  new in Power Widgets.<br />
+                </p>
+                <a style="color: var(--text-color-light);">01/27/2022</a><br />
+                <br />
+                <button class="ms-button-accent" style="height: 40px; width: 100px;" onclick="NavigateTo('news/update1.5.html');">Read</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><br />
+    <br />
+    <footer class="ms-footer" style="height: 90px;">
+      <p style="margin-top: 28px;">
+        <a class="ms-badged-text" href="mailto:dima.borodij@gmail.com" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via email</a>&nbsp;
+        <a class="ms-badged-text" href="window.open('https://twitter.com/dev_dmitriy?t=lRX88mjdFUXWM_fbYgyxNQ&s=09');" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via Twitter</a>&nbsp;
+        <a class="ms-badged-text" href="/privacy/index.html" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Privacy policy</a>&nbsp;
+        <a class="ms-badged-text" href="https://www.microsoft.com/en-us/p/power-widgets-customize-your-at-a-glance-info/9nlhp5krxzq7" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Official page in Microsoft</a>&nbsp;
+      </p>
+    </footer>
   </body>
 </html>

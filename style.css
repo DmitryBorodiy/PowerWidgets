@@ -119,6 +119,10 @@ body {
     margin: 0px;
 }
 
+a{
+    text-decoration: none;
+}
+
 .fluent-icons{
     font-family: "Fluent-Icons-Regular";
     font-size: 20px;
@@ -193,6 +197,13 @@ body {
     position: relative;
     top: 14px;
     left: 16px;
+}
+
+#blog-badge{
+    position: relative;
+    top: -14px;
+    left: 10px;
+    bottom: 0px;
 }
 
 #content{
