@@ -1,14 +1,41 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bing daily wallpapers - Power Widgets</title>
+        
+        <!-- Main style -->
+        <link rel="stylesheet" href="../style.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bing daily wallpapers - Power Widgets</title>
-</head>
-
-<body>
-
-</body>
-
+        <!-- WinUI CSS Library -->
+        <link rel="stylesheet" href="../styles/winui-web.css" />
+        
+        <script src="../main.js"></script>
+        <script src="index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="navbar">
+          <div id="navbar-logo">
+            <img id="logo_img" src="../img/app_logo.png" alt="logo_img" />
+            <a id="logo-text">Widgets</a>
+            <span id="blog-badge" class="ms-badged-text">Docs</span>
+          </div>
+          <div id="navbar_separator" class="vertical-separator" style="left: 234px; top: 26px;"></div>
+          <div id="desktop_menu" class="ms-menu" style="left: 246px;">
+            <div class="ms-menu-item">
+              <button class="ms-menu-button-selected" style="width: 81px;" onclick="NavigateTo('../home.html');">
+                <span class="button_content">
+                  <i class="fluent-icons"></i>
+                  <span class="menu-button-label">Home</span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <button id="send_review_button" class="ms-button-accent" onclick="window.open('mailto:dima.borodij@gmail.com');">
+            <span class="button_label">Send review</span>
+          </button>
+        </header>
+    </body>
 </html>
