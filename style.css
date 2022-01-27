@@ -128,6 +128,14 @@
     left: 196px;
 }
 
+#get-app-button {
+    position: absolute;
+    top: 18px;
+    height: 35px;
+    right: 140px;
+    width: 160px;
+}
+
 @font-face{
     font-family: "Fluent-Icons-Regular";
     src: url("fonts/FluentSystemIcons-Regular.ttf");

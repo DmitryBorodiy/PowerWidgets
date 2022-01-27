@@ -97,7 +97,15 @@
   animation-duration: 4s;
 }
 
-#logo-text{
+#get-app-button{
+  position: absolute;
+  top: 18px;
+  height: 35px;
+  right: 140px;
+  width: 160px;
+}
+
+#logo-text {
     font-size: 24px;
     position: relative;
     top: -13px;
