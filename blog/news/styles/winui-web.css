@@ -245,7 +245,7 @@
       text-align: center;
       justify-content: center;
       vertical-align: middle;
-      /* display: flex; */
+      display: flex;
     }
     
     .ms-badged-text{

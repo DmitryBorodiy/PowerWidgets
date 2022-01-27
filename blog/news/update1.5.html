@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Power Widgets - Introducing 1.5 update!</title>
     
-    <link rel="stylesheet" href="/styles/winui-web.css" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="styles/winui-web.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     
-    <script src="/main.js"></script>
+    <script src="../main.js"></script>
     <script src="../index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body onresize="Content_OnResize();" onload="Content_OnResize();">
     <header class="navbar">
       <div id="navbar-logo">
-        <img id="logo_img" src="/img/app_logo.png" alt="logo_img" />
+        <img id="logo_img" src="img/app_logo.png" alt="logo_img" />
         <a id="logo-text">Widgets</a>
         <span id="blog-badge" class="ms-badged-text">Blog</span>
       </div>
       <div id="navbar_separator" class="vertical-separator" style="left: 234px; top: 26px;"></div>
       <div id="desktop_menu" class="ms-menu" style="left: 246px;">
         <div class="ms-menu-item">
-          <button class="ms-menu-button-selected" style="width: 81px;" onclick="NavigateTo('/home.html');">
+          <button class="ms-menu-button-selected" style="width: 81px;" onclick="NavigateTo('https://dmitryborodiy.github.io/PowerWidgets/home.html');">
             <span class="button_content">
               <i class="fluent-icons"></i>
               <span class="menu-button-label">Home</span>
@@ -36,9 +36,9 @@
     </header>
     <section id="content-state" style="padding-top: 85px;">
       <div id="content-div-state" style="text-align: center; padding-left: 10px; padding-right: 10px;">
-        <div id="state-img" style="border-radius: 12px; width: 100%; height: 560px; background-image: url('assets/update1.5(1).png'); background-repeat: no-repeat; background-position: right; max-width: 1200px; display: inline-block;" />
+        <div id="state-img" style="border-radius: 12px; width: 100%; height: 560px; background-image: url('assets/update1.5(1).png'); background-repeat: no-repeat; background-position: right; max-width: 1200px; display: inline-block;"></div>
         <hr />
-        <div id="text-content" style="text-align: left;">
+        <div id="text-content" style="text-align: left; font-family: 'Roboto', sans-serif;">
           <h1>Introducing Power Widgets version 1.5!</h1>
           <a style="position: relative; top: -10px;"><i>01/27/2022 11:30 AM</i></a>
           <p>
@@ -178,8 +178,8 @@
     <footer class="ms-footer" style="height: 90px;">
       <p style="margin-top: 28px;">
         <a class="ms-badged-text" href="mailto:dima.borodij@gmail.com" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via email</a>&nbsp;
-        <a class="ms-badged-text" href="window.open('https://twitter.com/dev_dmitriy?t=lRX88mjdFUXWM_fbYgyxNQ&s=09');" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via Twitter</a>&nbsp;
-        <a class="ms-badged-text" href="/privacy/index.html" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Privacy policy</a>&nbsp;
+        <a class="ms-badged-text" onclick="window.open('https://twitter.com/dev_dmitriy?t=lRX88mjdFUXWM_fbYgyxNQ&s=09');" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via Twitter</a>&nbsp;
+        <a class="ms-badged-text" href="https://dmitryborodiy.github.io/PowerWidgets/privacy/" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Privacy policy</a>&nbsp;
         <a class="ms-badged-text" href="https://www.microsoft.com/en-us/p/power-widgets-customize-your-at-a-glance-info/9nlhp5krxzq7" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Official page in Microsoft</a>&nbsp;
       </p>
     </footer>

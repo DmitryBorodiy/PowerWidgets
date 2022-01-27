@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Power Widgets - docs &amp; support</title>
+
+        <!-- Main style -->
+        <link rel="stylesheet" href="../style.css" />
+
+        <!-- WinUI CSS Library -->
+        <link rel="stylesheet" href="../styles/winui-web.css" />
+        
+        <script src="../main.js"></script>
+        <script src="index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="navbar">
+          <div id="navbar-logo">
+            <img id="logo_img" src="../img/app_logo.png" alt="logo_img" />
+            <a id="logo-text">Widgets</a>
+            <span id="blog-badge" class="ms-badged-text">Docs</span>
+          </div>
+          <div id="navbar_separator" class="vertical-separator" style="left: 234px; top: 26px;"></div>
+          <div id="desktop_menu" class="ms-menu" style="left: 246px;">
+            <div class="ms-menu-item">
+              <button class="ms-menu-button-selected" style="width: 81px;" onclick="NavigateTo('../home.html');">
+                <span class="button_content">
+                  <i class="fluent-icons"></i>
+                  <span class="menu-button-label">Home</span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <button id="send_review_button" class="ms-button-accent">
+            <span class="button_label">Send review</span>
+          </button>
+        </header>
+        <section id="content">
+            <div id="content-div-docs" style="padding-top: 125px; padding-left: 56px;">
+                <img height="80" width="80" src="https://img.icons8.com/fluency/96/000000/address-book.png"/>
+                <h1>Welcome to Power Widgets Docs</h1>
+                <p style="position: relative; top: -12px;">Learn how to use Power Widgets to the fullest.</p>
+                <button class="ms-button-accent" style="width: 136px; height: 42px;">Contact developer</button>
+                <h3 style="color: var(--text-color-light);">Explore docs</h3>
+                <div class="table">
+                    <div class="table_item ms-tile" style="height: 320px; width: 465px; text-align: left; margin: 10px;">
+                        <div style="margin: 25px;">
+                            <img height="56" width="56" src="https://img.icons8.com/fluency/96/000000/bing--v1.png" />
+                            <h2>Bing daily wallpapers</h2>
+                            <p>Enable or disable bing daily wallpapers in Microsoft Edge widget.</p>
+                            <button class="ms-button" style="width: 120px; margin-top: 15px;">Read</button>
+                        </div>
+                    </div>
+                    <div class="table_item ms-tile" style="height: 320px; width: 465px; text-align: left; margin: 10px;">
+                        <div style="margin: 25px;">
+                            <img height="56" width="56" src="https://img.icons8.com/fluency/96/000000/image-gallery.png" />
+                            <h2>Customize widget feed</h2>
+                            <p>Setup a widget feed background image, blur effects and accent color. Just make your own.</p>
+                            <button class="ms-button" style="width: 120px; margin-top: 15px;">Read</button>
+                        </div>
+                    </div>
+                    <div class="table_item ms-tile" style="height: 320px; width: 465px; text-align: left; margin: 10px;">
+                        <div style="margin: 25px;">
+                            <img height="56" width="56" src="https://img.icons8.com/fluency/96/000000/windows-11.png" />
+                            <h2>Manage widgets</h2>
+                            <p>Pin or unpin, reorder and resize widgets on widgets feed.</p>
+                            <button class="ms-button" style="width: 120px; margin-top: 15px;">Read</button>
+                        </div>
+                    </div>
+                    <div class="table_item ms-tile" style="height: 320px; width: 465px; text-align: left; margin: 10px;">
+                        <div style="margin: 25px;">
+                            <img height="56" width="56" src="https://img.icons8.com/fluency/96/000000/overtime.png" />
+                            <h2>Date &amp; time preferences</h2>
+                            <p>Setup your date &amp; time preferences.<br /><br /></p>
+                            <button class="ms-button" style="width: 120px; margin-top: 15px;">Read</button>
+                        </div>
+                    </div>
+                    <div class="table_item ms-tile" style="height: 320px; width: 465px; text-align: left; margin: 10px;">
+                        <div style="margin: 25px;">
+                            <img height="56" width="56" src="https://img.icons8.com/fluency/96/000000/partly-cloudy-day.png" />
+                            <h2>Setup weather widget</h2>
+                            <p>Select place or city for show the weather. Setup weather update interval.</p>
+                            <button class="ms-button" style="width: 120px; margin-top: 15px;">Read</button>
+                        </div>
+                    </div>
+                    <div class="table_item ms-tile" style="height: 320px; width: 465px; text-align: left; margin: 10px;">
+                        <div style="margin: 25px;">
+                            <img height="56" width="56" src="https://img.icons8.com/fluency/96/000000/microsoft-outlook-2019.png" />
+                            <h2>Setup Outlook widget</h2>
+                            <p>Setup calendar, mail and contacts.<br /><br /></p>
+                            <button class="ms-button" style="width: 120px; margin-top: 15px;">Read</button>
+                        </div>
+                    </div>
+                    <div class="table_item ms-tile" style="height: 320px; width: 465px; text-align: left; margin: 10px;">
+                        <div style="margin: 25px;">
+                            <img height="56" width="56" src="https://img.icons8.com/fluency/96/000000/ms-edge-new.png" />
+                            <h2>Setup Microsoft Edge widget</h2>
+                            <p>Setup search preferences, and Edge's web features.</p>
+                            <button class="ms-button" style="width: 120px; margin-top: 15px;">Read</button>
+                        </div>
+                    </div>
+                    <div class="table_item ms-tile" style="height: 320px; width: 465px; text-align: left; margin: 10px;">
+                        <div style="margin: 25px;">
+                            <img height="56" width="56" src="https://img.icons8.com/fluency/96/000000/test-account.png" />
+                            <h2>Connect to Microsoft Account</h2>
+                            <p>Connect Power Widgets to all Microsoft world with Microsoft one account.</p>
+                            <button class="ms-button" style="width: 120px; margin-top: 15px;">Read</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
