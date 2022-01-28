@@ -1,87 +1,37 @@
-﻿var SearchBoxInput;
+﻿window.onload += function(){
 
-window.onload = function(){
-  ThemeInitialize();
 };
-
-function SearchBoxInput_OnLoad(){
-    SearchBoxInput = document.getElementById("SearchBoxInput");
-    //debugger;
-    SearchBoxInput.addEventListener("keydown", SearchBoxInput_KeyDown);
-}
-
-function SearchBoxInput_KeyDown(key){
-    try{
-        if(key != null){
-            if(key.code == "Enter"){
-                //debugger;
-                SearchBing($('#SearchBoxInput').val());
-            }
-        }
-    }
-    catch(e){
-        console.log(e.toString());
-    }
-}
-
-function ThemeInitialize(){
-  try{
-    const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
-    
-    if (darkThemeMq.matches) {
-      var cssId = 'dark';
-      
-      if (!document.getElementById(cssId))
-      {
-        var head = document.getElementsByTagName('head')[0];
-        var link = document.createElement('link');
-        link.id = cssId;
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'style_dark.css';
-        link.media = 'all';
-        head.appendChild(link);
-      }
-    } 
-    else {
-      var cssId = 'light';
-      
-      if (!document.getElementById(cssId))
-      {
-        var head = document.getElementsByTagName('head')[0];
-        var link = document.createElement('link');
-        link.id = cssId;
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'style.css';
-        link.media = 'all';
-        head.appendChild(link);
-      }
-    }
-  }
-  catch(e){
-    console.log(e.toString());
-  }
-}
-
-function NavigateTo(url){
-  try{
-    document.location.href = url.toString();
-  }
-  catch(e){
-    console.log(e.toString());
-  }
-}
 
 function SendReview(){
   window.open("mailto:dima.borodij@gmail.com");
 }
 
-function SearchBing(query){
+function OnResize(){
     try{
-        var request = "https://www.bing.com/search?q=" + query.toString();
+        var documentWidthProperty = document.documentElement.clientWidth;
 
-        window.open(request.toString());
+        if(documentWidthProperty <= 880){
+            $('#navbar-logo').css("position", "relative");
+            $('#navbar-logo').css("left", "0px");
+            $('#get-app-button').css("visibility", "collapse");
+
+            document.getElementsByClassName("navbar")[0].style.textAlign = "center";
+
+            document.getElementById("desktop_menu").style.visibility = "collapse";
+            document.getElementById("navbar_separator").style.visibility = "collapse";
+            document.getElementById("send_review_button").style.visibility = "collapse";
+        }
+        else if(documentWidthProperty >= 880){
+            $('#navbar-logo').css("position", "relative");
+            $('#navbar-logo').css("left", "16px");
+            $('#get-app-button').css("visibility", "visible");
+
+            document.getElementsByClassName("navbar")[0].style.textAlign = "left";
+
+            document.getElementById("desktop_menu").style.visibility = "visible";
+            document.getElementById("navbar_separator").style.visibility = "visible";
+            document.getElementById("send_review_button").style.visibility = "visible";
+        }
     }
     catch(e){
         console.log(e.toString());

@@ -1,4 +1,4 @@
-@media(prefers-color-scheme: light){
+﻿@media(prefers-color-scheme: light){
   body{
     background-color: rgb(245, 245, 245);
     color: black;
@@ -41,6 +41,11 @@
     background-image: url('assets/light-screen.png');
     border-radius: 5px;
     /*box-shadow: 0 0 10px rgba(0,0,0,0.3); */
+  }
+
+  #fast-actions-preview{
+      border-radius: 6px;
+      background-image: url('img/');
   }
 
   .gradient-div{

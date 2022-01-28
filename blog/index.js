@@ -1,4 +1,4 @@
-window.onload = function(){
+﻿window.onload = function(){
   Content_OnResize();
 };
 
@@ -15,6 +15,9 @@ function Content_OnResize(){
       $('#content-div-state').css("padding-left", "15px");
       $('#content-div-state').css("padding-right", "15px");
       $('#get-app-button').css("visibility", "collapse");
+      $('#whats-new-text').css("margin-left", "15px");
+      $('#whats-new-text').css("margin-right", "16px");
+      $('#whats-new-text').css("padding-top", "25px");
     
     document.getElementsByClassName("navbar")[0].style.textAlign = "center";
     document.getElementById("desktop_menu").style.visibility = "collapse";
@@ -30,6 +33,9 @@ function Content_OnResize(){
       $('#content-div-state').css("padding-left", "96px");
       $('#content-div-state').css("padding-right", "96px");
       $('#get-app-button').css("visibility", "visible");
+      $('#whats-new-text').css("margin-left", "90px");
+      $('#whats-new-text').css("margin-right", "0px");
+      $('#whats-new-text').css("padding-top", "0px");
     
     document.getElementsByClassName("navbar")[0].style.textAlign = "left";
     document.getElementById("desktop_menu").style.visibility = "visible";

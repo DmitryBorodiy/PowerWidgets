@@ -1,4 +1,4 @@
-var header;
+﻿var header;
 var logo_img;
 
 window.onload = function(){
@@ -29,6 +29,9 @@ function DetectMobileMode(){
         $('#app-preview-image').css("width", "85%");
 
         $('#content').css("width", "100%");
+        $('#apps-grid').css("width", "320px");
+        $('#apps-grid').css("padding-left", "20px");
+        $('#apps-grid').css("padding-right", "20px");
     }
     else if(documentWidthProperty >= 1000){
       $('#navbar-logo').css("position", "relative");
@@ -45,6 +48,9 @@ function DetectMobileMode(){
         $('#app-preview-image').css("width", "1000px");
 
         $('#content').css("width", "100%");
+        $('#apps-grid').css("width", "360px");
+        $('#apps-grid').css("padding-left", "0px");
+        $('#apps-grid').css("padding-right", "0px");
       }
 
       if (documentWidthProperty <= 880) {
@@ -57,6 +63,13 @@ function DetectMobileMode(){
           $('#fast-actions-text').css("padding-right", "35px");
           $('#fast-actions-text').css("padding-top", "40px");
           $('#fast-actions-text').css("top", "35px");
+          $('#get-gifts-text').css("padding-left", "35px");
+          $('#get-gifts-text').css("padding-right", "35px");
+
+          $('#whats-new-text').css("margin-left", "32px");
+          $('#whats-new-text').css("margin-right", "32px");
+          $('#whats-new-text').css("padding-top", "0px");
+          $('#whats-new-img').css("top", "12px");
 
           $('bing-wallpapers').css("width", "100%");
       }
@@ -70,6 +83,13 @@ function DetectMobileMode(){
           $('#fast-actions-text').css("padding-right", "0px");
           $('#fast-actions-text').css("padding-top", "-35px");
           $('#fast-actions-text').css("top", "-50px");
+          $('#get-gifts-text').css("padding-left", "100px");
+          $('#get-gifts-text').css("padding-right", "0px");
+
+          $('#whats-new-text').css("margin-left", "90px");
+          $('#whats-new-text').css("margin-right", "0px");
+          $('#whats-new-text').css("padding-top", "0px");
+          $('#whats-new-img').css("top", "-40px");
 
           $('bing-wallpapers').css("width", "436px");
       }

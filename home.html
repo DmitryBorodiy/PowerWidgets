@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Power Editor - best way to edit your code.</title>
+  <title>Power Widgets - new way to customize your at-a-glance info</title>
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css" />
@@ -48,8 +48,8 @@
       <div class="ms-menu-item">
         <button class="ms-menu-button" style="width: auto;" onclick="NavigateTo('docs/index.html');">
             <span class="button_content">
-                <i class="fluent-icons"></i>
-                <span class="menu-button-label">Docs</span>
+                <i class="fluent-icons"></i>
+                <span class="menu-button-label">About me</span>
             </span>
         </button>
       </div>
@@ -79,9 +79,12 @@
       </div> -->
     </div>
     <div id="SearchBoxControl" class="ms-textbox" style="position: fixed; top: 18px; right: 140px; height: 35px; width: 220px;">
-      <input id="SearchBoxInput" class="ms-text-input" type="text" placeholder="Search here..." autocomplete="true" />
+      <input id="SearchBoxInput" class="ms-text-input" type="text" placeholder="Search here..." autocomplete="on" onload="SearchBoxInput_OnLoad();" onkeydown="SearchBoxInput_KeyDown" />
       <i class="ms-textbox-icon icon-ic_fluent_search_20_regular"></i>
     </div>
+    <script>
+      document.getElementById("SearchBoxInput").addEventListener('keydown', SearchBoxInput_KeyDown);
+    </script>
     <button id="send_review_button" class="ms-button-accent" onclick="SendReview();">
         <span class="button_label">Send review</span>
     </button>
@@ -117,7 +120,7 @@
                   </div>
                 </div>
              </button>-->
-             <button class="ms-button" style="height: 60px; width: 290px; margin: 5px;">
+             <button class="ms-button" style="height: 60px; width: 290px; margin: 5px;" onclick="NavigateTo('gift/index.html');">
                 <div style="display: table;text-align: center;position: relative;top: -5px;left: 16px;">
                   <img height="24px" width="24px" src="https://img.icons8.com/fluency/48/000000/gift--v1.png" style="justify-content: middle; display: inline-block; position: relative; top: -6px;" />
                   <div style="display: inline-block;position: relative;left: 13px;">
@@ -131,6 +134,23 @@
          </div>
          <div id="app-preview-image" class="ms-grid">
          </div>
+         <section id="news" style="height: auto; margin-left: 35px; margin-right: 35px; padding-top: 50px; padding-bottom: 60px;">
+           <div id="news-div" class="ms-base" style="padding-bottom: 45px; text-align: left;">
+              <h5 style="color: var(--text-color-light); top: 20px; left: 30px; position: relative; font-weight: bold;">What's new in 1.5?</h5>
+              <div class="table">
+                <img id="whats-new-img" height="70" width="70" src="https://img.icons8.com/fluency/96/000000/approve-and-update.png" style="display: inline-block; position: relative; top: -40px; left: 30px;" />
+                <div id="whats-new-text" style="display: inline-block;">
+                  <h3>Introducing version 1.5🎉🎉🎉</h3>
+                  <p>
+                    See what's new in Power Widgets version 1.5.<br />
+                    New features, bug fixes and stability improvements.<br />
+                  </p>
+                  <button class="ms-button-accent">See what's new</button>
+                </div>
+              </div>
+           </div>
+         </section>
+         <h2 style="text-align: center;">Best new widgets features</h2>
          <section class="ms-base" id="section1" style="height: auto; margin-top: 50px; margin-left: 35px; margin-right: 35px;">
             <div class="table" style="padding-top: 90px; padding-bottom: 90px;">
               <div id="apps-grid" class="ms-grid" style="display: inline-block; width: 360px;">
@@ -176,61 +196,14 @@
                   <h2>Customize for yourself</h2>
                   <p style="padding-bottom: 8px; text-align: left;">
                     Power Widgets is customizable! Choose a theme color, <br />
-                    customize the backgroundimage and blur mode, <br />
+                    customize the background image and blur mode, <br />
                     and much more. <br />
                   </p>
-                  <!--<div class="table">
-                    <span class="ms-listitem ms-ellipse ms-border" style="ba"
-                  </div> -->
+                  <span class="ms-badged-text">Powered with Bing</span>
                 </div>
               </div>
             </div>
          </section><br />
-         <hr class="ms-separator" style="margin-top: 13px;" />
-         <br />
-         <section id="personalization-features" style="width: 100%;">
-           <div class="table">
-             <div id="bing-wallpapers" class="ms-base" style="display: inline-block; text-align: left; height: 400px; width: 370px; margin: 5px;">
-               <img height="85px" width="85px" src="https://img.icons8.com/fluency/144/000000/bing--v1.png" style="position: relative; top: 36px; left: 35px; right: 0px;" />
-               <div style="position: relative; left: 40px; top: 25px;">
-                 <h2>Bing daily wallpapers</h2>
-                 <p>
-                   Get beautiful daily wallpapers<br />
-                   for every day with Bing daily<br />
-                   wallpapers.<br />
-                 </p>
-                 <a href="docs/bing-daily-wallpaper.html"><button class="ms-button-accent" style="height: 45px; width: 160px; position: relative; top: 10px; font-weight: bold;">More info</button></a>
-               </div>
-             </div>
-             <div class="ms-base" style="display: inline-block; text-align: left; height: 400px; width: 370px; margin: 5px;">
-               <img height="85px" width="85px" src="https://img.icons8.com/fluency/96/000000/image-gallery.png" style="position: relative; top: 36px; left: 35px; right: 0px;" />
-               <div style="position: relative; left: 40px; top: 25px;">
-                 <h2>Set your wallpaper</h2>
-                 <p>
-                   You are can set your<br />
-                   own background picture and<br />
-                   make your widgets feed like you want.<br />
-                 </p>
-                 <button class="ms-button-accent" style="height: 45px; width: 160px; position: relative; top: 10px; font-weight: bold;">How to do that?</button>
-               </div>
-             </div>
-             <div class="ms-base" style="display: inline-block; text-align: left; height: 400px; width: 370px; margin: 5px;">
-               <img height="85px" width="85px" src="https://img.icons8.com/fluency/96/000000/paint-palette.png" style="position: relative; top: 36px; left: 35px; right: 0px;" />
-               <div style="position: relative; left: 40px; top: 25px;">
-                 <h2>Setup colors</h2>
-                 <p>
-                   Pick your accent color and<br />
-                   setup acrylic & blur effects.<br />
-                   Just make your own!<br />
-                 </p>
-                 <button class="ms-button-accent" style="height: 45px; width: 160px; position: relative; top: 10px; font-weight: bold;">More info</button>
-               </div>
-             </div>
-           </div>
-         </section>
-         <br />
-         <hr class="ms-separator" style="margin-top: 12px;" />
-         <br />
          <section id="fast-actions" class="ms-base" style="height: auto; margin-top: 10px; margin-left: 35px; margin-right: 35px;">
            <div class="table" style="padding-top: 145px; padding-bottom: 140px;">
              <div style="display: inline-block;">
@@ -247,6 +220,23 @@
              </div>
            </div>
          </section>
+         <section id="get-gifts" style="height: auto; margin-left: 35px; margin-right: 35px; margin-top: 35px;">
+            <div class="ms-base table" style="width: 100%; height: auto; padding-top: 120px; padding-bottom: 135px;">
+                <img height="120" width="120" src="https://img.icons8.com/fluency/96/000000/gift--v1.png" style="display: inline-block; position: relative; top: -25px;" />
+                <div id="get-gifts-text" style="display: inline-block; padding-top: -10px; text-align: left; padding-left: 100px;">
+                  <h2>Thank you!</h2>
+                  <p>
+                    Thanks for using Power Widgets!<br />
+                    Free gift codes for Power Widgets will appear here from time to time.<br />
+                    You will be able to use them in the Microsoft Store.<br />
+                  </p>
+                  <a href="gift/index.html">
+                    <button class="ms-button-accent">Check gift box</button>
+                  </a>
+                </div>
+            </div>
+         </section>
+         <br />
           <footer class="ms-footer" style="height: 90px; position: relative; top: 40px; padding-bottom: 20px;">
               <p style="padding-top: 28px;">
                 <a class="ms-badged-text" href="mailto:dima.borodij@gmail.com" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via email</a>&nbsp;

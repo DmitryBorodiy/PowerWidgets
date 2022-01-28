@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Checking gift box - Power Widgets</title>
+
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- WinUI Library -->
+    <link rel="stylesheet" href="../styles/winui-web.css" />
+
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body onresize="OnResize();">
+    <header class="navbar">
+      <a href="../home.html">
+        <div id="navbar-logo">
+            <img id="logo_img" src="../img/app_logo.png" alt="logo_img" />
+            <a id="logo-text">Widgets</a>
+        </div>
+      </a>
+      <div id="navbar_separator" class="vertical-separator"></div>
+      <div id="desktop_menu" class="ms-menu">
+        <div class="ms-menu-item">
+          <a href="../home.html">
+            <button class="ms-menu-button-selected" style="width: 81px;">
+                <span class="button_content">
+                    <i class="fluent-icons"></i>
+                    <span class="menu-button-label">Home</span>
+                </span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <button id="send_review_button" class="ms-button-accent" onclick="SendReview();">
+        <span class="button_label">Send review</span>
+      </button>
+      <button id="get-app-button" class="ms-button" onclick="OpenInMicrosoftStore();">Get Power Widgets</button>
+    </header>
+    <section id="content">
+      <div id="content-div" style="padding-top: 100px;">
+          <div id="gift-box" class="ms-base" style="text-align: center; text-align: center; margin-left: 36px; margin-right: 36px; margin-top: 20px; height: 720px;">
+             <div id="pgring" class="progress-ring" style="display: inline-block; height: 60px; width: 150px; position: relative; top: 38%;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="ring">
+                  <circle class="static" cx="50%" cy="50%" r="43.75%"></circle>
+                  <circle class="dynamic" cx="50%" cy="50%" r="43.75%"></circle>
+                </svg>
+                <h5 style="position: relative; top: -10px;">Checking gift box</h5>
+             </div>
+             <div id="gift-content">
+
+             </div>
+          </div>
+      </div>
+    </section>
+  </body>
+</html>
