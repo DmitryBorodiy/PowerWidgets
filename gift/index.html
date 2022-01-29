@@ -8,6 +8,7 @@
     <title>Checking gift box - Power Widgets</title>
 
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- WinUI Library -->
     <link rel="stylesheet" href="../styles/winui-web.css" />
@@ -15,7 +16,7 @@
     <script src="index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
-  <body onresize="OnResize();">
+  <body onresize="OnResize();" onload="Window_OnLoaded();">
     <header class="navbar">
       <a href="../home.html">
         <div id="navbar-logo">
@@ -35,6 +36,26 @@
             </button>
           </a>
         </div>
+        <div class="ms-menu-item">
+            <a href="../blog/index.html">
+                <button class="ms-menu-button" style="width: auto;" onclick="NavigateTo('blog/index.html');">
+                    <span class="button_content">
+                        <i class="fluent-icons"></i>
+                        <span class="menu-button-label">What's new</span>
+                    </span>
+                </button>
+            </a>
+        </div>
+        <div class="ms-menu-item">
+            <a href="../developers/index.html">
+                <button class="ms-menu-button" style="width: auto;" onclick="NavigateTo('developers/index.html');">
+                    <span class="button_content">
+                        <i class="fluent-icons"></i>
+                        <span class="menu-button-label">About me</span>
+                    </span>
+                </button>
+            </a>
+        </div>
       </div>
       <button id="send_review_button" class="ms-button-accent" onclick="SendReview();">
         <span class="button_label">Send review</span>
@@ -51,8 +72,10 @@
                 </svg>
                 <h5 style="position: relative; top: -10px;">Checking gift box</h5>
              </div>
-             <div id="gift-content">
-
+             <div id="gift-content" style="padding-top: 160px; visibility: collapse;">
+                <img height="136" width="136" src="https://img.icons8.com/fluency/96/000000/gift--v1.png" />
+                <h2 id="gift-title">Gift box now is empty.</h2>
+                <p id="gift-code">5434535-5345345-5345345-5345353</p>
              </div>
           </div>
       </div>

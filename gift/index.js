@@ -2,6 +2,39 @@
 
 };
 
+//Gift info
+var giftCode = "DMCRF-VTHX9-VV4FC-RW6TC-KF7FZ";
+var IsGiftAvaliable = true;
+
+function Window_OnLoaded(){
+  try{
+    setTimeout(Timer_OnTick, 5600);
+  }
+  catch(e){
+    console.log(e.toString());
+  }
+}
+
+function Timer_OnTick(){
+  $('#pgring').hide();
+  $('#gift-content').show();
+
+  CheckGiftBox(IsGiftAvaliable);
+
+  $('#gift-content').css("visibility", "visible");
+}
+
+function CheckGiftBox(args){
+  if(args == true){
+    document.getElementById("gift-title").innerHTML = "We have a gift box for you!";
+    document.getElementById("gift-code").innerHTML = giftCode.toString();
+  }
+  else if(args == false){
+    document.getElementById("gift-title").innerHTML = "Gift box now is empty.";
+    document.getElementById("gift-code").innerHTML = "";
+  }
+}
+
 function SendReview(){
   window.open("mailto:dima.borodij@gmail.com");
 }
