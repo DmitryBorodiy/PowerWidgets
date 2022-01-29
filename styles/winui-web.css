@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
+﻿@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
 
 @media(prefers-color-scheme: light){
   :root {
@@ -15,7 +15,20 @@
   input{
     color: black;
   }
-  
+
+  tooltip:hover span {
+      display: inline;
+      position: absolute;
+      background: rgb(240, 240, 240);
+      color: rgb(20, 20, 20);
+  }
+
+  .ms-flyout-menu{
+      background-color: rgba(255, 255, 255, 0.6);
+      -webkit-backdrop-filter: blur(50px);
+      backdrop-filter: blur(50px);
+  }
+
   .ms-textblock{
     color: black;
   }
@@ -127,7 +140,20 @@
   button{
       color: white;
   }
+
+  tooltip:hover span {
+      display: inline;
+      position: absolute;
+      background: rgb(35, 35, 35);
+      color: rgb(250, 250, 250);
+  }
   
+  .ms-flyout-menu{
+      background-color: rgba(25, 25, 25, 0.7);
+      -webkit-backdrop-filter: blur(50px);
+      backdrop-filter: blur(50px);
+  }
+
   .ms-footer{
     background-color: rgb(30, 30, 30);
   }
@@ -219,6 +245,39 @@
         border: 0.1px solid rgba(0, 0, 0, 0.1);
         box-sizing: border-box;
         box-shadow: 0px 1.2px 1px rgba(0, 0, 0, 0.35);
+        border-radius: 6px;
+    }
+
+    tooltip span {
+        display: none; 
+        padding: 5px; 
+        margin-left: 8px; 
+        width: 130px;
+        border-radius: 6px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    tooltip:hover span {
+        display: inline; 
+        position: absolute;
+    }
+
+    .ms-flyout-menu{
+        border-radius: 6px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        width: 250px;
+        height: auto;
+    }
+
+    .ms-flyout-menu-item{
+        position: relative;
+        display: table;
+        top: 6px;
+        width: 98%;
+    }
+
+    .ms-flyout-menu-item:hover{
+        background-color: rgba(255, 255, 255, 0.3);
         border-radius: 6px;
     }
     

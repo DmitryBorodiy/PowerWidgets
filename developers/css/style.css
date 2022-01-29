@@ -1,0 +1,47 @@
+﻿body{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#dev-avatar{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    background-image: url('../img/Me.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+#dev-text{
+    position: relative;
+    display: inline-block;
+    padding-left: 100px;
+    text-align: left;
+    top: 20px;
+}
+
+#send-review-menu{
+    position: absolute;
+    top: 62px;
+    right: 20px;
+}
+
+.social-icon{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-tile{
+    width: 200px;
+    height: 200px;
+}
+
+.social-tile:hover{
+    width: 185px;
+    height: 185px;
+}

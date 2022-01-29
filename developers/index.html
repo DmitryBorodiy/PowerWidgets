@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Dmitriy Borodiy - UWP/WinUI/.NET apps developer🤖👾🧑‍💻</title>
+
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- WinUI WASM -->
+        <link rel="stylesheet" href="../styles/winui-web.css" />
+        <link rel="stylesheet" href="../fonts/FluentSystemIcons-Regular.css" />
+
+        <!--<script type="module" src="https://cdn.jsdelivr.net/npm/@microsoft/fast-components/dist/fast-components.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body onresize="Body_OnResize();" onload="HideSendReviewMenu();">
+        <header class="navbar">
+            <div id="navbar-logo">
+                <img id="logo_img" src="../img/app_logo.png" alt="logo_img" />
+                <a id="logo-text">Widgets</a>
+            </div>
+            <div id="navbar_separator" class="vertical-separator"></div>
+            <div id="desktop_menu" class="ms-menu">
+                <div class="ms-menu-item">
+                    <a href="../home.html">
+                        <button class="ms-menu-button-selected" style="width: 81px;">
+                            <span class="button_content">
+                                <i class="fluent-icons"></i>
+                                <span class="menu-button-label">Home</span>
+                            </span>
+                        </button>
+                    </a>
+                </div>
+                <div class="ms-menu-item">
+                    <a href="../blog/index.html">
+                        <button class="ms-menu-button" style="width: auto;">
+                            <span class="button_content">
+                                <i class="fluent-icons"></i>
+                                <span class="menu-button-label">What's new</span>
+                            </span>
+                        </button>
+                    </a>
+                </div>
+                <div class="ms-menu-item">
+                    <a href="../developers/index.html">
+                        <button class="ms-menu-button" style="width: auto;">
+                            <span class="button_content">
+                                <i class="fluent-icons"></i>
+                                <span class="menu-button-label">About me</span>
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div id="SearchBoxControl" class="ms-textbox" style="position: fixed; top: 18px; right: 140px; height: 35px; width: 220px;">
+                <input id="SearchBoxInput" class="ms-text-input" type="text" placeholder="Search here..." autocomplete="on" onload="SearchBoxInput_OnLoad();" onkeydown="SearchBoxInput_KeyDown" />
+                <i class="ms-textbox-icon icon-ic_fluent_search_20_regular" onclick="SearchButton_Click();"></i>
+            </div>
+            <script>
+                document.getElementById("SearchBoxInput").addEventListener('keydown', SearchBoxInput_KeyDown);
+            </script>
+            <button id="send_review_button" class="ms-button-accent" onclick="ShowSendReviewMenu();">
+                <span class="button_label">Send review</span>
+            </button>
+            <span id="send-review-menu" class="ms-flyout-menu" style="height: 80px;">
+                <span class="ms-flyout-menu-item" style="padding-top: 4px; margin-left: 3px; margin-right: 3px;" onclick="SendMail_Click();">
+                    <img height="24" width="24" style="display: inline-block;position: relative;left: 10px;" src="https://img.icons8.com/fluency/96/000000/microsoft-outlook-2019.png" />
+                    <a style="display: inline-block;position: relative;font-size: 14px;left: 16px;top: -7px;">Send via mail</a>
+                </span>
+                <span class="ms-flyout-menu-item" style="padding-top: 4px; margin-bottom: 3px; margin-left: 3px; margin-right: 3px;" onclick="SendMicrosoftStore_Click();">
+                    <img height="24" width="24" style="display: inline-block;position: relative;left: 10px;" src="https://img.icons8.com/fluency/96/000000/microsoft-store.png" />
+                    <a style="display: inline-block;position: relative;font-size: 14px;left: 16px;top: -7px;">Send via Microsoft Store</a>
+                </span>
+            </span>
+        </header>
+        <section id="content" style="padding-top: 150px;">
+            <div id="content-div" style="margin-left: 36px; margin-right: 36px;">
+                <div class="table" style="text-align: center;">
+                    <div id="dev-avatar"></div>
+                    <div id="dev-text">
+                        <h2><b>Dmitriy Borodiy</b></h2>
+                        <p style="color: var(--text-color-light);">
+                            UWP/WinUI/Uno/.NET application developer🤖👾🧑‍💻<br />
+                        </p>
+                        <p>
+                            If you have any questions or suggestions,<br />
+                            as well as information about crashes or bugs in applications,<br /> 
+                            you can always contact me here or through social networks.<br />
+                        </p>
+                        <div id="dev-buttons" style="padding-top: 15px;">
+                            <button class="ms-button-accent" style="height: 42px; width: 145px;" onclick="SendMessage();">
+                                <div class="table" style="position: relative; left: -3px;">
+                                    <i class="fluent-icons" style="position: relative; top: 1px; left: -5px;"></i>
+                                    <a style="position: relative; top: -4px; left: 8px;">Send mail</a>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <section id="socials" style="padding-top: 126px; display: table;">
+                    <div id="socials-div" style="margin-left: 120px; margin-right: 120px; display: inline-block; text-align: left;">
+                        <h3 style="color: var(--text-color-light);">Socials</h3>
+                        <div class="table">
+                            <div style="display: inline-block; margin: 5px;" onclick="ContactMeSocial('twitter');">
+                                <div class="ms-base social-tile">
+                                    <img class="social-icon" height="74" width="74" src="https://img.icons8.com/fluency/240/000000/twitter.png" />
+                                </div>
+                            </div>
+                            <div style="display: inline-block; margin: 5px;" onclick="ContactMeSocial('facebook');">
+                                <div class="ms-base social-tile">
+                                    <img class="social-icon" height="74" width="74" src="https://img.icons8.com/fluency/240/000000/facebook-new.png" />
+                                </div>
+                            </div>
+                            <div style="display: inline-block; margin: 5px;" onclick="ContactMeSocial('instagram');">
+                                <div class="ms-base social-tile">
+                                    <img class="social-icon" height="74" width="74" src="https://img.icons8.com/fluency/240/000000/instagram-new.png" />
+                                </div>
+                            </div>
+                            <div style="display: inline-block; margin: 5px;" onclick="ContactSkype();">
+                                <div class="ms-base social-tile">
+                                    <img class="social-icon" height="74" width="74" src="https://img.icons8.com/fluency/240/000000/skype.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <br />
+            <footer class="ms-footer" style="height: 90px; position: relative; top: 40px; padding-bottom: 20px;">
+                <p style="padding-top: 38px;">
+                    <a class="ms-badged-text" href="mailto:dima.borodij@gmail.com" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via email</a>&nbsp;
+                    <a class="ms-badged-text" onclick="window.open('https://twitter.com/dev_dmitriy?t=lRX88mjdFUXWM_fbYgyxNQ&s=09');" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via Twitter</a>&nbsp;
+                    <a class="ms-badged-text" href="https://dmitryborodiy.github.io/PowerWidgets/privacy/" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Privacy policy</a>&nbsp;
+                    <a class="ms-badged-text" href="https://www.microsoft.com/en-us/p/power-widgets-customize-your-at-a-glance-info/9nlhp5krxzq7" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Official page in Microsoft</a>&nbsp;
+                </p>
+            </footer>
+        </section>
+    </body>
+</html>

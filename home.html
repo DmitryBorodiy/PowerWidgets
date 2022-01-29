@@ -46,7 +46,7 @@
         </button>
       </div>
       <div class="ms-menu-item">
-        <button class="ms-menu-button" style="width: auto;" onclick="NavigateTo('docs/index.html');">
+        <button class="ms-menu-button" style="width: auto;" onclick="NavigateTo('developers/index.html');">
             <span class="button_content">
                 <i class="fluent-icons"></i>
                 <span class="menu-button-label">About me</span>
@@ -80,7 +80,7 @@
     </div>
     <div id="SearchBoxControl" class="ms-textbox" style="position: fixed; top: 18px; right: 140px; height: 35px; width: 220px;">
       <input id="SearchBoxInput" class="ms-text-input" type="text" placeholder="Search here..." autocomplete="on" onload="SearchBoxInput_OnLoad();" onkeydown="SearchBoxInput_KeyDown" />
-      <i class="ms-textbox-icon icon-ic_fluent_search_20_regular"></i>
+      <i class="ms-textbox-icon icon-ic_fluent_search_20_regular" onclick="SearchButton_Click();"></i>
     </div>
     <script>
       document.getElementById("SearchBoxInput").addEventListener('keydown', SearchBoxInput_KeyDown);
@@ -238,7 +238,7 @@
          </section>
          <br />
           <footer class="ms-footer" style="height: 90px; position: relative; top: 40px; padding-bottom: 20px;">
-              <p style="padding-top: 28px;">
+              <p style="padding-top: 38px;">
                 <a class="ms-badged-text" href="mailto:dima.borodij@gmail.com" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via email</a>&nbsp;
                 <a class="ms-badged-text" onclick="window.open('https://twitter.com/dev_dmitriy?t=lRX88mjdFUXWM_fbYgyxNQ&s=09');" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via Twitter</a>&nbsp;
                 <a class="ms-badged-text" href="https://dmitryborodiy.github.io/PowerWidgets/privacy/" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Privacy policy</a>&nbsp;

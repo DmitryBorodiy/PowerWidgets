@@ -24,6 +24,15 @@ function SearchBoxInput_KeyDown(key){
     }
 }
 
+function SearchButton_Click(){
+    try{
+        SearchBing($('#SearchBoxInput').val());
+    }
+    catch(e){
+        console.log(e.toString());
+    }
+}
+
 function ThemeInitialize(){
   try{
     const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");

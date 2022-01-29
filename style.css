@@ -1,4 +1,4 @@
-﻿@media(prefers-color-scheme: light){
+@media(prefers-color-scheme: light){
   body{
     background-color: rgb(245, 245, 245);
     color: black;
@@ -57,7 +57,7 @@
 
 @media(prefers-color-scheme: dark){
   body{
-    background-color: rgb(35, 35, 35);
+    background-color: rgba(35, 35, 35);
     color: white;
   }
 
