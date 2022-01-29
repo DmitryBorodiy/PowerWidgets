@@ -1,4 +1,4 @@
-@media(prefers-color-scheme: light){
+﻿@media(prefers-color-scheme: light){
   body{
     background-color: rgb(245, 245, 245);
     color: black;
@@ -105,6 +105,26 @@
     background: linear-gradient(90deg, rgba(35, 35, 35, 0.9617838859558105) 10%, rgba(35, 35, 35, 0) 100%);
     border-radius: 6px;
   }
+}
+
+#microsoft-edge-preview{
+    border-radius: 10px;
+    box-shadow: 0 3 10px rgba(0, 0, 0, 0.3);
+    background-image: url('img/MicrosoftEdgeWidget.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 350px;
+    width: 340px;
+    display: inline-block;
+}
+
+#microsoft-edge-text{
+    display: inline-block;
+    padding-left: 100px;
+    position: relative;
+    text-align: left;
+    top: -75px;
 }
 
 #app-preview-image{
