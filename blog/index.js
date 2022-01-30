@@ -23,6 +23,10 @@ function Content_OnResize(){
     document.getElementById("desktop_menu").style.visibility = "collapse";
     document.getElementById("navbar_separator").style.visibility = "collapse";
     document.getElementById("send_review_button").style.visibility = "collapse";
+
+    //Enable mobile shell
+    $('#mobile-menu-button').css("visibility", "visible");
+    $('#mobile-search-button').css("visibility", "visible");
   }
   else if(documentWidthProperty >= 750){
     //document.getElementById("content_div").style.paddingLeft = "75px";
@@ -41,6 +45,10 @@ function Content_OnResize(){
     document.getElementById("desktop_menu").style.visibility = "visible";
     document.getElementById("navbar_separator").style.visibility = "visible";
     document.getElementById("send_review_button").style.visibility = "visible";
+
+    //Disable mobile shell
+    $('#mobile-menu-button').css("visibility", "collapse");
+    $('#mobile-search-button').css("visibility", "collapse");
   }
 }
 

@@ -1,7 +1,23 @@
-﻿@media(prefers-color-scheme: light){
+@media(prefers-color-scheme: light){
   body{
     background-color: rgb(245, 245, 245);
     color: black;
+  }
+
+  #menu-flyout{
+      background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  #search-flyout{
+      background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .navigation-item:hover{
+      background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .navigation-item:active{
+      background-color: rgba(255, 255, 255, 0.8);
   }
 
   #fast-actions-asset{
@@ -61,6 +77,22 @@
     color: white;
   }
 
+  #menu-flyout{
+      background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  #search-flyout{
+      background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .navigation-item:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .navigation-item:active{
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+
   #fast-actions-asset {
       height: 250px;
       width: 250px;
@@ -105,6 +137,149 @@
     background: linear-gradient(90deg, rgba(35, 35, 35, 0.9617838859558105) 10%, rgba(35, 35, 35, 0) 100%);
     border-radius: 6px;
   }
+}
+
+#mobile-menu-button{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    top: 18px;
+    left: 12px;
+    background-color: transparent;
+    border: none;
+    visibility: collapse;
+    box-shadow: none;
+}
+
+#mobile-search-button{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    top: 18px;
+    right: 12px;
+    background-color: transparent;
+    border: none;
+    visibility: collapse;
+    box-shadow: none;
+}
+
+#search-flyout{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(50px);
+    display: table;
+    z-index: 11111111111111111111111111111111111111111111111111111111111111;
+    visibility: collapse;
+
+    -webkit-backdrop-filter: blur(50px);
+}
+
+#close-search-button{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    top: 50px;
+    right: 26px;
+}
+
+#FlyoutSearchBox{
+    height: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: table;
+    width: 90%;
+}
+
+#search-flyout-commands{
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: 14px;
+    text-align: left;
+}
+
+#search-flyout-header{
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 16px;
+}
+
+#menu-flyout{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 400px;
+    backdrop-filter: blur(50px);
+    z-index: 11111111111111111111111111111111111111111111111111111111111111111111;
+    padding: 10px;
+    visibility: collapse;
+
+    -webkit-backdrop-filter: blur(50px);
+}
+
+#menu-close-button{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    top: 32px;
+    left: 350px;
+}
+
+#menu-header{
+    padding-left: 20px;
+}
+
+#navigation-items{
+    padding-top: 10px;
+}
+
+.navigation-item{
+    display: table;
+    position: relative;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 15px;
+    text-align: left;
+    /* margin-left: 5px; */
+    margin-right: 5px;
+    height: 50px;
+    width: 96%;
+    margin-top: 5px;
+}
+
+.navigation-item-content{
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+
+.navigation-item-text{
+    position: relative;
+    top: -4px;
+    left: 15px;
+}
+
+.navigation-selector{
+    position: relative;
+    display: inline-block;
+    width: 4.5px;
+    height: 20px;
+    border-radius: 6px;
+    background-color: var(--theme-primary-color);
+    left: -12px;
 }
 
 #microsoft-edge-preview{

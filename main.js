@@ -4,6 +4,22 @@ window.onload = function(){
   ThemeInitialize();
 };
 
+function CloseFlyoutMenu(){
+    $('#menu-flyout').css("visibility", "collapse");
+}
+
+function OpenFlyoutMenu(){
+    $('#menu-flyout').css("visibility", "visible");
+}
+
+function CloseSearch(){
+    $('#search-flyout').css("visibility", "collapse");
+}
+
+function OpenSearch(){
+    $('#search-flyout').css("visibility", "visible");
+}
+
 function SearchBoxInput_OnLoad(){
     SearchBoxInput = document.getElementById("SearchBoxInput");
     //debugger;
@@ -24,9 +40,32 @@ function SearchBoxInput_KeyDown(key){
     }
 }
 
+function FlyoutSearchInput_KeyDown(key){
+    try{
+        if(key != null){
+            if(key.code == "Enter"){
+                //debugger;
+                SearchBing($('#FlyoutSearchInput').val());
+            }
+        }
+    }
+    catch(e){
+        console.log(e.toString());
+    }
+}
+
 function SearchButton_Click(){
     try{
         SearchBing($('#SearchBoxInput').val());
+    }
+    catch(e){
+        console.log(e.toString());
+    }
+}
+
+function FlyoutSearch_Find(){
+    try{
+        SearchBing($('#FlyoutSearchInput').val());
     }
     catch(e){
         console.log(e.toString());

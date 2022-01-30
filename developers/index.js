@@ -32,6 +32,10 @@ function Body_OnResize(){
             document.getElementById("SearchBoxControl").style.visibility = "collapse";
             document.getElementById("send_review_button").style.visibility = "collapse";
 
+            //Enable mobile shell
+            $('#mobile-menu-button').css("visibility", "visible");
+            $('#mobile-search-button').css("visibility", "visible");
+
             $('#socials-div').css("margin-left", "3px");
             $('#socials-div').css("margin-right", "3px");
 
@@ -54,6 +58,10 @@ function Body_OnResize(){
             document.getElementById("navbar_separator").style.visibility = "visible";
             document.getElementById("SearchBoxControl").style.visibility = "visible";
             document.getElementById("send_review_button").style.visibility = "visible";
+
+            //Disable mobile shell
+            $('#mobile-menu-button').css("visibility", "collapse");
+            $('#mobile-search-button').css("visibility", "collapse");
 
             $('#socials-div').css("margin-left", "120px");
             $('#socials-div').css("margin-right", "120px");

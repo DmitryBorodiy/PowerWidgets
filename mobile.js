@@ -24,6 +24,10 @@ function DetectMobileMode(){
       document.getElementById("SearchBoxControl").style.visibility = "collapse";
       document.getElementById("send_review_button").style.visibility = "collapse";
 
+      //Enable mobile shell
+      $('#mobile-menu-button').css("visibility", "visible");
+      $('#mobile-search-button').css("visibility", "visible");
+
       $('#page-title').css("font-size", "40px");
       $('#app-preview-image').css("top", "100px");
       $('#app-preview-image').css("width", "85%");
@@ -47,6 +51,10 @@ function DetectMobileMode(){
       document.getElementById("navbar_separator").style.visibility = "visible";
       document.getElementById("SearchBoxControl").style.visibility = "visible";
       document.getElementById("send_review_button").style.visibility = "visible";
+
+      //Disable mobile shell
+      $('#mobile-menu-button').css("visibility", "collapse");
+      $('#mobile-search-button').css("visibility", "collapse");
 
       $('#page-title').css("font-size", "60px");
       $('#app-preview-image').css("top", "50px");
@@ -102,6 +110,13 @@ function DetectMobileMode(){
         $('#whats-new-img').css("top", "-40px");
 
         $('bing-wallpapers').css("width", "436px");
+      }
+
+      if(documentWidthProperty <= 450){
+        $('#menu-flyout').css("width", "100%");
+      }
+      else if(documentWidthProperty >= 450){
+        $('#menu-flyout').css("width", "400px");
       }
   }
   catch(e){

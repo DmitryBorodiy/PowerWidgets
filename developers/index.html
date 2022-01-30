@@ -17,15 +17,22 @@
 
         <!--<script type="module" src="https://cdn.jsdelivr.net/npm/@microsoft/fast-components/dist/fast-components.min.js"></script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../main.js"></script>
         <script src="index.js"></script>
     </head>
-    <body onresize="Body_OnResize();" onload="HideSendReviewMenu();">
+    <body onresize="Body_OnResize();" onload="HideSendReviewMenu(); Body_OnResize();">
         <header class="navbar">
             <div id="navbar-logo">
                 <img id="logo_img" src="../img/app_logo.png" alt="logo_img" />
                 <a id="logo-text">Widgets</a>
             </div>
             <div id="navbar_separator" class="vertical-separator"></div>
+            <button id="mobile-menu-button" class="ms-button" onclick="OpenFlyoutMenu();">
+                <i class="fluent-icons"></i>
+            </button>
+            <button id="mobile-search-button" class="ms-button" onclick="OpenSearch();">
+                <i class="fluent-icons"></i>
+            </button>
             <div id="desktop_menu" class="ms-menu">
                 <div class="ms-menu-item">
                     <a href="../home.html">
@@ -79,6 +86,73 @@
                 </span>
             </span>
         </header>
+        <span id="menu-flyout">
+            <div id="menu-header">
+                <h3 style="color: var(--text-color-light);">Menu</h3>
+            </div>
+            <div id="navigation-items">
+                <span class="navigation-item" onclick="NavigateTo('../home.html'); CloseFlyoutMenu();">
+                    <div class="navigation-item-content">
+                        <div class="navigation-selector" style="opacity: 0;"></div>
+                        <i class="fluent-icons"></i>
+                        <a class="navigation-item-text">Home</a>
+                    </div>
+                </span>
+                <span class="navigation-item" onclick="NavigateTo('../blog/index.html');">
+                    <div class="navigation-item-content">
+                        <div class="navigation-selector" style="opacity: 0;"></div>
+                        <i class="fluent-icons"></i>
+                        <a class="navigation-item-text">Blog</a>
+                    </div>
+                </span>
+                <span class="navigation-item" onclick="NavigateTo('#'); CloseFlyoutMenu();">
+                    <div class="navigation-item-content">
+                        <div class="navigation-selector"></div>
+                        <i class="fluent-icons"></i>
+                        <a class="navigation-item-text">About developer</a>
+                    </div>
+                </span>
+            </div>
+            <button id="menu-close-button" class="ms-button" onclick="CloseFlyoutMenu();">
+                <i class="fluent-icons"></i>
+            </button>
+        </span>
+        <span id="search-flyout">
+            <div id="search-flyout-header">
+                <h3 style="color: var(--text-color-light);">Search</h3>
+                <p style="font-size: 15px; position: relative; top: -10px;">Based on Bing</p>
+            </div>
+            <div id="search-flyout-box">
+                <div id="FlyoutSearchBox" class="ms-textbox">
+                    <img height="25" width="25" src="https://img.icons8.com/fluency/96/000000/bing--v1.png" style="display: inline-block; position: relative; top: 7px; left: -12px;" />
+                    <input id="FlyoutSearchInput" class="ms-text-input" placeholder="Search in Bing" type="text" style="width: 86%; margin-left: 5px; display: inline-block;" />
+                    <i class="ms-textbox-icon icon-ic_fluent_search_20_regular" onclick="FlyoutSearch_Find();" style="display: inline-block; bottom: 0px; top: 16px; right: 18px;"></i>
+                </div>
+            </div>
+            <script>
+                document.getElementById("FlyoutSearchInput").addEventListener('keydown', FlyoutSearchInput_KeyDown);
+            </script>
+            <div id="search-flyout-commands">
+                <p style="color: var(--text-color-light); font-size: 14px;">More</p>
+                <span id="search-commands">
+                    <span class="navigation-item" onclick="SendReview(); CloseSearch();" style="margin-left: 0px;">
+                        <div class="navigation-item-content">
+                            <i class="fluent-icons"></i>
+                            <a class="navigation-item-text">Send review</a>
+                        </div>
+                    </span>
+                    <span class="navigation-item" onclick="OpenInMicrosoftStore(); CloseSearch();" style="margin-left: 0px;">
+                        <div class="navigation-item-content">
+                            <i class="fluent-icons"></i>
+                            <a class="navigation-item-text">Get app from Microsoft Store</a>
+                        </div>
+                    </span>
+                </span>
+            </div>
+            <button id="close-search-button" onclick="CloseSearch();">
+                <i class="fluent-icons"></i>
+            </button>
+        </span>
         <section id="content" style="padding-top: 150px;">
             <div id="content-div" style="margin-left: 36px; margin-right: 36px;">
                 <div class="table" style="text-align: center;">
