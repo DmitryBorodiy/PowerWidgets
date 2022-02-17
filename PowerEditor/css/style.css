@@ -1,0 +1,70 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+@media(prefers-color-scheme: light){
+  body{
+    background-color: rgb(246, 246, 246);
+  }
+  
+  header{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: table;
+  }
+  
+  #logo-text{
+    color: rgb(15, 15, 15);
+  }
+}
+
+@media(prefers-color-scheme: dark){
+  body {
+    background-color: rgb(30, 30, 30);
+  }
+  
+  header {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: table;
+  }
+  
+  #logo-text{
+    color: rgb(250, 250, 250);
+  }
+}
+
+#logo-div{
+  position: absolute;
+  display: inline-block;
+  top: 13.5px;
+  left: 14px;
+}
+
+#logo-text{
+  font-size: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  position: relative;
+  left: 6px;
+  top: -13px;
+}
+
+#get-app-button{
+  position: absolute;
+  top: 14px;
+  right: 12px;
+}
