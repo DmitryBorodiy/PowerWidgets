@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Power Editor v2.3</title>
+    
+    <meta property="og:title" content="Introducing Power Editor v2.3🧑‍💻🧑‍💻🧑‍💻" />
+    <meta property="og:description" content="See what's new in new version of Power Editor. Not bad replacement for default Windows Notepad.😅" />
+    <meta name="description" content="See what's new in new version of Power Editor. Not bad replacement for default Windows Notepad.😅" />
+    <meta property="og:image" content="img/power-editor-update-2.3.png" />
+
+    <link rel="stylesheet" href="styles/winui-web.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    
+    <script src="../main.js"></script>
+    <script src="../index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body onresize="Content_OnResize();" onload="Content_OnResize();">
+    <header class="navbar">
+      <div id="navbar-logo">
+        <img id="logo_img" src="img/app_logo.png" alt="logo_img" />
+        <a id="logo-text">Widgets</a>
+        <span id="blog-badge" class="ms-badged-text">Blog</span>
+      </div>
+      <div id="navbar_separator" class="vertical-separator" style="left: 234px; top: 26px;"></div>
+      <div id="desktop_menu" class="ms-menu" style="left: 246px;">
+        <div class="ms-menu-item">
+          <button class="ms-menu-button-selected" style="width: 81px;" onclick="NavigateTo('https://dmitryborodiy.github.io/PowerWidgets/home.html');">
+            <span class="button_content">
+              <i class="fluent-icons"></i>
+              <span class="menu-button-label">Home</span>
+            </span>
+          </button>
+        </div>
+      </div>
+      <button id="send_review_button" class="ms-button-accent" onclick="window.open('mailto:dima.borodij@gmail.com');">
+        <span class="button_label">Send review</span>
+      </button>
+      <a href="https://www.microsoft.com/store/productId/9NCXLRSKPL9K"><button id="get-app-button" class="ms-button">Get Power Editor</button></a>
+    </header>
+    <section id="content-state" style="padding-top: 85px;">
+      <div id="content-div-state" style="text-align: center; padding-left: 10px; padding-right: 10px;">
+        <div id="state-img" style="border-radius: 12px; width: 100%; height: 620px; background-image: url('img/power-editor-update-2.3.png'); background-repeat: no-repeat; background-position: right; max-width: 1320px; display: inline-block;"></div>
+        <hr />
+        <div id="text-content" style="text-align: left; font-family: 'Roboto', sans-serif;">
+          <h1>Introducing Power Editor v2.3🧑‍💻🧑‍💻🧑‍💻</h1>
+          <b>Drag & drop support added</b><br />
+          <p>
+            This update added support for the Drag & drop function,<br />
+            thanks to which you can quickly open any file by simply dragging<br />
+            it to the top taskbar or tab bar.<br />
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
