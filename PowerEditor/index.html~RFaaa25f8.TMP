@@ -80,21 +80,21 @@
                 The modern interface and functionality will allow you to work more conveniently with any text. Try it right now! <br />
               </p>
               <div id="start-text-actions">
-                <button class="ms-button" style="height: 58px; width: 200px; position: relative; display: inline-block;" onclick="GetApp();">
+                <button class="ms-button" style="height: 58px; width: 200px; position: relative; display: inline-block;">
                   <div class="table">
                     <img height="30" width="30" src="https://img.icons8.com/fluency/96/000000/microsoft-store.png" style="display: inline-block;" />
-                    <div style="display: inline-block; margin-left: 13px; text-align: left;">
+                    <div style="display: inline-block; margin-left: 13px; text-align: left;" onclick="GetApp();">
                       <p style="font-weight: bold; margin: 0px; font-family: 'Segoe UI', sans-serif;"><b>Get from Microsoft</b></p>
                       <a>Totally 1.99$</a>
                     </div>
                   </div>
                 </button>
-                <button class="ms-button" style="height: 58px; width: 250px; margin-left: 5px; position: relative; display: inline-block;" onclick="SendReview();">
+                <button class="ms-button" style="height: 58px; width: 200px; position: relative; display: inline-block;">
                   <div class="table">
                     <img height="30" width="30" src="https://img.icons8.com/fluency/96/000000/microsoft-tips.png" style="display: inline-block;" />
-                    <div style="display: inline-block; margin-left: 13px; text-align: left;">
-                      <p style="font-weight: bold; margin: 0px; font-family: 'Segoe UI', sans-serif;"><b>Send review</b></p>
-                      <a>Send bug report or suggestion</a>
+                    <div style="display: inline-block; margin-left: 13px; text-align: left;" onclick="GetApp();">
+                      <p style="font-weight: bold; margin: 0px; font-family: 'Segoe UI', sans-serif;"><b>Get from Microsoft</b></p>
+                      <a>Totally 1.99$</a>
                     </div>
                   </div>
                 </button>
@@ -102,20 +102,6 @@
             </div>
             <div id="app-view">
               <span id="app-view-img"></span>
-            </div>
-          </div>
-        </section>
-        <section id="info">
-          <div id="info-div">
-            <div class="ms-base" style="width: 100%; height: 200px; max-width: 1124px; display: inline-block;">
-              <div class="table" style="padding: 36px; text-align: left;">
-                <img height="80" width="80" src="https://img.icons8.com/fluency/96/000000/recurring-appointment.png" style="display: inline-block; margin-top: 34px;" />
-                <div style="display: inline-block; margin-left: 25px; position: absolute;">
-                  <h2>Version 2.3 is here!</h2>
-                  <p style="margin: 0; position: relative; top: -12px;">See what's new in this update.</p>
-                  <button class="ms-button-accent" style="margin-top: 3px;">See what's new</button>
-                </div>            
-              </div>
             </div>
           </div>
         </section>
