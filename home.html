@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -31,250 +31,252 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="main.js"></script>
   <script src="mobile.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/browse/@n8d/htwoo-core@<version>/dist/css/htwoo.min.css">
-  <script src="https://unpkg.com/browse/@n8d/htwoo-core@<version>/dist/js/"></script>
 </head>
 
 <body class="system-chrome-alt-high-color" onresize="DetectMobileMode();">
-  <header class="navbar">
-    <div id="navbar-logo">
-        <img id="logo_img" src="img/app_logo.png" alt="logo_img" />
-        <a id="logo-text">Widgets</a>
-    </div>
-    <button id="mobile-menu-button" class="ms-button" onclick="OpenFlyoutMenu();">
-      <i class="fluent-icons"></i>
-    </button>
-    <button id="mobile-search-button" class="ms-button" onclick="OpenSearch();">
-      <i class="fluent-icons"></i>
-    </button>
-    <div id="navbar_separator" class="vertical-separator"></div>
-    <div id="desktop_menu" class="ms-menu">
-      <div class="ms-menu-item">
-        <button class="ms-menu-button-selected" style="width: 81px;">
-            <span class="button_content">
-                <i class="fluent-icons"></i>
-                <span class="menu-button-label">Home</span>
-            </span>
-        </button>
+    <header class="navbar">
+      <div id="navbar-logo">
+          <img id="logo_img" src="img/app_logo.png" alt="logo_img" />
+          <a id="logo-text">Widgets</a>
       </div>
-      <div class="ms-menu-item">
-        <button class="ms-menu-button" style="width: auto;" onclick="NavigateTo('blog/index.html');">
+      <button id="mobile-menu-button" class="ms-button" onclick="OpenFlyoutMenu();">
+        <i class="fluent-icons"></i>
+      </button>
+      <button id="mobile-search-button" class="ms-button" onclick="OpenSearch();">
+        <i class="fluent-icons"></i>
+      </button>
+      <div id="navbar_separator" class="vertical-separator"></div>
+      <div id="desktop_menu" class="ms-menu">
+        <div class="ms-menu-item">
+          <button class="ms-menu-button-selected" style="width: 81px;">
+              <span class="button_content">
+                  <i class="fluent-icons"></i>
+                  <span class="menu-button-label">Home</span>
+              </span>
+          </button>
+        </div>
+        <div class="ms-menu-item">
+          <button class="ms-menu-button" style="width: auto;" onclick="NavigateTo('blog/index.html');">
+              <span class="button_content">
+                  <i class="fluent-icons"></i>
+                  <span class="menu-button-label">What's new</span>
+              </span>
+          </button>
+        </div>
+        <div class="ms-menu-item">
+          <button class="ms-menu-button" style="width: auto;" onclick="NavigateTo('developers/index.html');">
+              <span class="button_content">
+                  <i class="fluent-icons"></i>
+                  <span class="menu-button-label">About me</span>
+              </span>
+          </button>
+        </div>
+        <!--<div class="ms-menu-item">
+          <button class="ms-menu-button" style="width: auto;">
+              <span class="button_content">
+                  <i class="fluent-icons"></i>
+                  <span class="menu-button-label">Widgets</span>
+              </span>
+          </button>
+        </div>-->
+        <!--<div class="ms-menu-item">
+          <button class="ms-menu-button" style="width: auto;">
+              <span class="button_content">
+                  <i class="fluent-icons"></i>
+                  <span class="menu-button-label">Get from Microsoft Store</span>
+              </span>
+          </button>
+        </div> -->
+        <!--<div class="ms-menu-item">
+          <button class="ms-menu-button" style="width: auto;">
             <span class="button_content">
-                <i class="fluent-icons"></i>
-                <span class="menu-button-label">What's new</span>
+              <i class="fluent-icons icon-ic_fluent_settings_20_regular">&#xE700;</i>
+              <span class="menu-button-label">Settings</span>
             </span>
-        </button>
+          </button>
+        </div> -->
       </div>
-      <div class="ms-menu-item">
-        <button class="ms-menu-button" style="width: auto;" onclick="NavigateTo('developers/index.html');">
-            <span class="button_content">
-                <i class="fluent-icons"></i>
-                <span class="menu-button-label">About me</span>
-            </span>
-        </button>
+      <div id="SearchBoxControl" class="ms-textbox" style="position: fixed; top: 18px; right: 140px; height: 35px; width: 220px;">
+        <input id="SearchBoxInput" class="ms-text-input" type="text" placeholder="Search here..." autocomplete="on" onload="SearchBoxInput_OnLoad();" onkeydown="SearchBoxInput_KeyDown" />
+        <i class="ms-textbox-icon icon-ic_fluent_search_20_regular" onclick="SearchButton_Click();"></i>
       </div>
-      <!--<div class="ms-menu-item">
-        <button class="ms-menu-button" style="width: auto;">
-            <span class="button_content">
-                <i class="fluent-icons"></i>
-                <span class="menu-button-label">Widgets</span>
-            </span>
-        </button>
-      </div>-->
-      <!--<div class="ms-menu-item">
-        <button class="ms-menu-button" style="width: auto;">
-            <span class="button_content">
-                <i class="fluent-icons"></i>
-                <span class="menu-button-label">Get from Microsoft Store</span>
-            </span>
-        </button>
-      </div> -->
-      <!--<div class="ms-menu-item">
-        <button class="ms-menu-button" style="width: auto;">
-          <span class="button_content">
-            <i class="fluent-icons icon-ic_fluent_settings_20_regular">&#xE700;</i>
-            <span class="menu-button-label">Settings</span>
+      <script>
+        document.getElementById("SearchBoxInput").addEventListener('keydown', SearchBoxInput_KeyDown);
+      </script>
+      <button id="send_review_button" class="ms-button-accent" onclick="SendReview();">
+          <span class="button_label">Send review</span>
+      </button>
+    </header>
+    <span id="menu-flyout">
+      <div id="menu-header">
+        <h3 style="color: var(--text-color-light);">Menu</h3>
+      </div>
+      <div id="navigation-items">
+        <span class="navigation-item" onclick="NavigateTo('#'); CloseFlyoutMenu();">
+          <div class="navigation-item-content">
+            <div class="navigation-selector"></div>
+            <i class="fluent-icons"></i>
+            <a class="navigation-item-text">Home</a>
+          </div>
+        </span>
+        <span class="navigation-item" onclick="NavigateTo('blog/index.html');">
+          <div class="navigation-item-content">
+            <div class="navigation-selector" style="opacity: 0;"></div>
+            <i class="fluent-icons"></i>
+            <a class="navigation-item-text">Blog</a>
+          </div>
+        </span>
+        <span class="navigation-item" onclick="NavigateTo('developers/index.html');">
+          <div class="navigation-item-content">
+            <div class="navigation-selector" style="opacity: 0;"></div>
+            <i class="fluent-icons"></i>
+            <a class="navigation-item-text">About developer</a>
+          </div>
+        </span>
+      </div>
+      <button id="menu-close-button" class="ms-button" onclick="CloseFlyoutMenu();">
+        <i class="fluent-icons"></i>
+      </button>
+    </span>
+    <span id="search-flyout">
+      <div id="search-flyout-header">
+        <h3 style="color: var(--text-color-light);">Search</h3>
+        <p style="font-size: 15px; position: relative; top: -10px;">Based on Bing</p>
+      </div>
+      <div id="search-flyout-box">
+        <div id="FlyoutSearchBox" class="ms-textbox">
+            <img height="25" width="25" src="https://img.icons8.com/fluency/96/000000/bing--v1.png" style="display: inline-block; position: relative; top: 7px; left: -12px;" />
+            <input id="FlyoutSearchInput" class="ms-text-input" placeholder="Search in Bing" type="text" style="width: 86%; margin-left: 5px; display: inline-block;" />
+            <i class="ms-textbox-icon icon-ic_fluent_search_20_regular" onclick="FlyoutSearch_Find();" style="display: inline-block; bottom: 0px; top: 16px; right: 18px;"></i>
+        </div>
+      </div>
+      <script>
+        document.getElementById("FlyoutSearchInput").addEventListener('keydown', FlyoutSearchInput_KeyDown);
+      </script>
+      <div id="search-flyout-commands">
+        <p style="color: var(--text-color-light); font-size: 14px;">More</p>
+        <span id="search-commands">
+          <span class="navigation-item" onclick="SendReview(); CloseSearch();" style="margin-left: 0px;">
+          <div class="navigation-item-content">
+            <i class="fluent-icons"></i>
+            <a class="navigation-item-text">Send review</a>
+          </div>
           </span>
-        </button>
-      </div> -->
-    </div>
-    <div id="SearchBoxControl" class="ms-textbox" style="position: fixed; top: 18px; right: 140px; height: 35px; width: 220px;">
-      <input id="SearchBoxInput" class="ms-text-input" type="text" placeholder="Search here..." autocomplete="on" onload="SearchBoxInput_OnLoad();" onkeydown="SearchBoxInput_KeyDown" />
-      <i class="ms-textbox-icon icon-ic_fluent_search_20_regular" onclick="SearchButton_Click();"></i>
-    </div>
-    <script>
-      document.getElementById("SearchBoxInput").addEventListener('keydown', SearchBoxInput_KeyDown);
-    </script>
-    <button id="send_review_button" class="ms-button-accent" onclick="SendReview();">
-        <span class="button_label">Send review</span>
-    </button>
-  </header>
-  <span id="menu-flyout">
-    <div id="menu-header">
-      <h3 style="color: var(--text-color-light);">Menu</h3>
-    </div>
-    <div id="navigation-items">
-       <span class="navigation-item" onclick="NavigateTo('#'); CloseFlyoutMenu();">
-         <div class="navigation-item-content">
-          <div class="navigation-selector"></div>
-          <i class="fluent-icons"></i>
-          <a class="navigation-item-text">Home</a>
-         </div>
-       </span>
-       <span class="navigation-item" onclick="NavigateTo('blog/index.html');">
-         <div class="navigation-item-content">
-          <div class="navigation-selector" style="opacity: 0;"></div>
-          <i class="fluent-icons"></i>
-          <a class="navigation-item-text">Blog</a>
-         </div>
-       </span>
-       <span class="navigation-item" onclick="NavigateTo('developers/index.html');">
-         <div class="navigation-item-content">
-          <div class="navigation-selector" style="opacity: 0;"></div>
-          <i class="fluent-icons"></i>
-          <a class="navigation-item-text">About developer</a>
-         </div>
-       </span>
-    </div>
-    <button id="menu-close-button" class="ms-button" onclick="CloseFlyoutMenu();">
-      <i class="fluent-icons"></i>
-    </button>
-  </span>
-  <span id="search-flyout">
-    <div id="search-flyout-header">
-       <h3 style="color: var(--text-color-light);">Search</h3>
-       <p style="font-size: 15px; position: relative; top: -10px;">Based on Bing</p>
-    </div>
-    <div id="search-flyout-box">
-       <div id="FlyoutSearchBox" class="ms-textbox">
-          <img height="25" width="25" src="https://img.icons8.com/fluency/96/000000/bing--v1.png" style="display: inline-block; position: relative; top: 7px; left: -12px;" />
-          <input id="FlyoutSearchInput" class="ms-text-input" placeholder="Search in Bing" type="text" style="width: 86%; margin-left: 5px; display: inline-block;" />
-          <i class="ms-textbox-icon icon-ic_fluent_search_20_regular" onclick="FlyoutSearch_Find();" style="display: inline-block; bottom: 0px; top: 16px; right: 18px;"></i>
-       </div>
-    </div>
-    <script>
-      document.getElementById("FlyoutSearchInput").addEventListener('keydown', FlyoutSearchInput_KeyDown);
-    </script>
-    <div id="search-flyout-commands">
-      <p style="color: var(--text-color-light); font-size: 14px;">More</p>
-      <span id="search-commands">
-        <span class="navigation-item" onclick="SendReview(); CloseSearch();" style="margin-left: 0px;">
-         <div class="navigation-item-content">
-          <i class="fluent-icons"></i>
-          <a class="navigation-item-text">Send review</a>
-         </div>
+          <span class="navigation-item" onclick="OpenInMicrosoftStore(); CloseSearch();" style="margin-left: 0px;">
+          <div class="navigation-item-content">
+            <i class="fluent-icons"></i>
+            <a class="navigation-item-text">Get app from Microsoft Store</a>
+          </div>
+          </span>
         </span>
-        <span class="navigation-item" onclick="OpenInMicrosoftStore(); CloseSearch();" style="margin-left: 0px;">
-         <div class="navigation-item-content">
-          <i class="fluent-icons"></i>
-          <a class="navigation-item-text">Get app from Microsoft Store</a>
-         </div>
-        </span>
-      </span>
-    </div>
-    <button id="close-search-button" onclick="CloseSearch();">
-      <i class="fluent-icons"></i>
-    </button>
-  </span>
-  <div id="content">
-    <section id="start">
-      <div id="start_content">
-         <h1 id="page-title" class="ms-textblock">Meet new Widgets for Windows</h1>
-         <p id="page-description" class="ms-textblock">
-             Power Widgets is new way to customize your at-a-glance info.<br />
-             With new widgets and mini-apps you can explore info and get fast access to important things.<br />
-         </p>
-         <div id="start-buttons-grid" style="text-align: center; margin-top: 150px;">
-             <button class="ms-button" style="height: 60px; width: 290px; margin: 5px;" onclick="OpenInMicrosoftStore();">
-                <div style="display: table;text-align: center;position: relative;top: -5px;left: 16px;">
-                  <img height="24px" width="24px" src="https://img.icons8.com/fluency/48/000000/microsoft-store.png" style="justify-content: middle; display: inline-block; position: relative; top: -6px;" />
-                  <div style="display: inline-block;position: relative;left: 13px;">
-                      <p style="text-align: left;">
-                        <b style="font-weight: bold; font-size: 16px;">Get from Microsoft Store</b><br />
-                        Totally 1.99$<br />
-                      </p>
+      </div>
+      <button id="close-search-button" onclick="CloseSearch();">
+        <i class="fluent-icons"></i>
+      </button>
+    </span>
+    <div id="content">
+      <section id="start">
+        <div id="start_content">
+          <h1 id="page-title" class="ms-textblock">Meet new Widgets for Windows</h1>
+          <p id="page-description" class="ms-textblock">
+              Power Widgets is new way to customize your at-a-glance info.<br />
+              With new widgets and mini-apps you can explore info and get fast access to important things.<br />
+          </p>
+          <div id="start-buttons-grid" style="text-align: center; margin-top: 150px;">
+              <button class="ms-button" style="height: 60px; width: 290px; margin: 5px;" onclick="OpenInMicrosoftStore();">
+                  <div style="display: table;text-align: center;position: relative;top: -5px;left: 16px;">
+                    <img height="24px" width="24px" src="https://img.icons8.com/fluency/48/000000/microsoft-store.png" style="justify-content: middle; display: inline-block; position: relative; top: -6px;" />
+                    <div style="display: inline-block;position: relative;left: 13px;">
+                        <p style="text-align: left;">
+                          <b style="font-weight: bold; font-size: 16px;">Get from Microsoft Store</b><br />
+                          Totally 1.99$<br />
+                        </p>
+                    </div>
+                  </div>
+              </button>
+              <!--<button class="ms-button" style="height: 60px; width: 290px; margin: 5px;" onclick="Message('Coming soon!');">
+                  <div style="display: table;text-align: center;position: relative;top: -5px;left: 16px;">
+                    <img height="24px" width="24px" src="https://img.icons8.com/fluency/48/000000/product.png" style="justify-content: middle; display: inline-block; position: relative; top: -6px;" />
+                    <div style="display: inline-block;position: relative;left: 13px;">
+                        <p style="text-align: left;">
+                          <b style="font-weight: bold; font-size: 16px;">Get application package</b><br />
+                          For students and education<br />
+                        </p>
+                    </div>
+                  </div>
+              </button>-->
+              <button class="ms-button" style="height: 60px; width: 290px; margin: 5px;" onclick="NavigateTo('gift/index.html');">
+                  <div style="display: table;text-align: center;position: relative;top: -5px;left: 16px;">
+                    <img height="24px" width="24px" src="https://img.icons8.com/fluency/48/000000/gift--v1.png" style="justify-content: middle; display: inline-block; position: relative; top: -6px;" />
+                    <div style="display: inline-block;position: relative;left: 13px;">
+                        <p style="text-align: left;">
+                          <b style="font-weight: bold; font-size: 16px;">Get a gift</b><br />
+                          Check gift box<br />
+                        </p>
+                    </div>
+                  </div>
+              </button>
+          </div>
+          <div id="app-preview-image" class="ms-grid">
+          </div>
+          <section id="news" style="height: auto; margin-left: 35px; margin-right: 35px; padding-top: 50px; padding-bottom: 60px;">
+            <div id="news-div" class="ms-base" style="padding-bottom: 45px; text-align: left;">
+                <h5 style="color: var(--text-color-light); top: 20px; left: 30px; position: relative; font-weight: bold;">What's new in 1.6?</h5>
+                <div class="table">
+                  <img id="whats-new-img" height="70" width="70" src="https://img.icons8.com/fluency/96/000000/approve-and-update.png" style="display: inline-block; position: relative; top: -40px; left: 30px;" />
+                  <div id="whats-new-text" style="display: inline-block;">
+                    <h3>Introducing May 2022 update!(version 1.6)🎉🎉🎉</h3>
+                    <p>
+                      See what's new in Power Widgets May 2022 update.<br />
+                      New features, bug fixes and stability improvements.<br />
+                    </p>
+                    <a href="blog/news/update1.6.html"><button class="ms-button-accent">See what's new</button></a>
                   </div>
                 </div>
-             </button>
-             <!--<button class="ms-button" style="height: 60px; width: 290px; margin: 5px;" onclick="Message('Coming soon!');">
-                <div style="display: table;text-align: center;position: relative;top: -5px;left: 16px;">
-                  <img height="24px" width="24px" src="https://img.icons8.com/fluency/48/000000/product.png" style="justify-content: middle; display: inline-block; position: relative; top: -6px;" />
-                  <div style="display: inline-block;position: relative;left: 13px;">
-                      <p style="text-align: left;">
-                        <b style="font-weight: bold; font-size: 16px;">Get application package</b><br />
-                        For students and education<br />
-                      </p>
-                  </div>
-                </div>
-             </button>-->
-             <button class="ms-button" style="height: 60px; width: 290px; margin: 5px;" onclick="NavigateTo('gift/index.html');">
-                <div style="display: table;text-align: center;position: relative;top: -5px;left: 16px;">
-                  <img height="24px" width="24px" src="https://img.icons8.com/fluency/48/000000/gift--v1.png" style="justify-content: middle; display: inline-block; position: relative; top: -6px;" />
-                  <div style="display: inline-block;position: relative;left: 13px;">
-                      <p style="text-align: left;">
-                        <b style="font-weight: bold; font-size: 16px;">Get a gift</b><br />
-                        Check gift box<br />
-                      </p>
-                  </div>
-                </div>
-             </button>
-         </div>
-         <div id="app-preview-image" class="ms-grid">
-         </div>
-         <section id="news" style="height: auto; margin-left: 35px; margin-right: 35px; padding-top: 50px; padding-bottom: 60px;">
-           <div id="news-div" class="ms-base" style="padding-bottom: 45px; text-align: left;">
-              <h5 style="color: var(--text-color-light); top: 20px; left: 30px; position: relative; font-weight: bold;">What's new in 1.6?</h5>
-              <div class="table">
-                <img id="whats-new-img" height="70" width="70" src="https://img.icons8.com/fluency/96/000000/approve-and-update.png" style="display: inline-block; position: relative; top: -40px; left: 30px;" />
-                <div id="whats-new-text" style="display: inline-block;">
-                  <h3>Introducing May 2022 update!(version 1.6)🎉🎉🎉</h3>
-                  <p>
-                    See what's new in Power Widgets May 2022 update.<br />
-                    New features, bug fixes and stability improvements.<br />
+            </div>
+          </section>
+          <h2 style="text-align: center;">New features in widgets</h2>
+          <div class="table" style="margin-top: 45px;">
+            <fluent-card class="card-item">
+              <div class="card-content">
+                <div class="card-preview-image" style="background-image: url('img/screenshots/FastActions.png'); background-position: center center; background-size: cover; width: 100%; height: 100%;"></div>
+                <div class="card-bar">
+                  <h2 class="card-title">Fast actions</h2>
+                  <p class="card-description">
+                    Get fast access to important system or device features.
                   </p>
-                  <a href="blog/news/update1.6.html"><button class="ms-button-accent">See what's new</button></a>
+                  <button class="ms-button card-action" style="width: 46px;" onclick="FastActionsFeatureShare();">
+                    <i class="fluent-icons"></i>
+                  </button>
                 </div>
               </div>
-           </div>
-         </section>
-         <h2 style="text-align: center;">New features in widgets</h2>
-         <div class="table" style="margin-top: 45px;">
-           <fluent-card class="card-item">
-             <div class="card-content">
-               <div class="card-preview-image" style="background-image: url('img/xbox.jpg'); background-position: center center; background-size: cover; width: 100%; height: 100%;"></div>
-               <div class="card-bar">
-                 <h2 class="card-title">Fast actions</h2>
-                 <p class="card-description">
-                   Get fast access to important system or device features.
-                 </p>
-                 <fluent-button class="card-action" appearance="accent">Share feedback</fluent-button>
-               </div>
-             </div>
-           </fluent-card>
-           <fluent-card class="card-item">
-             <div class="card-content">
-               <div class="card-preview-image" style="background-image: url('img/xbox.jpg'); background-position: center center; background-size: cover; width: 100%; height: 100%;"></div>
-               <div class="card-bar">
-                 <h2 class="card-title">Outlook widget</h2>
-                 <p class="card-description">
-                   All important Outlook features in one small widget.
-                 </p>
-                 <fluent-button class="card-action" appearance="accent">Share feedback</fluent-button>
-               </div>
-             </div>
-           </fluent-card>
-         </div>
-         <br />
-          <footer class="ms-footer" style="height: 90px; position: relative; top: 40px; padding-bottom: 20px;">
-              <p style="padding-top: 38px;">
-                <a class="ms-badged-text" href="mailto:dima.borodij@gmail.com" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via email</a>&nbsp;
-                <a class="ms-badged-text" onclick="window.open('https://twitter.com/dev_dmitriy?t=lRX88mjdFUXWM_fbYgyxNQ&s=09');" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via Twitter</a>&nbsp;
-                <a class="ms-badged-text" href="https://dmitryborodiy.github.io/PowerWidgets/privacy/" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Privacy policy</a>&nbsp;
-                <a class="ms-badged-text" href="https://www.microsoft.com/en-us/p/power-widgets-customize-your-at-a-glance-info/9nlhp5krxzq7" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Official page in Microsoft</a>&nbsp;
-              </p>
-          </footer>
-      </div>
-    </section>
-  </div>
+            </fluent-card>
+            <fluent-card class="card-item">
+              <div class="card-content">
+                <div class="card-preview-image" style="background-image: url('img/screenshots/OutlookWidget.png'); background-position: center center; background-size: cover; width: 100%; height: 100%;"></div>
+                <div class="card-bar">
+                  <h2 class="card-title">Outlook widget</h2>
+                  <p class="card-description">
+                    All important Outlook features in one small widget.
+                  </p>
+                  <button class="ms-button card-action" style="width: 46px;" onclick="OutlookFeatureShare();">
+                    <i class="fluent-icons"></i>
+                  </button>
+                </div>
+              </div>
+            </fluent-card>
+          </div>
+          <br />
+            <footer class="ms-footer" style="height: 90px; position: relative; top: 40px; padding-bottom: 20px;">
+                <p style="padding-top: 38px;">
+                  <a class="ms-badged-text" href="mailto:dima.borodij@gmail.com" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via email</a>&nbsp;
+                  <a class="ms-badged-text" onclick="window.open('https://twitter.com/dev_dmitriy?t=lRX88mjdFUXWM_fbYgyxNQ&s=09');" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via Twitter</a>&nbsp;
+                  <a class="ms-badged-text" href="https://dmitryborodiy.github.io/PowerWidgets/privacy/" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Privacy policy</a>&nbsp;
+                  <a class="ms-badged-text" href="https://www.microsoft.com/en-us/p/power-widgets-customize-your-at-a-glance-info/9nlhp5krxzq7" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Official page in Microsoft</a>&nbsp;
+                </p>
+            </footer>
+        </div>
+      </section>
+    </div>
 </body>
 </html>

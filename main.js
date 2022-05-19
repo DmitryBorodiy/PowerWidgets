@@ -4,6 +4,10 @@ window.onload = function(){
   ThemeInitialize();
 };
 
+function OnLoaded(){
+  ThemeInitialize();
+}
+
 function CloseFlyoutMenu(){
     $('#menu-flyout').css("visibility", "collapse");
 }
@@ -18,6 +22,30 @@ function CloseSearch(){
 
 function OpenSearch(){
     $('#search-flyout').css("visibility", "visible");
+}
+
+function ShowShareDialog(title, content){
+   try{
+     if(navigator.share){
+       navigator.share({
+         title: title,
+         text: content,
+         url: "https://www.microsoft.com/store/productId/9NLHP5KRXZQ7"
+       })
+       .then(function(){
+         console.log("Share success!");
+       })
+       .catch(function(){
+         console.log("Share failed.");
+       });
+     }
+     else{
+       console.log("Share APIs don't supported.");
+     }
+   }
+   catch(e){
+     console.log(e.toString());
+   }
 }
 
 function SearchBoxInput_OnLoad(){
@@ -192,4 +220,22 @@ function getWindowsOS() {
 
 function Message(content){
   alert(content.toString());
+}
+
+function OutlookFeatureShare(){
+  var content = 
+  "All important Outlook features in one small widget." +
+  "Try it right now!";
+  var title = "Try Outlook widget in Power Widgets app";
+
+  ShowShareDialog(title.toString(), content.toString());
+}
+
+function FastActionsFeatureShare(){
+  var content = 
+  "Get fast access to important system or device features." +
+  "Try it right now!";
+  var title = "Try fast actions in Power Widgets app";
+
+  ShowShareDialog(title.toString(), content.toString());
 }

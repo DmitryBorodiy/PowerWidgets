@@ -559,7 +559,7 @@ a{
 
 .card-item{
   display: inline-block;
-  margin: 15px;
+  margin: 10px;
   width: 360px;
   height: 420px;
   text-align: left;
@@ -573,7 +573,7 @@ a{
 .card-bar{
   position: relative;
   height: 200px;
-  top: -190px;
+  top: -142px;
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   z-index: 10;
@@ -591,12 +591,13 @@ a{
   position: relative;
   top: 16px;
   left: 18px;
+  font-size: 24px;
 }
 
 .card-action{
   float: right;
   position: relative;
-  bottom: -26px;
+  bottom: -3px;
   right: 12px;
 }
 
