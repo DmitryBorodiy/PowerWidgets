@@ -1,21 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Description meta tags -->
-    <meta property="og:title" content="Power Editor - the best text editor for Windows" />
-    <meta property="og:description" content="Modern, powerful and user-friendly text editor for you is here! Edit your text documents or source code more convenient with the best text editor for Windows." />
-
-
     <title>Power Editor - the best text editor for Windows</title>
     
     <!-- WinUI WASM -->
     <link rel="stylesheet" href="../styles/winui-web.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="../fonts/FluentSystemIcons-Regular.css" />
-    <!--<link rel="stylesheet" href="../style.css" /> -->
     
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -27,35 +20,9 @@
     <header id="nav-bar">
       <div id="logo-div">
         <img src="img/app_logo.png" height="42px" width="42px" />
-        <a id="logo-text">Editor</a>
+        <a id="logo-text">Power Editor</a>
       </div>
       <div id="menu-separator"></div>
-      <div id="menu-ui" class="ms-menu">
-        <div class="ms-menu-item">
-          <button class="ms-menu-button-selected" style="width: 81px;">
-              <span class="button_content">
-                  <i class="fluent-icons"></i>
-                  <span class="menu-button-label">Home</span>
-              </span>
-          </button>
-        </div>
-        <div class="ms-menu-item">
-          <button class="ms-menu-button" style="width: auto;" onclick="NavigateTo('../blog/index.html');">
-              <span class="button_content">
-                  <i class="fluent-icons"></i>
-                  <span class="menu-button-label">What's new</span>
-              </span>
-          </button>
-        </div>
-        <div class="ms-menu-item">
-          <button class="ms-menu-button" style="width: auto;" onclick="SendReview();">
-              <span class="button_content">
-                  <i class="fluent-icons"></i>
-                  <span class="menu-button-label">Send review</span>
-              </span>
-          </button>
-        </div>
-      </div>
       <div id="SearchBoxControl" class="ms-textbox" style="position: fixed; top: 17px; right: 172px; height: 35px; width: 220px;">
         <input id="SearchBoxInput" class="ms-text-input" type="text" placeholder="Search here..." autocomplete="on" onload="SearchBoxInput_OnLoad();" onkeydown="SearchBoxInput_KeyDown" />
         <i class="ms-textbox-icon icon-ic_fluent_search_20_regular" onclick="SearchButton_Click();"></i>
@@ -67,57 +34,6 @@
         Get Power Editor
       </button>
     </header>
-    <section id="content">
-      <div id="content-div">
-        <section id="start-ui">
-          <div id="start-div">
-            <div id="start-text-div" style="color: white;">
-              <h1 class="title-text">Introducing modern and powerful text editor for Windows</h1>
-              <p class="description-text">
-                Modern, powerful and user-friendly text editor for you is here!<br />
-                Edit your text documents or source code more convenient with the best text editor for Windows.<br />
-                With Power Editor you can edit text files on any Windows device and this make typing text really comfortable. <br />
-                The modern interface and functionality will allow you to work more conveniently with any text. Try it right now! <br />
-              </p>
-              <div id="start-text-actions">
-                <button class="ms-button" style="height: 58px; width: 200px; position: relative; display: inline-block;" onclick="GetApp();">
-                  <div class="table">
-                    <img height="30" width="30" src="https://img.icons8.com/fluency/96/000000/microsoft-store.png" style="display: inline-block;" />
-                    <div style="display: inline-block; margin-left: 13px; text-align: left;">
-                      <p style="font-weight: bold; margin: 0px; font-family: 'Segoe UI', sans-serif;"><b>Get from Microsoft</b></p>
-                      <a>Totally 1.99$</a>
-                    </div>
-                  </div>
-                </button>
-                <button class="ms-button" style="height: 58px; width: 250px; margin-left: 5px; position: relative; display: inline-block;" onclick="SendReview();">
-                  <div class="table">
-                    <img height="30" width="30" src="https://img.icons8.com/fluency/96/000000/microsoft-tips.png" style="display: inline-block;" />
-                    <div style="display: inline-block; margin-left: 13px; text-align: left;">
-                      <p style="font-weight: bold; margin: 0px; font-family: 'Segoe UI', sans-serif;"><b>Send review</b></p>
-                      <a>Send bug report or suggestion</a>
-                    </div>
-                  </div>
-                </button>
-              </div>
-            </div>
-            <span id="app-view-img" class="ms-grid"></span>
-          </div>
-        </section>
-        <section id="info">
-          <div id="info-div">
-            <div class="ms-base" style="width: 100%; height: 200px; max-width: 1124px; display: inline-block;">
-              <div class="table" style="padding-top: 36px; width: 80%; position: relative; left: 36px; text-align: left;">
-                <img height="80" width="80" src="https://img.icons8.com/fluency/96/000000/recurring-appointment.png" style="display: inline-block; margin-top: 34px;" />
-                <div style="margin-left: 25px; display: inline-block; position: relative;">
-                  <h2>Version 2.3 is here!</h2>
-                  <p style="margin: 0; position: relative; top: -12px;">See what's new in this update.</p>
-                  <button class="ms-button-accent" style="margin-top: 3px;" onclick="window.open('https://dmitriy-windows-dev.blogspot.com/2022/03/power-editor-v23-is-here.html');">See what's new</button>
-                </div>            
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
   </body>
 </html>
+

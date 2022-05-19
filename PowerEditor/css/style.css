@@ -1,8 +1,3 @@
-﻿@font-face{
-    font-family: "Fluent-Icons-Regular";
-    src: url("../fonts/FluentSystemIcons-Regular.ttf");
-}
-
 body{
   margin: 0px;
   padding: 0px;
@@ -10,34 +5,15 @@ body{
   height: 100%;
 }
 
-#menu-separator{
-    position: fixed;
-    top: 24px;
-    left: 140px;
-    width: 1px;
-    height: 24px;
-}
-
-#menu-ui{
-    position: fixed;
-    top: 15px;
-    left: 156px;
-}
-
 @media(prefers-color-scheme: light){
   body{
     background-color: rgb(246, 246, 246);
-    color: black;
-  }
-
-  #menu-separator{
-      background-color: rgb(35, 35, 35);
   }
   
   header{
     width: 100%;
     height: 70px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
@@ -48,22 +24,21 @@ body{
   #logo-text{
     color: rgb(15, 15, 15);
   }
+  
+  #menu-separator{
+    background-color: rgb(156, 156, 156);
+  }
 }
 
 @media(prefers-color-scheme: dark){
   body {
     background-color: rgb(30, 30, 30);
-    color: white;
   }
   
-  #menu-separator{
-      background-color: rgb(200, 200, 200);
-  }
-
   header {
     width: 100%;
     height: 70px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
@@ -74,44 +49,10 @@ body{
   #logo-text{
     color: rgb(250, 250, 250);
   }
-}
-
-header{
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 111111111111111111111111111111111;
-}
-
-.fluent-icons{
-    font-family: "Fluent-Icons-Regular";
-    font-size: 20px;
-    font-style: normal;
-    display: inline-block;
-}
-
-.description-text{
-    font-size: 24px;
-}
-
-.title-text{
-    font-size: 60px;
-    font-weight: bold;
-}
-
-#start-text-div{
-    padding-left: 46px;
-    padding-right: 46px;
-    text-align: center;
-    position: relative;
-    padding-top: 24px;
-}
-
-#info-div{
-    display: table;
-    text-align: center;
-    padding-top: 300px;
-    width: 100%;
+  
+  #menu-separator{
+    background-color: rgb(220, 220, 220);
+  }
 }
 
 #logo-div{
@@ -136,48 +77,11 @@ header{
   right: 12px;
 }
 
-#start-text-actions{
-    display: table;
-    width: 100%;
-    text-align: center;
-    padding-top: 35px;
-}
-
-#app-view{
-    position: absolute;
-    /* top: 80px; */
-    width: 85%;
-    height: 565px;
-    text-align: center;
-    display: table;
-    bottom: -510px;
-}
-
-#app-view-img{
-    display: inline-block;
-    background-image: url('../img/app-view.png');
-    height: 700px;
-    width: 85%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 15px;
-    margin-top: 16px;
-    animation-name: app-preview;
-    animation-duration: 4s;
-    position: relative;
-    top: 200px;
-}
-
-#start-div{
-    width: 100%;
-    height: auto;
-    display: table;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 0px;
-    background-image: url('../img/background.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#menu-separator{
+  position: absolute;
+  display: inline-block;
+  top: 22px;
+  left: 214px;
+  height: 25px;
+  width: 1px;
 }

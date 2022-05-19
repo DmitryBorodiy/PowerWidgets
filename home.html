@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -26,6 +26,7 @@
   <!-- WinUI WASM -->
   <link rel="stylesheet" href="styles/winui-web.css" />
   <link rel="stylesheet" href="fonts/FluentSystemIcons-Regular.css" />
+  <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="main.js"></script>
@@ -222,139 +223,47 @@
          </div>
          <section id="news" style="height: auto; margin-left: 35px; margin-right: 35px; padding-top: 50px; padding-bottom: 60px;">
            <div id="news-div" class="ms-base" style="padding-bottom: 45px; text-align: left;">
-              <h5 style="color: var(--text-color-light); top: 20px; left: 30px; position: relative; font-weight: bold;">What's new in 1.5?</h5>
+              <h5 style="color: var(--text-color-light); top: 20px; left: 30px; position: relative; font-weight: bold;">What's new in 1.6?</h5>
               <div class="table">
                 <img id="whats-new-img" height="70" width="70" src="https://img.icons8.com/fluency/96/000000/approve-and-update.png" style="display: inline-block; position: relative; top: -40px; left: 30px;" />
                 <div id="whats-new-text" style="display: inline-block;">
-                  <h3>Introducing version 1.5🎉🎉🎉</h3>
+                  <h3>Introducing May 2022 update!(version 1.6)🎉🎉🎉</h3>
                   <p>
-                    See what's new in Power Widgets version 1.5.<br />
+                    See what's new in Power Widgets May 2022 update.<br />
                     New features, bug fixes and stability improvements.<br />
                   </p>
-                  <a href="blog/news/update1.5.html"><button class="ms-button-accent">See what's new</button></a>
+                  <a href="blog/news/update1.6.html"><button class="ms-button-accent">See what's new</button></a>
                 </div>
               </div>
            </div>
          </section>
-         <h2 style="text-align: center;">Best widgets new features</h2>
-         <section class="ms-base" id="section1" style="height: auto; margin-top: 50px; margin-left: 35px; margin-right: 35px;">
-            <div class="table" style="padding-top: 90px; padding-bottom: 90px;">
-              <div id="apps-grid" class="ms-grid" style="display: inline-block; width: 360px;">
-                <div class="table" style="text-align: left;">
-                  <div class="ms-tile" style="height: 100px; width: 100px;">
-                    <img class="ms-tile-img" src="https://img.icons8.com/fluency/144/000000/clock--v1.png" height="60px" width="60px" />
-                  </div>
-                  <div class="ms-tile" style="height: 100px; width: 100px;">
-                    <img class="ms-tile-img" src="https://img.icons8.com/fluency/144/000000/microsoft-outlook-2019.png" height="60px" width="60px" />
-                  </div>
-                  <div class="ms-tile" style="height: 100px; width: 100px;">
-                    <img class="ms-tile-img" src="https://img.icons8.com/fluency/144/000000/ms-edge-new.png" height="60px" width="60px" />
-                  </div>
-                  <div class="ms-tile" style="height: 100px; width: 100px;">
-                    <img class="ms-tile-img" src="https://img.icons8.com/fluency/144/000000/weather.png" height="60px" width="60px" />
-                  </div>
-                  <div class="ms-tile" style="height: 100px; width: 100px;">
-                    <img class="ms-tile-img" src="https://img.icons8.com/fluency/144/000000/windows-11.png" height="60px" width="60px" />
-                  </div>
-                </div>
-              </div>
-              <div id="apps-description" style="display: inline-block; position: relative; top: 26px; padding-left: 60px; margin-bottom: 50px;">
-                  <h2 style="text-align: left;">
-                    Organize your every day Windows experience.
-                  </h2>
-                  <p style="text-align: left; padding-bottom: 8px;">
-                    Maximum productivity with <br />
-                    widgets on the widget feed. <br />
-                    Get a variety of options at your fingertips.<br />
-                    Read mail, view your events, see weather, search on the web and getting fast access to important peoples<br />
-                    with Power Widgets app for Windows.<br />
-                  </p>
-                  <br />
-              </div>
-            </div>
-         </section>
-         <section id="microsoft-edge" class="ms-base" style="height: auto; margin-top: 25px; margin-left: 35px; margin-right: 35px;">
-            <div id="microsoft-edge-content" class="table" style="padding-top: 100px; padding-bottom: 30px;">
-              <div id="microsoft-edge-preview"></div>
-              <div id="microsoft-edge-text">
-                <img height="72" width="72" src="https://img.icons8.com/fluency/96/000000/ms-edge-new.png" /><br />
-                <h2>Easy and fast search on the web.</h2>
-                <p>
-                  Internet search is now easier.<br />
-                  Now you can search directly from the widget panel without<br />
-                  being distracted from important business. Search where you<br />
-                  really need it with interactive search in the Microsoft Edge widget.<br /> 
-                  Pin the sites you need and get quick access to them right from the widget panel.<br />
-                </p>
-                <div class="table" style="position: relative; left: -10px; top: -3px;">
-                  <div class="ms-tile" style="height: 60px; width: 60px;">
-                    <img height="40" width="40" style="position: relative; top: 9px;" src="https://img.icons8.com/fluency/96/000000/bing--v1.png" />
-                  </div>
-                  <div class="ms-tile" style="height: 60px; width: 60px;">
-                    <img height="40" width="40" style="position: relative; top: 9px;" src="https://img.icons8.com/fluency/96/000000/google-logo.png" />
-                  </div>
-                  <div class="ms-tile" style="height: 60px; width: 60px;">
-                    <img height="40" width="40" style="position: relative; top: 9px;" src="https://img.icons8.com/fluency/96/000000/duckduckgo.png" />
-                  </div>
-                  <div class="ms-tile" style="height: 60px; width: 60px;">
-                    <img height="40" width="40" style="position: relative; top: 9px;" src="https://img.icons8.com/fluency/96/000000/wolfram-alpha.png" />
-                  </div>
-                </div>
-              </div>
-            </div>
-         </section>
-         <section id="themes-personalization" class="ms-base" style="height: auto; margin-top: 25px; margin-left: 35px; margin-right: 35px;">
-            <div class="gradient-div" style="width: 100%; height: 100%;">
-              <div class="table" style="padding-top: 145px; padding-bottom: 140px;">
-                <div style="display: inline-block;">
-                  <img style="position: relative; top: -48px;" src="https://img.icons8.com/fluency/96/000000/color-palette.png" height="136px" width="136px" />
-                </div>
-                <div id="personalize-text" style="display: inline-block; padding-left: 135px; text-align: left;">
-                  <h2>Customize for yourself</h2>
-                  <p style="padding-bottom: 8px; text-align: left;">
-                    Power Widgets is customizable! Choose a theme color, <br />
-                    customize the background image and blur mode, <br />
-                    and much more. Bing picture of the day are now available <br />
-                    directly from the widget feed. Get a new wallpaper every day <br />
-                    with the integrated Microsoft Edge and Bing widget.<br />
-                  </p>
-                  <span class="ms-badged-text">Powered with Bing</span>
-                </div>
-              </div>
-            </div>
-         </section><br />
-         <section id="fast-actions" class="ms-base" style="height: auto; margin-top: 10px; margin-left: 35px; margin-right: 35px;">
-           <div class="table" style="padding-top: 145px; padding-bottom: 140px;">
-             <div style="display: inline-block;">
-               <div id="fast-actions-asset"></div>
+         <h2 style="text-align: center;">New features in widgets</h2>
+         <div class="table" style="margin-top: 45px;">
+           <fluent-card class="card-item">
+             <div class="card-content">
+               <div class="card-preview-image" style="background-image: url('img/xbox.jpg'); background-position: center center; background-size: cover; width: 100%; height: 100%;"></div>
+               <div class="card-bar">
+                 <h2 class="card-title">Fast actions</h2>
+                 <p class="card-description">
+                   Get fast access to important system or device features.
+                 </p>
+                 <fluent-button class="card-action" appearance="accent">Share feedback</fluent-button>
+               </div>
              </div>
-             <div id="fast-actions-text" style="display: inline-block; text-align: left; padding-left: 100px; position: relative; top: -50px;">
-               <h2>Fast actions is here!</h2>
-               <p>
-                 Manage your device settings faster<br />
-                 with fast actions. With fast actions you can<br />
-                 create screenshots, manage tasks, open new tab in Microsoft Edge<br />
-                 and more!<br />
-               </p>
+           </fluent-card>
+           <fluent-card class="card-item">
+             <div class="card-content">
+               <div class="card-preview-image" style="background-image: url('img/xbox.jpg'); background-position: center center; background-size: cover; width: 100%; height: 100%;"></div>
+               <div class="card-bar">
+                 <h2 class="card-title">Outlook widget</h2>
+                 <p class="card-description">
+                   All important Outlook features in one small widget.
+                 </p>
+                 <fluent-button class="card-action" appearance="accent">Share feedback</fluent-button>
+               </div>
              </div>
-           </div>
-         </section>
-         <section id="get-gifts" style="height: auto; margin-left: 35px; margin-right: 35px; margin-top: 35px;">
-            <div class="ms-base table" style="width: 100%; height: auto; padding-top: 120px; padding-bottom: 135px;">
-                <img height="120" width="120" src="https://img.icons8.com/fluency/96/000000/gift--v1.png" style="display: inline-block; position: relative; top: -25px;" />
-                <div id="get-gifts-text" style="display: inline-block; padding-top: -10px; text-align: left; padding-left: 100px;">
-                  <h2>Thank you!</h2>
-                  <p>
-                    Thanks for using Power Widgets!<br />
-                    Free gift codes for Power Widgets will appear here from time to time.<br />
-                    You will be able to use them in the Microsoft Store.<br />
-                  </p>
-                  <a href="gift/index.html">
-                    <button class="ms-button-accent">Check gift box</button>
-                  </a>
-                </div>
-            </div>
-         </section>
+           </fluent-card>
+         </div>
          <br />
           <footer class="ms-footer" style="height: 90px; position: relative; top: 40px; padding-bottom: 20px;">
               <p style="padding-top: 38px;">

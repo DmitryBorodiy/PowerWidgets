@@ -1,7 +1,15 @@
-﻿@media(prefers-color-scheme: light){
+@media(prefers-color-scheme: light){
   body{
     background-color: rgb(245, 245, 245);
     color: black;
+  }
+  
+  h2 {
+    color: rgb(35, 35, 35);
+  }
+  
+  p {
+    color: rgb(34, 34, 34);
   }
 
   #menu-flyout{
@@ -10,6 +18,15 @@
 
   #search-flyout{
       background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .card-item{
+    background-color: rgb(250, 250, 250);
+    border-color: rgb(242, 242, 242);
+  }
+  
+  .card-bar{
+    background-color: rgba(255, 255, 255, 0.7);
   }
 
   .navigation-item:hover{
@@ -77,12 +94,29 @@
     color: white;
   }
 
+  h2 {
+    color: rgb(232, 232, 232);
+  }
+  
+  p {
+    color: rgb(230, 230, 230);
+  }
+
   #menu-flyout{
       background-color: rgba(0, 0, 0, 0.4);
   }
 
   #search-flyout{
       background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .card-item {
+    background-color: rgb(40, 40, 40);
+    border-color: rgb(32, 32, 32);
+  }
+  
+  .card-bar {
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .navigation-item:hover{
@@ -522,3 +556,56 @@ a{
         opacity: 1;
     }
 }
+
+.card-item{
+  display: inline-block;
+  margin: 15px;
+  width: 360px;
+  height: 420px;
+  text-align: left;
+}
+
+.card-content{
+  width: 100%;
+  height: 100%;
+}
+
+.card-bar{
+  position: relative;
+  height: 200px;
+  top: -190px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  z-index: 10;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}
+
+.card-preview-image{
+  width: 100px;
+  height: 100;
+  background-size: cover;
+}
+
+.card-title{
+  position: relative;
+  top: 16px;
+  left: 18px;
+}
+
+.card-action{
+  float: right;
+  position: relative;
+  bottom: -26px;
+  right: 12px;
+}
+
+.card-description{
+  position: relative;
+  font-size: 15px;
+  top: 6px;
+  max-height: 10px;
+  max-width: 260px;
+  left: 18px;
+}
+
