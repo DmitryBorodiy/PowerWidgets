@@ -25,6 +25,10 @@
     border-color: rgb(242, 242, 242);
   }
   
+  .card-subtext{
+      color: rgb(70, 70, 70);
+  }
+
   .card-bar{
     background-color: rgba(255, 255, 255, 0.7);
   }
@@ -115,6 +119,10 @@
     border-color: rgb(32, 32, 32);
   }
   
+  .card-subtext{
+      color: rgb(167 167 167);
+  }
+
   .card-bar {
     background-color: rgba(0, 0, 0, 0.7);
   }
@@ -573,7 +581,7 @@ a{
 .card-bar{
   position: relative;
   height: 200px;
-  top: -142px;
+  top: -160px;
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   z-index: 10;
@@ -597,16 +605,24 @@ a{
 .card-action{
   float: right;
   position: relative;
-  bottom: -3px;
+  bottom: 8px;
   right: 12px;
 }
 
-.card-description{
-  position: relative;
-  font-size: 15px;
-  top: 6px;
-  max-height: 10px;
-  max-width: 260px;
-  left: 18px;
+.card-subtext{
+    position: relative;
+    font-size: 13px;
+    top: 29px;
+    max-width: 210px;
+    left: 18px;
+}
+
+.card-description {
+    position: relative;
+    font-size: 15px;
+    top: 6px;
+    max-height: 10px;
+    max-width: 260px;
+    left: 18px;
 }
 

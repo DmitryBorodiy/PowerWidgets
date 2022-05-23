@@ -185,7 +185,7 @@
           <div id="start-buttons-grid" style="text-align: center; margin-top: 150px;">
               <button class="ms-button" style="height: 60px; width: 290px; margin: 5px;" onclick="OpenInMicrosoftStore();">
                   <div style="display: table;text-align: center;position: relative;top: -5px;left: 16px;">
-                    <img height="24px" width="24px" src="https://img.icons8.com/fluency/48/000000/microsoft-store.png" style="justify-content: middle; display: inline-block; position: relative; top: -6px;" />
+                    <img height="24px" width="24px" src="https://img.icons8.com/fluency/48/000000/microsoft-store.png" style="justify-content: middle; display: inline-block; position: relative; top: -3px;" />
                     <div style="display: inline-block;position: relative;left: 13px;">
                         <p style="text-align: left;">
                           <b style="font-weight: bold; font-size: 16px;">Get from Microsoft Store</b><br />
@@ -207,7 +207,7 @@
               </button>-->
               <button class="ms-button" style="height: 60px; width: 290px; margin: 5px;" onclick="NavigateTo('gift/index.html');">
                   <div style="display: table;text-align: center;position: relative;top: -5px;left: 16px;">
-                    <img height="24px" width="24px" src="https://img.icons8.com/fluency/48/000000/gift--v1.png" style="justify-content: middle; display: inline-block; position: relative; top: -6px;" />
+                    <img height="24px" width="24px" src="https://img.icons8.com/fluency/48/000000/gift--v1.png" style="justify-content: middle; display: inline-block; position: relative; top: -3px;" />
                     <div style="display: inline-block;position: relative;left: 13px;">
                         <p style="text-align: left;">
                           <b style="font-weight: bold; font-size: 16px;">Get a gift</b><br />
@@ -236,7 +236,26 @@
             </div>
           </section>
           <h2 style="text-align: center;">New features in widgets</h2>
-          <div class="table" style="margin-top: 45px;">
+          <div class="table">
+              <div class="table_item" style="max-width: 1200px;">
+                  <div class="table" style="margin-top: 24px;">
+            <fluent-card class="card-item">
+              <div class="card-content">
+                <div class="card-preview-image" style="background-image: url('img/screenshots/ClockScreenshot.png'); background-position: -100px -60px; background-size: cover; width: 100%; height: 100%;"></div>
+                <div class="card-bar">
+                  <h2 class="card-title">Clock widget</h2>
+                  <p class="card-description">
+                    Beautiful clock widget will decorate your widget feed and desktop.
+                  </p>
+                  <p class="card-subtext">
+                    Updated in 1.6(May 2022) update
+                  </p>
+                  <button class="ms-button card-action" style="width: 46px;" onclick="ClockCardShare();">
+                    <i class="fluent-icons"></i>
+                  </button>
+                </div>
+              </div>
+            </fluent-card>
             <fluent-card class="card-item">
               <div class="card-content">
                 <div class="card-preview-image" style="background-image: url('img/screenshots/FastActions.png'); background-position: center center; background-size: cover; width: 100%; height: 100%;"></div>
@@ -244,6 +263,9 @@
                   <h2 class="card-title">Fast actions</h2>
                   <p class="card-description">
                     Get fast access to important system or device features.
+                  </p>
+                  <p class="card-subtext">
+                      Updated in 1.6(May 2022) update
                   </p>
                   <button class="ms-button card-action" style="width: 46px;" onclick="FastActionsFeatureShare();">
                     <i class="fluent-icons"></i>
@@ -259,12 +281,68 @@
                   <p class="card-description">
                     All important Outlook features in one small widget.
                   </p>
+                  <p class="card-subtext">
+                    Updated in 1.6(May 2022) update
+                  </p>
                   <button class="ms-button card-action" style="width: 46px;" onclick="OutlookFeatureShare();">
                     <i class="fluent-icons"></i>
                   </button>
                 </div>
               </div>
             </fluent-card>
+            <fluent-card class="card-item">
+              <div class="card-content">
+                <div class="card-preview-image" style="background-image: url('img/screenshots/WeatherScreenshot.png'); background-position: -50px; background-size: cover; width: 100%; height: 100%;"></div>
+                <div class="card-bar">
+                  <h2 class="card-title">Weather widget</h2>
+                  <p class="card-description">
+                    Get a quick weather information in a handy widget.
+                  </p>
+                  <p class="card-subtext">
+                    Updated in 1.6(May 2022) update
+                  </p>
+                  <button class="ms-button card-action" style="width: 46px;" onclick="WeatherCardShare();">
+                    <i class="fluent-icons"></i>
+                  </button>
+                </div>
+              </div>
+            </fluent-card>
+            <fluent-card class="card-item">
+              <div class="card-content">
+                <div class="card-preview-image" style="background-image: url('img/screenshots/EdgeScreenshot.png'); background-position: -45px -20px; background-size: cover; width: 100%; height: 100%;"></div>
+                <div class="card-bar">
+                  <h2 class="card-title">Microsoft Edge widget</h2>
+                  <p class="card-description">
+                    Perform quick web searches, pin sites, and get Bing picture of the day.
+                  </p>
+                  <p class="card-subtext">
+                    Updated in 1.6(May 2022) update
+                  </p>
+                  <button class="ms-button card-action" style="width: 46px;" onclick="EdgeCardShare();">
+                    <i class="fluent-icons"></i>
+                  </button>
+                </div>
+              </div>
+            </fluent-card>
+            <fluent-card class="card-item">
+              <div class="card-content">
+                <div class="card-preview-image" style="background-image: url('img/screenshots/NotesScreenshot.png'); background-position: -45px -20px; background-size: cover; width: 100%; height: 100%;"></div>
+                <div class="card-bar">
+                  <h2 class="card-title">Sticky notes bar</h2>
+                  <p class="card-description">
+                    Write down everything you need and pin it to the notes panel.
+                  </p>
+                  <p class="card-subtext">
+                    Added in 1.6(May 2022) update
+                  </p>
+                  <button class="ms-button card-action" style="width: 46px;" onclick="StickyCardShare();">
+                    <i class="fluent-icons"></i>
+                  </button>
+                </div>
+              </div>
+            </fluent-card>
+          </div>
+              </div>
           </div>
           <br />
             <footer class="ms-footer" style="height: 90px; position: relative; top: 40px; padding-bottom: 20px;">

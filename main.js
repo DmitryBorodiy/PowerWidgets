@@ -239,3 +239,35 @@ function FastActionsFeatureShare(){
 
   ShowShareDialog(title.toString(), content.toString());
 }
+
+function WeatherCardShare() {
+    var content = "Get a quick weather information in a handy widget." +
+        "Try it right now!";
+    var title = "Try weather widget in Power Widgets app";
+
+    ShowShareDialog(title.toString(), content.toString());
+}
+
+function ClockCardShare() {
+    var content = "Beautiful clock widget will decorate your widget feed and desktop." +
+        "Try it right now!";
+    var title = "Try clock widget in Power Widgets app";
+
+    ShowShareDialog(title.toString(), content.toString());
+}
+
+function EdgeCardShare() {
+    var content = "Perform quick web searches, pin sites, and get Bing picture of the day" +
+        "Try it right now!";
+    var title = "Try Microsoft Edge widget in Power Widgets app";
+
+    ShowShareDialog(title.toString(), content.toString());
+}
+
+function StickyCardShare() {
+    var content = "Write down everything you need and pin it to the notes panel." +
+        "Try it right now!";
+    var title = "Try create sticky notes in Power Widgets app";
+
+    ShowShareDialog(title.toString(), content.toString());
+}

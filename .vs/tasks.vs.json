@@ -5,6 +5,11 @@
       "taskLabel": "task-PowerWidgetsGit",
       "appliesTo": "/",
       "type": "launch"
+    },
+    {
+      "taskLabel": "task-home",
+      "appliesTo": "home.html",
+      "type": "launch"
     }
   ]
 }
