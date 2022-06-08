@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\blog\\news",
-    "\\blog\\news\\styles",
-    "\\blog\\news\\styles\\fonts"
+    "\\img\\screenshots"
   ],
-  "SelectedNode": "\\blog",
+  "SelectedNode": "\\style.css",
   "PreviewInSolutionExplorer": false
 }
