@@ -9,6 +9,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@dev_dmitriy" />
   <meta name="twitter:creator" content="@dev_dmitriy" />
+  <meta name="twitter:widgets:theme" content="dark" />
 
   <meta property="og:title" content="Power Widgets - new way to customize your at-a-glance info" />
   <meta property="og:description" content="Power Widgets is new way to customize your at-a-glance info. With new widgets and mini-apps you can explore info and get fast access to important things." />
@@ -34,6 +35,7 @@
 </head>
 
 <body class="system-chrome-alt-high-color" onresize="DetectMobileMode();">
+    <!-- Header UI -->
     <header class="navbar">
       <div id="navbar-logo">
           <img id="logo_img" src="img/app_logo.png" alt="logo_img" />
@@ -107,6 +109,7 @@
           <span class="button_label">Send review</span>
       </button>
     </header>
+    <!-- Menu UI -->
     <span id="menu-flyout">
       <div id="menu-header">
         <h3 style="color: var(--text-color-light);">Menu</h3>
@@ -138,6 +141,7 @@
         <i class="fluent-icons"></i>
       </button>
     </span>
+    <!-- Search flyout UI -->
     <span id="search-flyout">
       <div id="search-flyout-header">
         <h3 style="color: var(--text-color-light);">Search</h3>
@@ -174,14 +178,17 @@
         <i class="fluent-icons"></i>
       </button>
     </span>
+    <!-- Layout content UI -->
     <div id="content">
       <section id="start">
         <div id="start_content">
+          <!-- Page landing title and text -->
           <h1 id="page-title" class="ms-textblock">Meet new Widgets for Windows</h1>
           <p id="page-description" class="ms-textblock">
               Power Widgets is new way to customize your at-a-glance info.<br />
               With new widgets and mini-apps you can explore info and get fast access to important things.<br />
           </p>
+          <!-- Page landing start buttons -->
           <div id="start-buttons-grid" style="text-align: center; margin-top: 150px;">
               <button class="ms-button" style="height: 60px; width: 290px; margin: 5px;" onclick="OpenInMicrosoftStore();">
                   <div style="display: table;text-align: center;position: relative;top: -5px;left: 16px;">
@@ -217,8 +224,8 @@
                   </div>
               </button>
           </div>
-          <div id="app-preview-image" class="ms-grid">
-          </div>
+          <div id="app-preview-image" class="ms-grid"></div>
+          <!-- Update section UI -->
           <section id="news" style="height: auto; margin-left: 35px; margin-right: 35px; padding-top: 50px; padding-bottom: 60px;">
             <div id="news-div" class="ms-base" style="padding-bottom: 45px; text-align: left;">
                 <h5 style="color: var(--text-color-light); top: 20px; left: 30px; position: relative; font-weight: bold;">What's new in 1.6?</h5>
@@ -235,6 +242,7 @@
                 </div>
             </div>
           </section>
+          <!-- Features section -->
           <h2 style="text-align: center;">New features in widgets</h2>
           <div class="table">
               <div class="table_item" style="max-width: 1200px;">
@@ -342,19 +350,47 @@
               </div>
             </fluent-card>
           </div>
-              </div>
           </div>
-          <br />
-            <footer class="ms-footer" style="height: 90px; position: relative; top: 40px; padding-bottom: 20px;">
-                <p style="padding-top: 38px;">
-                  <a class="ms-badged-text" href="mailto:dima.borodij@gmail.com" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via email</a>&nbsp;
-                  <a class="ms-badged-text" onclick="window.open('https://twitter.com/dev_dmitriy?t=lRX88mjdFUXWM_fbYgyxNQ&s=09');" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via Twitter</a>&nbsp;
-                  <a class="ms-badged-text" href="https://dmitryborodiy.github.io/PowerWidgets/privacy/" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Privacy policy</a>&nbsp;
-                  <a class="ms-badged-text" href="https://www.microsoft.com/en-us/p/power-widgets-customize-your-at-a-glance-info/9nlhp5krxzq7" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Official page in Microsoft</a>&nbsp;
-                </p>
-            </footer>
+        </div>
+        <section id="twitter-news">
+          <div style="width: 100%; text-align: center;">
+            <h2>News from author</h2>
+            <div id="twitter-actions">
+              <span class="twitter-action">
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-via="dmitriy_dev" data-show-count="false">Tweet</a>
+              </span>
+              <span class="twitter-action">
+                <a href="https://twitter.com/dmitriy_dev?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-via="dmitriy_dev" data-show-count="false">Follow @dmitriy_dev</a>
+              </span>
+            </div>
+            <div id="tweets-div">
+              <span class="tweet">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hello world!👋<br>Today I&#39;m excited to introduce you to a new version of the Power Widgets app for Windows. Version 1.6 is now available for download from the <a href="https://twitter.com/MicrosoftStore?ref_src=twsrc%5Etfw">@MicrosoftStore</a>.<a href="https://t.co/7OpqnPjtCZ">https://t.co/7OpqnPjtCZ</a><a href="https://twitter.com/Windows?ref_src=twsrc%5Etfw">@Windows</a> <a href="https://twitter.com/windowscentral?ref_src=twsrc%5Etfw">@windowscentral</a> <a href="https://twitter.com/WindowsLatest?ref_src=twsrc%5Etfw">@WindowsLatest</a> <a href="https://twitter.com/windowsblog?ref_src=twsrc%5Etfw">@windowsblog</a> <a href="https://twitter.com/windowsinsider?ref_src=twsrc%5Etfw">@windowsinsider</a> <a href="https://twitter.com/hashtag/Windows11?src=hash&amp;ref_src=twsrc%5Etfw">#Windows11</a> <a href="https://t.co/6TPN4fcpJ9">pic.twitter.com/6TPN4fcpJ9</a></p>&mdash; Dmitriy Borodiy (@dev_dmitriy) <a href="https://twitter.com/dev_dmitriy/status/1534682534000439300?ref_src=twsrc%5Etfw">June 8, 2022</a></blockquote>
+              </span>
+              <span class="tweet">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Power Widgets looks awesome on Windows 10X😌<br>Hmm Windows X version next?🤔<a href="https://twitter.com/Windows?ref_src=twsrc%5Etfw">@Windows</a> <a href="https://twitter.com/WindowsLatest?ref_src=twsrc%5Etfw">@WindowsLatest</a> <a href="https://twitter.com/windowsblog?ref_src=twsrc%5Etfw">@windowsblog</a> <a href="https://twitter.com/WindowsUI?ref_src=twsrc%5Etfw">@WindowsUI</a> <a href="https://twitter.com/windowsinsider?ref_src=twsrc%5Etfw">@windowsinsider</a> <a href="https://twitter.com/panos_panay?ref_src=twsrc%5Etfw">@panos_panay</a> <a href="https://twitter.com/Dave_UX?ref_src=twsrc%5Etfw">@Dave_UX</a> <a href="https://twitter.com/davidortinau?ref_src=twsrc%5Etfw">@davidortinau</a> <a href="https://twitter.com/danielko?ref_src=twsrc%5Etfw">@danielko</a> <a href="https://twitter.com/Defalt_Ratboi?ref_src=twsrc%5Etfw">@Defalt_Ratboi</a> <a href="https://twitter.com/mzikmunddev?ref_src=twsrc%5Etfw">@mzikmunddev</a> <a href="https://twitter.com/windowsdev?ref_src=twsrc%5Etfw">@windowsdev</a> <a href="https://twitter.com/hashtag/Windows10?src=hash&amp;ref_src=twsrc%5Etfw">#Windows10</a> <a href="https://twitter.com/hashtag/Windows11?src=hash&amp;ref_src=twsrc%5Etfw">#Windows11</a> <a href="https://twitter.com/hashtag/Windows10X?src=hash&amp;ref_src=twsrc%5Etfw">#Windows10X</a> <a href="https://twitter.com/martijnbrant?ref_src=twsrc%5Etfw">@martijnbrant</a> <a href="https://t.co/4Ujeqemd3D">pic.twitter.com/4Ujeqemd3D</a></p>&mdash; Dmitriy Borodiy (@dev_dmitriy) <a href="https://twitter.com/dev_dmitriy/status/1532991754064089088?ref_src=twsrc%5Etfw">June 4, 2022</a></blockquote>
+              </span>
+              <span class="tweet">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Power Widgets looks not bad on Surface Hub😌.<a href="https://twitter.com/Windows?ref_src=twsrc%5Etfw">@Windows</a> <a href="https://twitter.com/surface?ref_src=twsrc%5Etfw">@surface</a> <a href="https://twitter.com/windowsblog?ref_src=twsrc%5Etfw">@windowsblog</a> <a href="https://twitter.com/mzikmunddev?ref_src=twsrc%5Etfw">@mzikmunddev</a> <a href="https://twitter.com/martijnbrant?ref_src=twsrc%5Etfw">@martijnbrant</a> <a href="https://twitter.com/Defalt_Ratboi?ref_src=twsrc%5Etfw">@Defalt_Ratboi</a> <a href="https://twitter.com/windowsinsider?ref_src=twsrc%5Etfw">@windowsinsider</a> <a href="https://twitter.com/windowsdev?ref_src=twsrc%5Etfw">@windowsdev</a> <a href="https://twitter.com/thurrott?ref_src=twsrc%5Etfw">@thurrott</a> <a href="https://twitter.com/panos_panay?ref_src=twsrc%5Etfw">@panos_panay</a> <a href="https://twitter.com/Dave_UX?ref_src=twsrc%5Etfw">@Dave_UX</a> <a href="https://twitter.com/davidortinau?ref_src=twsrc%5Etfw">@davidortinau</a> <a href="https://twitter.com/danielko?ref_src=twsrc%5Etfw">@danielko</a> <a href="https://twitter.com/satyanadella?ref_src=twsrc%5Etfw">@satyanadella</a> <a href="https://twitter.com/AlurDesign?ref_src=twsrc%5Etfw">@AlurDesign</a> <a href="https://twitter.com/jsuarezruiz?ref_src=twsrc%5Etfw">@jsuarezruiz</a> <a href="https://twitter.com/JamesMontemagno?ref_src=twsrc%5Etfw">@JamesMontemagno</a> <a href="https://twitter.com/hashtag/Windows?src=hash&amp;ref_src=twsrc%5Etfw">#Windows</a> <a href="https://t.co/oPpi7Ib3WL">pic.twitter.com/oPpi7Ib3WL</a></p>&mdash; Dmitriy Borodiy (@dev_dmitriy) <a href="https://twitter.com/dev_dmitriy/status/1533640719629434882?ref_src=twsrc%5Etfw">June 6, 2022</a></blockquote>
+              </span>
+              <span class="tweet">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sticky notes feature in Power Widgets 1.6 is awesome! 🔥🔥<a href="https://twitter.com/windowscentral?ref_src=twsrc%5Etfw">@windowscentral</a> <a href="https://twitter.com/WindowsLatest?ref_src=twsrc%5Etfw">@WindowsLatest</a> <a href="https://twitter.com/windowsblog?ref_src=twsrc%5Etfw">@windowsblog</a> <a href="https://twitter.com/WindowsUI?ref_src=twsrc%5Etfw">@WindowsUI</a> <a href="https://twitter.com/Windows?ref_src=twsrc%5Etfw">@Windows</a> <a href="https://twitter.com/windowsinsider?ref_src=twsrc%5Etfw">@windowsinsider</a> <a href="https://twitter.com/windowsdev?ref_src=twsrc%5Etfw">@windowsdev</a> <a href="https://twitter.com/thurrott?ref_src=twsrc%5Etfw">@thurrott</a> <a href="https://twitter.com/panos_panay?ref_src=twsrc%5Etfw">@panos_panay</a> <a href="https://twitter.com/Dave_UX?ref_src=twsrc%5Etfw">@Dave_UX</a> <a href="https://twitter.com/davidortinau?ref_src=twsrc%5Etfw">@davidortinau</a> <a href="https://twitter.com/mzikmunddev?ref_src=twsrc%5Etfw">@mzikmunddev</a> <a href="https://twitter.com/Defalt_Ratboi?ref_src=twsrc%5Etfw">@Defalt_Ratboi</a> <a href="https://twitter.com/AlurDesign?ref_src=twsrc%5Etfw">@AlurDesign</a> <a href="https://twitter.com/JenMsft?ref_src=twsrc%5Etfw">@JenMsft</a> <a href="https://twitter.com/jsuarezruiz?ref_src=twsrc%5Etfw">@jsuarezruiz</a> <a href="https://twitter.com/Xbox?ref_src=twsrc%5Etfw">@Xbox</a> <a href="https://twitter.com/hashtag/Windows?src=hash&amp;ref_src=twsrc%5Etfw">#Windows</a> <a href="https://t.co/IBQwBHVz7I">pic.twitter.com/IBQwBHVz7I</a></p>&mdash; Dmitriy Borodiy (@dev_dmitriy) <a href="https://twitter.com/dev_dmitriy/status/1533972187056680960?ref_src=twsrc%5Etfw">June 7, 2022</a></blockquote>
+              </span>
+            </div>
+          </div>
+        </section>
+        <br />
+          <footer class="ms-footer" style="height: 90px; position: relative; top: 40px; padding-bottom: 20px;">
+              <p style="padding-top: 38px;">
+                <a class="ms-badged-text" href="mailto:dima.borodij@gmail.com" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via email</a>&nbsp;
+                <a class="ms-badged-text" onclick="window.open('https://twitter.com/dev_dmitriy?t=lRX88mjdFUXWM_fbYgyxNQ&s=09');" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Contact me via Twitter</a>&nbsp;
+                <a class="ms-badged-text" href="https://dmitryborodiy.github.io/PowerWidgets/privacy/" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Privacy policy</a>&nbsp;
+                <a class="ms-badged-text" href="https://www.microsoft.com/en-us/p/power-widgets-customize-your-at-a-glance-info/9nlhp5krxzq7" style="background-color: var(--background-high-color); color: var(--theme-text-color);">Official page in Microsoft</a>&nbsp;
+              </p>
+          </footer>
         </div>
       </section>
     </div>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>

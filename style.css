@@ -1,6 +1,6 @@
-@media(prefers-color-scheme: light){
+﻿@media(prefers-color-scheme: light){
   body{
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(253, 253, 253);
     color: black;
   }
   
@@ -346,7 +346,7 @@
 
 #app-preview-image{
   display: inline-block;
-  height: 500px;
+  height: 630px;
   width: 85%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -479,6 +479,8 @@ a{
 #content{
   width: 100%;
   height: auto;
+  position: relative;
+  top: -50px;
 }
 
 #start{
@@ -510,12 +512,13 @@ a{
 #page-title{
     position: relative;
     font-size: 60px;
-    top: 110px;
+    top: 120px;
     margin-left: 20px;
     margin-right: 20px;
     font-weight: bold;
     animation-name: start;
     animation-duration: 2.5s;
+    padding-top: 45px;
 }
 
 #start-buttons-grid{
@@ -626,3 +629,28 @@ a{
     left: 18px;
 }
 
+#twitter-news{
+    width: 100%;
+}
+
+#tweets-div{
+    display: table;
+    margin: 25px;
+    margin-top: 12px;
+}
+
+.tweet{
+    display: inline-block;
+    margin: 15px;
+}
+
+#twitter-actions{
+    width: 100%;
+    display: table;
+    padding-top: 15px;
+}
+
+.twitter-action{
+    display: inline-block;
+    margin: 6px;
+}
