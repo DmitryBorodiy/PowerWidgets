@@ -630,7 +630,9 @@
 
 .ms-app-icon{
     display: inline-block;
-    height: 32px;
-    width: 32px;
+    height: 36px;
+    width: 36px;
+    position: relative;
     justify-content: center;
+    top: 10px;
 }
