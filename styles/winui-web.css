@@ -23,6 +23,11 @@
       color: rgb(20, 20, 20);
   }
 
+  .ms-app-launcher{
+      background-color: rgb(248, 248, 248);
+      box-shadow: 0.1px 3px 5px rgb(0 0 0 / 24%);
+  }
+
   .ms-flyout-menu{
       background-color: rgba(255, 255, 255, 0.6);
       -webkit-backdrop-filter: blur(50px);
@@ -146,6 +151,11 @@
       position: absolute;
       background: rgb(35, 35, 35);
       color: rgb(250, 250, 250);
+  }
+
+  .ms-app-launcher{
+      background-color: rgb(35, 35, 35);
+      box-shadow: 0.1px 3px 5px rgb(0 0 0 / 30%);
   }
   
   .ms-flyout-menu{
@@ -619,13 +629,11 @@
 
 .ms-app-launcher{
     display: inline-block;
-    background-color: rgb(35, 35, 35);
     height: 56px;
     width: 56px;
     border-radius: 10px;
     justify-content: center;
     text-align: center;
-    box-shadow: 0.1px 3px 5px rgb(0 0 0 / 30%);
 }
 
 .ms-app-icon{
