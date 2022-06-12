@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
+﻿@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
 
 @media(prefers-color-scheme: light){
   :root {
@@ -615,4 +615,22 @@
   height: 100%;
   border-radius: 50%;
   stroke: var(--theme-primary-color);
+}
+
+.ms-app-launcher{
+    display: inline-block;
+    background-color: rgb(35, 35, 35);
+    height: 56px;
+    width: 56px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0.1px 3px 5px rgb(0 0 0 / 30%);
+}
+
+.ms-app-icon{
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    justify-content: center;
 }
