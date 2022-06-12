@@ -636,3 +636,9 @@
     justify-content: center;
     top: 10px;
 }
+
+.ms-app-label{
+    font-size: 14px;
+    position: relative;
+    top: 2.5px;
+}
