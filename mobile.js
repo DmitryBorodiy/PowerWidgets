@@ -18,6 +18,16 @@ function DetectMobileMode(){
       $('#navbar-logo').css("position", "relative");
       $('#navbar-logo').css("left", "0px");
       document.getElementsByClassName("navbar")[0].style.textAlign = "center";
+      
+      var tweets_list = document.getElementsByClassName("tweet");
+
+      if(tweets_list != null){
+          for(let i = 0; i < tweets_list.length; i++){
+              console.log(i.toString());
+
+              document.getElementsByClassName("tweet")[i].style.width = "320px";
+          }
+      }
 
       document.getElementById("desktop_menu").style.visibility = "collapse";
       document.getElementById("navbar_separator").style.visibility = "collapse";
@@ -46,6 +56,17 @@ function DetectMobileMode(){
       $('#navbar-logo').css("position", "relative");
       $('#navbar-logo').css("left", "16px");
       document.getElementsByClassName("navbar")[0].style.textAlign = "left";
+      document.getElementById("tweets-div").style.maxWidth = null;
+
+      var tweets_list = document.getElementsByClassName("tweet");
+
+      if(tweets_list != null){
+          for(let i = 0; i < tweets_list.length; i++){
+              console.log(i.toString());
+
+              document.getElementsByClassName("tweet")[i].style.width = "auto";
+          }
+      }
 
       document.getElementById("desktop_menu").style.visibility = "visible";
       document.getElementById("navbar_separator").style.visibility = "visible";
