@@ -375,8 +375,18 @@
     }
 
     .ms-base-description{
-        font-size: 15px;
+        font-size: 14px;
         font-family: 'Roboto', sans-serif;
+        position: relative;
+        top: -10px;
+        color: var(--text-color-light);
+    }
+
+    .ms-base-text{
+        text-align: left;
+        position: relative;
+        left: 24px;
+        top: 31px;
     }
     
     .ms-tile-img{
