@@ -412,6 +412,13 @@
         left: 24px;
         top: 31px;
     }
+
+    .ms-base-actions{
+        position: relative;
+        float: right;
+        bottom: 42px;
+        right: 18px;
+    }
     
     .ms-tile-img{
       position: relative;
