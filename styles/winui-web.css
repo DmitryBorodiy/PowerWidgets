@@ -380,6 +380,7 @@
         border: 1px solid rgba(0, 0, 0, 0.0578);
         box-shadow: 0 0.6 4px rgba(0, 0, 0, 0.1);  
         background-position: center center;
+        background-repeat: no-repeat;
         background-size: cover;
     }
 
