@@ -61,7 +61,7 @@
   }
   
   .ms-base{
-    background-color: rgb(249, 249, 249);
+    background-color: #fdfdfd;
   }
   
   .ms-textbox:focus-within{
@@ -198,7 +198,7 @@
   }
   
   .ms-base{
-    background-color: rgb(20, 20, 20);
+    background-color: #252525;
   }
 
   .ms-button:hover{
@@ -342,8 +342,12 @@
     }
     
     .ms-base{
-      border-radius: 6px;
-      box-shadow: 0 1 10px rgba(0, 0, 0, 0.5);
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        border-radius: 6px;
+        border: 1px solid rgba(0, 0, 0, 0.0578);
+        box-shadow: 0 0.6 4px rgba(0, 0, 0, 0.1);  
     }
     
     .ms-tile-img{
