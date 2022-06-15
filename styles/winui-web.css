@@ -79,21 +79,33 @@
   }
 
   .ms-button{
-    width: 120px;
-    height: 32px;
-    background: white;
-    border-radius: 4px;
-    border-style: solid;
-    border-width: 0px 0px 1px 0px;
-    border-color: rgba(0, 0, 0, 0.3);
-    color: rgb(0, 0, 0, 0.8);
-    font-family: Segoe UI, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 11px 6px;
+
+        width: 118px;
+        height: 30px;
+
+        background-color: #fdfdfd;
+        border-radius: 4px;
+        border: 0.8px solid #ececec;
+        border-bottom: 1px solid #d1d1d1;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
   }
 
   .ms-button:hover{
-      color: rgba(0, 0, 0, 0.6);
-      background-color: rgb(248, 248, 248);
-      border: none;
+    background-color: #ececec;
+  }
+
+  .ms-button:active{
+    border: 0.8px solid #ececec; 
+    background-color: #d1d1d1;
   }
   
   .ms-menu-button-selected{
@@ -179,16 +191,34 @@
   }
   
   .ms-button{
-    width: 120px;
-    height: 32px;
-    background: rgb(25, 25, 25);
-    border-radius: 4px;
-    border-style: solid;
-    border-width: 0px 0px 1px 0px;
-    border-color: rgba(255, 255, 255, 0.3);
-    color: rgba(255, 255, 255, 0.9);
-    font-family: Segoe UI, sans-serif;
-  }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 11px 6px;
+
+        width: 118px;
+        height: 30px;
+
+        background-color: #2a2a2a;
+        border-radius: 4px;
+        border: 0.8px solid #323232;
+        border-bottom: 1px solid #2e2e2e;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .ms-button:hover{
+        background-color: #282828;
+    }
+
+    .ms-button:active{
+        border: 0.8px solid #2e2e2e; 
+        background-color: #141414;
+    }
   
   .ms-separator {
     height: 1.1px;
@@ -203,12 +233,6 @@
   
   .ms-base{
     background-color: #252525;
-  }
-
-  .ms-button:hover{
-      color: rgba(255, 255, 255, 0.7);
-      background-color: rgb(35, 35, 35);
-      border: none;
   }
   
   input{
