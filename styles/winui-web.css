@@ -367,6 +367,17 @@
         -webkit-backdrop-filter: blur(50px);
         backdrop-filter: blur(50px);
     }
+
+    .ms-base-title{
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+    }
+
+    .ms-base-description{
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+    }
     
     .ms-tile-img{
       position: relative;
