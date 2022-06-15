@@ -358,7 +358,7 @@
     }
 
     .ms-base-bar{
-        position: absolute;
+        position: relative;
         bottom: 0px;
         left: 0px;
         width: 100%;
