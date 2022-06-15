@@ -398,36 +398,30 @@
     }
 
     .ms-button-accent{
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* padding: 5px 12px 7px; */
-        /* position: absolute; */
-        width: 120px;
-        height: 32px;
-        /* left: calc(50% - 120px/2); */
-        /* top: calc(50% - 32px/2); */
+        /* Button / Button */
+
+        box-sizing: border-box;
 
         /* Light/Fill Color/Accent/Default */
-        background: var(--theme-primary-color);
+
+        background: #005FB8;
         border-radius: 4px;
-        border: solid;
-        border-width: 0px 0px 1px 0px;
-        border-color: rgba(0, 0, 0, 0.3);
         color: white;
-        font-family: Segoe UI, sans-serif;
+
+        border: none;
+        border-bottom: 1px solid #0f4d87;
+
+        padding-top: 6px;
+        padding-bottom: 6px; 
     }
 
     .ms-button-accent:hover{
-        background-color: var(--theme-primary-color-focus);
-        color: rgba(255, 255, 255, 0.7);
+        background-color: #0072de;
     }
 
     .ms-button-accent:active{
-        background-color: var(--theme-primary-color-focus);
-        color: rgba(255, 255, 255, 0.6);
-        border: none;
+        background-color: #0057ab;
+        border-bottom: none; 
     }
 
     .ms-menu-button-selected{
