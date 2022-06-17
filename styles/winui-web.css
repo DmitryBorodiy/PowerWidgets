@@ -387,9 +387,10 @@
     .ms-base-bar{
         position: relative;
         bottom: 0px;
-        left: 0px;
+        left: -1px;
         width: 100%;
         height: 120px;
+        padding-right: 2px;
         border-radius: 0 0 6px 6px;
         -webkit-backdrop-filter: blur(50px);
         backdrop-filter: blur(50px);
