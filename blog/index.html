@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Power Widgets updates</title>
+
+    <!-- WinUI WASM -->
+    <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
+    <link rel="stylesheet" href="https://dmitryborodiy.github.io/PowerWidgets/styles/winui-web.css" />
+    <link rel="stylesheet" href="fonts/FluentSystemIcons-Regular.css" />
+
+    <!-- local -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header id="header-ui">
+        <span id="header-logo-ui">
+            <img id="header-img" height="56px" width="56px" src="img/logo-asset.png" />
+            <h3 id="header-text" style="font-weight: normal;">Widgets</h3>
+            <fluent-badge id="badge-ui" appearance="accent">Updates</fluent-badge>
+        </span>
+        <div id="desktop-menu" class="ms-menu">
+            <div class="ms-menu-item">
+              <a href="https://dmitryborodiy.github.io/PowerWidgets/home.html">
+                  <button class="ms-menu-button" style="width: 81px;">
+                      <span class="button_content">
+                          <i class="fluent-icons"></i>
+                          <span class="menu-button-label">Home</span>
+                      </span>
+                  </button>
+              </a>
+            </div>
+            <div class="ms-menu-item">
+              <button class="ms-menu-button-selected" style="width: auto;">
+                  <span class="button_content">
+                      <i class="fluent-icons"></i>
+                      <span class="menu-button-label">What's new</span>
+                  </span>
+              </button>
+            </div>
+        </div>
+        <a id="twitter-button" href="https://twitter.com/dev_dmitriy?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @dev_dmitriy</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div id="search-box">
+          <input id="search-box-input" type="search" autocomplete="on" placeholder="Search in Bing" onkeydown="SearchBox_KeyDown" />
+          <i class="fluent-icons" style="float: right; position: relative; display: inline-block; font-size: 16px; right: 8px; top: -24px;" onclick="MakeSearch();"></i>
+        </div>
+        <fluent-button id="send-review-action" appearance="accent" onclick="SendFeedback();">Send feedback</fluent-button>
+        <button id="mobile-menu-button" class="ms-button" onclick="ShowMenuFlyout();">
+            <i class="fluent-icons" style="font-size: 19px; position: relative; top: 1px;"></i>
+        </button>
+        <a href="https://twitter.com/dev_dmitriy">
+            <button id="mobile-twitter-button">
+                <img height="20px" width="20px" src="img/twitter.png" style="position: relative; top: 1px;" />
+            </button>
+        </a>
+    </header>
+    <div id="menu-flyout-ui">
+        <h4 id="menu-flyout-title">Power Widgets updates news</h4>
+        <button id="close-menu-flyout" class="ms-button" onclick="HideMenuFlyout();">
+            <i class="fluent-icons" style="font-size: 19px; position: relative; top: 1px;"></i>
+        </button>
+        <div id="menu-flyout-layout">
+            <div style="padding-left: 12px; padding-right: 20px;">
+              <div id="mobile-search-box" class="ms-textbox" style="max-width: 460px; width: 100%; height: 45px; padding-right: 3px; top: 22px; display: inline-block;">
+                  <img height="20px" width="20px" src="https://img.icons8.com/fluency/96/undefined/bing--v1.png" style="position: relative; display: block; top: 11px; left: 12px;" />
+                  <input id="mobile-search-input" type="search" class="ms-text-input" autocomplete="on" placeholder="Search with Bing" style="margin-left: 44px; position: relative; display: block; top: -20px;" />
+                  <i class="ms-textbox-icon icon-ic_fluent_search_20_regular" onclick="SearchButton_Click();" style="position: relative; left: -12px; top: -50px;"></i>
+              </div>
+            </div>
+            <div style="width: 100%; text-align: left; max-width: 486px; display: inline-block;">
+                <p id="menu-navigation-header">Actions</p>
+                <div id="menu-navigation" style="position: relative; top: -5px; left: 15px;">
+                    <a href="https://dmitryborodiy.github.io/PowerWidgets/home.html">
+                        <div class="ms-block" style="position: relative; top: -19px;">
+                            <div class="ms-app-launcher">
+                                <img class="ms-app-icon" height="24px" width="24px" src="https://img.icons8.com/fluency/96/undefined/home.png" />
+                            </div><br />
+                            <a class="ms-app-label">Home</a>
+                        </div>
+                    </a>
+                    <a href="https://www.microsoft.com/store/productId/9NLHP5KRXZQ7">
+                        <div class="ms-block">
+                            <div class="ms-app-launcher">
+                                <img class="ms-app-icon" height="20px" width="20px" src="https://upload.wikimedia.org/wikipedia/en/0/08/Microsoft_Store_app_icon.png" style="height: 34px; width: 34px; top: 11px;" />
+                            </div><br />
+                            <a class="ms-app-label">Get from<br />Microsoft</a>
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/dev_dmitriy">
+                        <div class="ms-block">
+                            <div class="ms-app-launcher">
+                                <img class="ms-app-icon" height="24px" width="24px" src="https://img.icons8.com/fluency/96/undefined/stack-of-tweets.png" />
+                            </div>
+                            <br />
+                            <a class="ms-app-label">Follow in<br />Twitter</a>
+                        </div>
+                    </a>
+                    <div class="ms-block" style="background: transparent;" onclick="SendFeedback();">
+                        <div class="ms-app-launcher">
+                            <img class="ms-app-icon" height="24px" width="24px" src="https://img.icons8.com/fluency/96/undefined/feedback-hub.png" />
+                        </div><br />
+                        <a class="ms-app-label">Send<br />feedback</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe id="frame-ui" frameborder="0" src="pages/home.html" />
+</body>
+</html>
