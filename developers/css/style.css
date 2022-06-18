@@ -10,7 +10,7 @@
     width: 200px;
     border-radius: 50%;
     display: inline-block;
-    background-image: url('../img/Me.jpg');
+    background-image: url('https://pbs.twimg.com/profile_images/1537964013304197121/dMZRWiqY_400x400.jpg');
     background-position: center center;
     background-size: cover;
 }
