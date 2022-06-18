@@ -1,4 +1,4 @@
-﻿@media(prefers-color-scheme: light){
+@media(prefers-color-scheme: light){
   body{
     background-color: rgb(253, 253, 253);
     color: black;
@@ -524,8 +524,8 @@ a{
 #start-buttons-grid{
     animation-name: start-buttons;
     animation-duration: 3.5s;
-    /*animation-delay: 5s; */
-    /*opacity: 0; */
+    /* animation-delay: 5s; */
+    /* opacity: 0; */
 }
 
 @keyframes start{

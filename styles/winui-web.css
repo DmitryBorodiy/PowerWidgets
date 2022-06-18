@@ -1,4 +1,4 @@
-﻿@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
+@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
 
 @media(prefers-color-scheme: light){
   :root {
@@ -79,12 +79,6 @@
   }
 
   .ms-button{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 4px 11px 6px;
-
         width: 118px;
         height: 30px;
 
@@ -191,24 +185,16 @@
   }
   
   .ms-button{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 4px 11px 6px;
-
         width: 118px;
         height: 30px;
-
         background-color: #2a2a2a;
         border-radius: 4px;
         border: 0.8px solid #323232;
         border-bottom: 1px solid #2e2e2e;
-
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
+        /* flex: none; */
+        /* order: 0; */
+        /* align-self: stretch; */
+        /* flex-grow: 0; */
     }
 
     .ms-button:hover{
@@ -376,7 +362,7 @@
     .ms-base{
         height: 300px;
         width: 300px;
-        border-radius: 6px;
+        border-radius: 9px;
         border: 1px solid rgba(0, 0, 0, 0.0578);
         box-shadow: 0 0.6 4px rgba(0, 0, 0, 0.1);  
         background-position: center center;
