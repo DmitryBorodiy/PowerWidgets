@@ -29,7 +29,12 @@ function FlipScreenshot(count){
            pipsPager.children[3].className = "ms-pippager-dot";
          break;
          case 1:
-           
+           if(GetCurrentEnviromentTheme() == RequestedTheme.Light){
+              $('#app-preview-image').css("background-image", "url('assets/Light-screen-laptop.png')");
+           }
+           else if(GetCurrentEnviromentTheme() == RequestedTheme.Dark){
+              $('#app-preview-image').css("background-image", "url('assets/Dark-screen-laptop.png')");
+           }
            
            pipsPager.children[0].className = "ms-pippager-dot";
            pipsPager.children[1].className = "ms-pippager-active-dot";
@@ -37,7 +42,7 @@ function FlipScreenshot(count){
            pipsPager.children[3].className = "ms-pippager-dot";
          break;
          case 2:
-           
+           $('#app-preview-image').css("background-image", "url('assets/Dark-screen-hub.png')");
 
            pipsPager.children[0].className = "ms-pippager-dot";
            pipsPager.children[1].className = "ms-pippager-dot";
@@ -45,7 +50,7 @@ function FlipScreenshot(count){
            pipsPager.children[3].className = "ms-pippager-dot";
          break;
          case 3:
-           
+           $('#app-preview-image').css("background-image", "url('assets/Dark-screen-xbox.png')");
            
            pipsPager.children[0].className = "ms-pippager-dot";
            pipsPager.children[1].className = "ms-pippager-dot";
