@@ -8,6 +8,89 @@ function OnLoaded(){
   ThemeInitialize();
 }
 
+var ScreenshotsFlipViewCounter = 0;
+
+function FlipScreenshot(count){
+   try{
+      var pipsPager = document.getElementById("screenshots-pager");
+
+      switch(count){
+         case 0:
+           if(GetCurrentEnviromentTheme() == RequestedTheme.Light){
+              $('#app-preview-image').css("background-image", "url('assets/light-screen.png')");
+           }
+           else if(GetCurrentEnviromentTheme() == RequestedTheme.Dark){
+              $('#app-preview-image').css("background-image", "url('assets/dark-screen.png')");
+           }
+
+           pipsPager.children[0].className = "ms-pippager-active-dot";
+           pipsPager.children[1].className = "ms-pippager-dot";
+           pipsPager.children[2].className = "ms-pippager-dot";
+           pipsPager.children[3].className = "ms-pippager-dot";
+         break;
+         case 1:
+           
+           
+           pipsPager.children[0].className = "ms-pippager-dot";
+           pipsPager.children[1].className = "ms-pippager-active-dot";
+           pipsPager.children[2].className = "ms-pippager-dot";
+           pipsPager.children[3].className = "ms-pippager-dot";
+         break;
+         case 2:
+           
+
+           pipsPager.children[0].className = "ms-pippager-dot";
+           pipsPager.children[1].className = "ms-pippager-dot";
+           pipsPager.children[2].className = "ms-pippager-active-dot";
+           pipsPager.children[3].className = "ms-pippager-dot";
+         break;
+         case 3:
+           
+           
+           pipsPager.children[0].className = "ms-pippager-dot";
+           pipsPager.children[1].className = "ms-pippager-dot";
+           pipsPager.children[2].className = "ms-pippager-dot";
+           pipsPager.children[3].className = "ms-pippager-active-dot";
+         break;
+      }
+   }
+   catch(e){
+      console.log(e.toString());
+   }
+}
+
+function NextFlipScreenshot_Click(){
+  try{
+    if(ScreenshotsFlipViewCounter < 3){
+      ScreenshotsFlipViewCounter++;
+      FlipScreenshot(ScreenshotsFlipViewCounter);
+    }
+    else{
+      ScreenshotsFlipViewCounter = 0;
+      FlipScreenshot(ScreenshotsFlipViewCounter);
+    }
+  }
+  catch(e){
+    console.log(e.toString());
+  }
+}
+
+function PreviousFlipScreenshot_Click(){
+  try{
+    if(ScreenshotsFlipViewCounter >= 0){
+      ScreenshotsFlipViewCounter--;
+      FlipScreenshot(ScreenshotsFlipViewCounter);
+    }
+    else{
+      ScreenshotsFlipViewCounter = 0;
+      FlipScreenshot(ScreenshotsFlipViewCounter);
+    }
+  }
+  catch(e){
+    console.log(e.toString());
+  }
+}
+
 function CloseFlyoutMenu(){
     $('#menu-flyout').css("visibility", "collapse");
 }
@@ -271,3 +354,5 @@ function StickyCardShare() {
 
     ShowShareDialog(title.toString(), content.toString());
 }
+
+setInterval(NextFlipScreenshot_Click, 15000);

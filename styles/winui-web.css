@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
+﻿@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
 
 @media(prefers-color-scheme: light){
   :root {
@@ -138,6 +138,28 @@
   .ms-base-bar{
       background-color: rgba(250, 250, 250, 0.9);
   }
+
+  .ms-pippager-dot{
+      background-color: #828282;
+  }
+
+  .ms-pippager-dot:hover{
+      height: 7px;
+      width: 7px;
+      margin: 0 6px;
+      background-color: #5c5c5c;
+      display: inline-block;
+      border-radius: 50%;
+      position: relative;
+      top: 1px;
+  }
+
+  .ms-pippager-active-dot{
+      height: 7px;
+      width: 7px;
+      margin: 0 6px;
+      background-color: #5c5c5c;
+  }
 }
 
 @media(prefers-color-scheme: dark){
@@ -266,6 +288,28 @@
 
   .ms-base-bar{
     background-color: rgba(35, 35, 35, 0.9);
+  }
+
+  .ms-pippager-dot{
+      background-color: #cccccc;
+  }
+
+  .ms-pippager-dot:hover{
+      height: 7px;
+      width: 7px;
+      margin: 0 6px;
+      background-color: #999999;
+  }
+
+  .ms-pippager-active-dot{
+      height: 9px;
+      width: 9px;
+      margin: 0 5px;
+      background-color: #999999;
+      display: inline-block;
+      border-radius: 50%;
+      position: relative;
+      top: 1px;
   }
 }
 
@@ -711,4 +755,21 @@
     font-size: 14px;
     position: relative;
     top: 2.5px;
+}
+
+.ms-pippager{
+    text-align: center;
+    display: table;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.ms-pippager-dot{
+    cursor: pointer;
+    height: 6px;
+    width: 6px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }

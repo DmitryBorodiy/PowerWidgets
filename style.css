@@ -1,4 +1,4 @@
-@media(prefers-color-scheme: light){
+﻿@media(prefers-color-scheme: light){
   body{
     background-color: rgb(253, 253, 253);
     color: black;
@@ -348,7 +348,7 @@
   display: inline-block;
   height: 630px;
   width: 85%;
-  background-position: center center;
+  background-position: 5px center;
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 15px;
@@ -653,4 +653,31 @@ a{
 .twitter-action{
     display: inline-block;
     margin: 6px;
+}
+
+#next-screenshot-button{
+    position: relative;
+    float: right;
+    top: 45%;
+    right: 15px;
+    height: 36px;
+    width: 36px;
+    border-radius: 30px;
+    padding-top: 5px;
+}
+
+#previous-screenshot-button{
+    position: relative;
+    float: left;
+    top: 45%;
+    left: 9px;
+    height: 36px;
+    width: 36px;
+    border-radius: 30px;
+    padding-top: 5px;
+}
+
+.centerize{
+    display: flex;
+    justify-content: center;
 }

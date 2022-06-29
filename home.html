@@ -30,6 +30,8 @@
   <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="js/ThemeHelper.js"></script>
   <script src="main.js"></script>
   <script src="mobile.js"></script>
 </head>
@@ -224,7 +226,22 @@
                   </div>
               </button>
           </div>
-          <div id="app-preview-image" class="ms-grid"></div>
+          <div id="app-preview-image" class="ms-grid">
+            <button id="next-screenshot-button" class="ms-button" onclick="NextFlipScreenshot_Click();">
+              <i class="fluent-icons"></i>
+            </button>
+            <button id="previous-screenshot-button" class="ms-button" onclick="PreviousFlipScreenshot_Click();">
+              <i class="fluent-icons"></i>
+            </button>
+            <div class="centerize" style="position: relative; top: 95%;">
+              <div id="screenshots-pager" class="ms-pippager" style="position: relative;right: 7px;">
+                <span class="ms-pippager-active-dot" onclick="FlipScreenshot(0);"></span> 
+                <span class="ms-pippager-dot" onclick="FlipScreenshot(1);"></span> 
+                <span class="ms-pippager-dot" onclick="FlipScreenshot(2);"></span> 
+                <span class="ms-pippager-dot" onclick="FlipScreenshot(3);"></span> 
+              </div>
+            </div>
+          </div>
           <!-- Update section UI -->
           <section id="news" style="height: auto; margin-left: 35px; margin-right: 35px; padding-top: 50px; padding-bottom: 60px;">
             <div id="news-div" class="ms-base" style="padding-bottom: 45px; text-align: left; width: 100%;">
