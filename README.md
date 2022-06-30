@@ -7,7 +7,7 @@ Explore the new experience of your widgets feed.
 More simple, more effective, more #Fluent. Meet the new widgets for Windows!
 Increase your productivity with new widgets for Windows devices. Don't miss out on important things, get quick access to important information and tools. With the new widgets feed, you can keep important information close at hand. Try new widgets now!
 
-<a href=""><img height="50px" width="142px" src="assets/MicrosoftStoreGet.png" style="margin-top: 10px;" /></a>
+<a href="https://www.microsoft.com/store/productId/9NLHP5KRXZQ7"><img height="50px" width="142px" src="assets/MicrosoftStoreGet.png" style="margin-top: 10px;" /></a>
 
 <a href="https://dmitryborodiy.github.io/PowerWidgets/home.html">
     <button style="color: white; background-color: #0078D7; border: none; border-radius: 4px; height: 32px; width: 126px;">Product web site</button>
