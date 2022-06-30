@@ -9,9 +9,15 @@ Increase your productivity with new widgets for Windows devices. Don't miss out 
 
 <a href=""><img height="50px" width="142px" src="assets/MicrosoftStoreGet.png" style="margin-top: 10px;" /></a>
 
-<button style="color: white; background-color: #0078D7; border: none; border-radius: 4px; height: 32px; width: 126px;">Product web site</button>
-<button style="color: white; background-color: #282828; border: none; border-radius: 4px; height: 32px; width: 136px;">Follow in Twitter</button>
-<button style="color: white; background-color: #282828; border: none; border-radius: 4px; height: 32px; width: 110px;">Send review</button>
+<a href="https://dmitryborodiy.github.io/PowerWidgets/home.html">
+    <button style="color: white; background-color: #0078D7; border: none; border-radius: 4px; height: 32px; width: 126px;">Product web site</button>
+</a>
+<a href="https://twitter.com/dev_dmitriy">
+    <button style="color: white; background-color: #282828; border: none; border-radius: 4px; height: 32px; width: 136px;">Follow in Twitter</button>
+</a>
+<a href="mailto:dima.borodiy@outlook.com">
+    <button style="color: white; background-color: #282828; border: none; border-radius: 4px; height: 32px; width: 110px;">Send review</button>
+</a>
 
 
 <h2 style="margin-top: 20px;">What's new in 1.6 update?</h2>
