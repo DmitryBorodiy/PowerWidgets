@@ -3,7 +3,7 @@
 };
 
 //Gift info
-var giftCode = "DMCRF-VTHX9-VV4FC-RW6TC-KF7FZ";
+var giftCode = "3GK6G-D47KX-MD3FF-4T9F2-3WRKZ";
 var IsGiftAvaliable = true;
 
 function Window_OnLoaded(){
