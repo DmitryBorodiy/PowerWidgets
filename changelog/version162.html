@@ -2,11 +2,78 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Power Widgets version 1.6.2 is here!🎉</title>
 
-        <script src="js/changelog.js"></script>
+        <!-- WinUI -->
+        <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
+
+        <!-- jQuery -->
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+        <link rel="stylesheet" href="css/style-light.css" />
+        <script src="main.js"></script>
     </head>
     <body id="rootLayout">
-        
+        <fluent-design-system-provider id="fluent-design-provider">
+            <section id="header" style="height: 460px; width: 100%;">
+                <div class="blogpost-header-image" style="background-image: url('assets/version162.png'); height: 530px; width: 100%;">
+                    <span class="gradient-div">
+                        <div id="post-header-div">
+                            <span id="post-header-date" class="fluent-badge">Nov 28, 2022</span>
+                            <h1 id="post-header-title">Enjoy new features in Novemeber 2022 update!☄️🚀⚡</h1>
+                            <p style="max-width: 600px; position: relative; top: -45px; display: inline-block;">
+                                Novemeber update gives you more features & capabilities, privacy settings updates and bug fixes. Here you can watch list of changes in Novemeber 2022 update aka version 1.6.2.
+                            </p>
+                            <div style="text-align: left; padding-top: 42px;">
+                                <br />
+                                <img class="app-icon" src="https://img.icons8.com/fluency/96/null/clock--v1.png" height="60px" width="60px" />
+                                <h2 style="margin-top: 26px; font-size: 25px;">Clock widget was updated</h2>
+                                <p style="font-size: 20px;">
+                                    • The ability to connect multiple time zones has been added. Now you can look at the time in any city or region.
+                                </p>
+                                <p style="font-size: 20px;">
+                                    • Introducing the Analog Clock Widget. Now the clock is available in a new design and you can add it to the widget panel, it also supports location selection.
+                                </p>
+                                <p style="font-size: 20px;">
+                                    • Bug fixes & stability improvements.
+                                </p><br />
+                                <br />
+                                <img class="app-icon" src="https://img.icons8.com/fluency/96/null/microsoft-outlook-2019.png" height="60px" width="60px" />
+                                <h2 style="margin-top: 26px; font-size: 25px;">Outlook widget improvements</h2>
+                                <p style="font-size: 20px;">
+                                    • A bug with updating mail and contacts has been fixed.
+                                </p>
+                                <p style="font-size: 20px;">
+                                    • A bug with signing into a Microsoft account has been fixed.
+                                </p><br />
+                                <br />
+                                <img class="app-icon" src="https://img.icons8.com/fluency/96/null/ms-edge-new.png" height="60px" width="60px" />
+                                <h2 style="margin-top: 26px; font-size: 25px;">Edge widget improvements</h2>
+                                <p style="font-size: 20px;">
+                                    • Pinned sites will now sync.
+                                </p>
+                                <p style="font-size: 20px;">
+                                    • You no longer need to insert a prefix to search in a specific search engine.
+                                </p><br />
+                                <br />
+                                <img class="app-icon" src="https://img.icons8.com/fluency/96/null/sticky-notes.png" height="60px" width="60px" />
+                                <h2 style="margin-top: 26px; font-size: 25px;">Sticky notes feature was updated</h2>
+                                <p style="font-size: 20px;">
+                                    • The graphical interface of notes has been seriously redesigned in favor of convenience, beauty and practicality.
+                                </p>
+                                <p style="font-size: 20px;">
+                                    • Notes search has been improved.
+                                </p>
+                                <p style="font-size: 20xp;">
+                                    • Bug fixes & stability improvements.
+                                </p><br />
+                                <br />
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </section>
+        </fluent-design-system-provider>
     </body>
 </html>

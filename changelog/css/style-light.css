@@ -1,6 +1,65 @@
-﻿body{
-    padding: 0px;
-    margin: 0px;
-    color: rgb(20, 20, 20);
-    background-color: rgb(248, 248, 248);
+﻿h1{
+    font-weight: bold;
+    font-size: 42px;
+}
+
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: rgb(246, 246, 246);
+  color: rgb(32, 32, 32);
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+#fluent-provider{
+  width: 100%;
+  height: auto;
+}
+
+#post-header-div{
+    text-align: center;
+    position: relative;
+    margin-left: 42px;
+    margin-right: 42px;
+    top: 300px;
+}
+
+#post-header-title{
+    position: relative;
+    top: -15px;
+}
+
+.blogpost-header-image{
+  width: 100%;
+  height: 460px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.gradient-div {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgb(246,246,246);
+  background: linear-gradient(0deg, rgba(246, 246, 246, 1) 1%, rgba(255,255,255,0) 100%);
+}
+
+.fluent-badge{
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6px;
+    backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: blur(60px);
+    background-color: rgba(255, 255, 255, 0.6);
+    position: inline-block;
 }
