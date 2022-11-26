@@ -4,7 +4,7 @@
 
 function Page_OnLoaded(){
     try{
-
+        CheckShellTheme();
     }
     catch(e){
         console.log(e.toString());
@@ -25,6 +25,22 @@ function SetTheme(theme){
                 document.getElementsByClassName("gradient-div")[0].style.background = "linear-gradient(0deg, rgba(32, 32, 32, 1) 3%, rgba(255,255,255,0) 100%)";
             break;
         }
+    }
+    catch(e){
+        console.log(e.toString());
+    }
+}
+
+function CheckShellTheme(){
+    try{
+        const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+        darkThemeMq.addListener(e => {
+            if(e.matches){
+                SetTheme("Dark");
+            } else{
+                SetTheme("Light");
+            }
+        });
     }
     catch(e){
         console.log(e.toString());
