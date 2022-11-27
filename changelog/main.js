@@ -37,6 +37,7 @@ function CheckShellTheme(){
         darkThemeMq.addListener(e => {
             if(e.matches){
                 SetTheme("Dark");
+                debugger;
             } else{
                 SetTheme("Light");
             }
@@ -46,3 +47,5 @@ function CheckShellTheme(){
         console.log(e.toString());
     }
 }
+
+CheckShellTheme();

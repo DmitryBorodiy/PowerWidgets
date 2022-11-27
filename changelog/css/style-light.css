@@ -1,4 +1,12 @@
-﻿h1{
+﻿@media (prefers-color-scheme: light){
+  
+}
+
+@media (prefers-color-scheme: dark){
+  
+}
+
+h1{
     font-weight: bold;
     font-size: 42px;
 }
