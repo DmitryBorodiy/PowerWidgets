@@ -1,9 +1,13 @@
 ﻿@media (prefers-color-scheme: light){
-  
+    body{
+
+    }
 }
 
 @media (prefers-color-scheme: dark){
-  
+    body{
+        
+    }
 }
 
 h1{
